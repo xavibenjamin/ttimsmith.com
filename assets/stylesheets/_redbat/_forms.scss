@@ -1,0 +1,97 @@
+/*
+
+FORMS
+------------------------------------------- */
+
+
+// Webkit Placeholder
+::-webkit-input-placeholder {
+   color: lighten($darkColor, 50%);
+   // @include transition(all .2s ease-in-out);
+}
+
+input:focus::-webkit-input-placeholder {
+  color: lighten($darkColor, 65%);
+}
+
+// Firefox 18
+:-moz-placeholder { /* Firefox 18- */
+   color: lighten($darkColor, 50%);
+}
+
+input:focus:-moz-placeholder {
+  color: lighten($darkColor, 65%);
+}
+
+// Firefox 19
+::-moz-placeholder {  /* Firefox 19+ */
+   color: lighten($darkColor, 50%);
+}
+
+input:focus::-moz-placeholder {
+  color: lighten($darkColor, 65%);
+}
+
+.page__newsletter-form, .page__search-form {
+  label {
+    display: block;
+    font-size: .95em;
+    font-weight: bold;
+  }
+  .inline-label {
+    display: inline-block !important;
+    font-weight: normal;
+  }
+  input[type="text"], input[type="email"] {
+    border: 1px solid darken($borderColor, 10%);
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 4px rgba(black, .1);
+    padding: 5px 8px;
+    width: 75%;
+    // @include transition(all .2s ease-in);
+    @media screen and (max-width: 400px ) {
+      width: 100%;
+    }
+    &:focus {
+      // @include transition(all .2s ease-in);
+      border: 1px solid #51a7e8;
+      box-shadow: inset 0px 0px 2px rgba(black, .1), 0 0 3px rgba(#51a7e8, .5);
+    }
+  }
+}
+
+.footer__search-form {
+  p {
+    margin: 2px 0 2% 10%;
+    @media screen and (max-width: 700px ) {
+      margin-left: 0;
+    }
+  }
+  input[type="text"] {
+    border: 1px solid darken($borderColor, 10%);
+    border-radius: 3px;
+    box-shadow: inset 1px 1px 4px rgba(black, .1);
+    font-size: .8em;
+    padding: 5px 8px;
+    width: 45%;
+    // @include transition(all .2s ease-in);
+    @media screen and (max-width: 400px ) {
+      width: 55%;
+    }
+    &:focus {
+      // @include transition(all .2s ease-in);
+      border: 1px solid #51a7e8;
+      box-shadow: inset 0px 0px 2px rgba(black, .1), 0 0 3px rgba(#51a7e8, .5);
+    }
+  }
+}
+
+.form-error {
+  color: $alertColor !important;
+}
+
+.form-success {
+  color: #77be65 !important;
+}
+
+

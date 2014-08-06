@@ -1,0 +1,19 @@
+---
+layout: page
+title: Portfolio
+permalink: /portfolio/
+---
+
+<p class="page__description">I’m available for web and interface design, or front-end development. Other than client work, I also work on some personal projects. If you’d like to look at code I've written, take a look at my <a href="https://github.com/ttimsmith" title="Homie can code!">GitHub profile</a>.</p>
+
+<div class="portfolio__items">
+  {% for work in site.work reversed %}
+    <article class="portfolio__entry">
+      <figure class="content__image">
+        <img src="{{ work.thumbnail }}" alt="{{ work.title }} thumb">
+      </figure>
+      <h2><a href="{{ work.url}}" title="Link to {{ work.title }}">{{ work.title }}</a></h2>
+      <p>{{ work.excerpt }}</p>
+    </article>
+  {% endfor %}
+</div><!-- .portfolio__items -->

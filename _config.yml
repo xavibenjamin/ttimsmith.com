@@ -1,0 +1,26 @@
+# Site settings
+name: Timothy B. Smith
+title: "Designer who codes, blabber mouth, and coffee addict."
+email: smith@ttimsmith.com
+description: "Tim Smith is a user interface and web designer based in St. Paul, Minnesota."
+url: http://ttimsmith.com
+
+# Build settings
+markdown: kramdown
+permalink: /:year/:month/:title
+paginate: 20
+exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
+include: ['.htaccess']
+sass:
+  sass_dir: assets/stylesheets
+  style: :compressed
+timezone: America/Chicago
+post:
+  extension: md
+
+
+# Collection
+collections:
+  work:
+    output: true
+    permalink: /portfolio/:path/

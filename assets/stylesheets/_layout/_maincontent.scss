@@ -1,0 +1,54 @@
+/*
+
+MAIN CONTENT
+------------------------------------------- */
+
+.main__content {
+  margin: 0 0 $spacing-xl;
+}
+
+.site__description, .site__services {
+  margin: 0 0 $spacing-m;
+}
+
+.home__title {
+  font-size: 2.4em;
+  font-weight: 900;
+  line-height: 120%;
+  margin: 0 0 $spacing-l;
+}
+
+.site__services {
+  background: $borderColor;
+  padding: $spacing-s 0;
+}
+
+.section__title {
+  color: darken($borderColor, 35%);
+  font-size: .95em;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 $spacing-m !important;
+  @extend %second-sans;
+}
+
+.service__widget {
+  h3 {
+    color: lighten($darkColor, 15%);
+    font-size: 1.15em;
+    margin-top: 0;
+  }
+  p {
+    font-size: .95em;
+  }
+}
+
+.portfolio__description {
+  h3 {
+    font-size: 1.15em;
+    margin-top: 0;
+  }
+  p {
+    font-size: 1em;
+  }
+}

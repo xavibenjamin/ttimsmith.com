@@ -1,0 +1,86 @@
+/*
+
+OBJECTS
+------------------------------------------- */
+
+.contain {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 940px;
+  @extend %clearfix;
+  @media (max-width: 940px) {
+    padding: 0 $spacing-m;
+  }
+}
+
+.screen-reader-text {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+.no-bullets {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+
+// Grid
+
+.right {
+  float: right;
+}
+
+.columns {
+  float: left;
+  margin-right: $spacing-m;
+  &:last-child {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+.centered {
+  margin: 0 auto;
+}
+
+.grid-8 {
+  width: percentage(620/970);
+  @include breakpoint(m) {
+    width: 100%;
+    margin-bottom: $spacing-m;
+  }
+}
+
+.grid-7 {
+  width: percentage(540/970);
+  @include breakpoint(m) {
+    width: 100%;
+    margin-bottom: $spacing-m;
+  }
+}
+
+.grid-5 {
+  width: percentage(380/970);
+  @include breakpoint(m) {
+    width: 100%;
+    margin-bottom: $spacing-m;
+  }
+}
+
+.grid-4 {
+  width: percentage(300/970);
+  @include breakpoint(m) {
+    width: 100%;
+    margin-bottom: $spacing-m;
+  }
+}
+
+.grid-3 {
+  width: percentage(220/970);
+  @include breakpoint(m) {
+    width: 100%;
+    margin-bottom: $spacing-m;
+  }
+}

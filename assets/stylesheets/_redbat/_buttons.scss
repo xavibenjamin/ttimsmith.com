@@ -1,0 +1,40 @@
+/*
+
+BUTTONS
+--------------------------------------------------------- */
+
+button[type=submit] {
+  border: 0;
+  outline: 0;
+  -webkit-appearance: none;
+}
+
+.btn {
+  background: $linkColor;
+  border-radius: 3px;
+  color: white;
+  display: inline-block;
+  font-size: .85em;
+  font-weight: bold;
+  padding: 8px 12px;
+  text-decoration: none;
+  @include transition(.2s ease-in-out);
+  @extend %sans;
+  &:hover {
+    background: darken($linkColor, 10%);
+    color: white;
+  }
+}
+
+.secondary {
+  background: $jazzColor;
+  color: white !important;
+  // @include transition(.2s ease-in-out);
+  &:hover {
+    background: darken($jazzColor, 5%);
+  }
+}
+
+.big {
+  font-size: 110%;
+}

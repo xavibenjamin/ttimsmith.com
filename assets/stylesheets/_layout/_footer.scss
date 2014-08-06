@@ -1,0 +1,31 @@
+/*
+
+FOOTER
+------------------------------------------- */
+
+.footer__work-cta {
+  background: $borderColor;
+  padding: $spacing-s 0;
+  h3 {
+    color: $bodyColor;
+    float: left;
+    font-size: 1.3em;
+    font-weight: 900;
+    margin-top: percentage(9/940);
+    @include breakpoint(s) {
+      font-size: 1.15em;
+      margin-top: percentage(18/940);
+    }
+  }
+}
+
+.site__footer {
+  background: $darkColor;
+  padding: $spacing-m;
+  @extend %sans;
+  small {
+    color: lighten($darkColor, 25%);
+    display: block;
+    font-size: .85em;
+  }
+}

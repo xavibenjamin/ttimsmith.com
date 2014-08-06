@@ -1,0 +1,47 @@
+
+/*
+
+BITS
+-------------------------------------------
+Table of Contents
+
+	- Colors
+
+	- Spacing
+
+------------------------------------------- */
+
+
+/*
+
+COLORS
+-------------------------------------------
+@colors
+
+Color Variables
+------------------------------------------- */
+
+$darkColor: #2c3031;
+$bodyColor: #777;
+$linkColor: #73c0ca;
+$borderColor: #f4f4f4;
+$jazzColor: #f3643c;
+$alertColor: #e54a4f;
+
+
+
+/*
+
+SPACING
+-------------------------------------------
+@spacing
+
+Spacing Variables
+------------------------------------------- */
+
+$spacing-xxs: percentage(10/940);
+$spacing-xs: percentage(15/940);
+$spacing-s: percentage(20/940);
+$spacing-m: percentage(30/940);
+$spacing-l: percentage(40/940);
+$spacing-xl: percentage(50/940);

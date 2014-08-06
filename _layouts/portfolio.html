@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<div class="portfolio__hero">
+  <img src="{{ site.url }}/{{ page.hero }}" alt="Hero for {{ page.title }}" />
+</div>
+
+<div class="contain">
+  <aside class="grid-4 columns portfolio__sidebar">
+    <div class="sidebar-widget">
+      <h3>Role</h3>
+      <p>{{ page.role }}</p>
+    </div>
+
+    <div class="sidebar-widget">
+     <h3>Type</h3>
+     <p>{{ page.type }}</p>
+    </div>
+
+    {% if page.item_url %}
+      <div class="sidebar-widget">
+        <h3>Live Site</h3>
+        <p><a href="{{ page.portfolio_item_url }}">{{ page.title }}</a></p>
+      </div>
+    {% endif %}
+  </aside>
+
+  <div class="grid-8 columns">
+    <header class="post__header">
+      <h1>{{ page.title }}</h1>
+    </header>
+
+    <div class="post__content">
+      {{ content }}
+    </div>
+  </div>
+</div><!-- .contain -->

@@ -1,0 +1,156 @@
+/*
+
+PAGE STYLES
+------------------------------------------- */
+
+p.page__description {
+  border-bottom: 1px solid $borderColor;
+  margin-bottom: $spacing-xl;
+  padding-bottom: $spacing-l;
+}
+
+
+/* Portfolio Specific Styles */
+
+.portfolio__entry {
+  border-bottom: 1px solid $borderColor;
+  padding: $spacing-xl 0;
+  &:last-child {
+    border-bottom: none;
+  }
+  h2 {
+    font-size: 1.4em;
+    font-weight: 900;
+    margin-bottom: $spacing-xxs;
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+.portfolio__hero {
+  margin: 0 auto;
+  max-width: 1700px;
+}
+
+.portfolio__sidebar {
+  background: lighten($borderColor, 2%);
+  border-radius: 3px;
+  // font-size: 80%;
+  padding: $spacing-s;
+  h3 {
+    font-size: 1em;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: $spacing-xl;
+    @extend %second-sans;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .sidebar-widget {
+    border-bottom-color: darken($borderColor, 10%);
+  }
+}
+
+/* Blog Specific Styles */
+
+.content__posts {
+  margin: 0;
+  li {
+    list-style-type: none;
+    margin-bottom: $spacing-m;
+    a {
+      text-decoration: none;
+    }
+  }
+  .post__title {
+    display: block;
+    font-size: 1.15em;
+    line-height: 125%;
+  }
+  .post__pubdate {
+    font-size: .85em;
+  }
+}
+
+.post__pubdate {
+  color: lighten($bodyColor, 15%);
+  font-size: .90em;
+  @extend %sans;
+}
+
+.post__header {
+  margin: 0 0 $spacing-l;
+  h1 {
+    font-size: 2.3em;
+    font-weight: 900;
+    line-height: 110%;
+    margin-bottom: $spacing-xxs;
+  }
+}
+
+.post__content {
+  p:first-child {
+    color: #4b4b4b;
+    font-size: 1.2em;
+  }
+}
+
+.footnotes {
+  margin-top: 10%;
+  &:before {
+    background: $borderColor;
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    margin-bottom: $spacing-xl;
+  }
+  ol {
+    margin: 0 0 0 8.5%;
+    li {
+      font-size: .95em;
+      p:first-child {
+        color: #777;
+      }
+    }
+  }
+}
+
+/* Resume Specific Styles */
+
+.resume__statement {
+  color: #4b4b4b;
+  font-size: 1.2em !important;
+}
+
+.resume__heading {
+  border-bottom: 1px solid $borderColor;
+  color: darken($borderColor, 35%);
+  font-weight: 400;
+  font-size: 1.15em;
+  padding-bottom: $spacing-xxs;
+  margin: $spacing-xl 0 $spacing-xs !important;
+  text-transform: uppercase;
+  @extend %second-sans;
+}
+
+.resume__subheading {
+  font-size: 1.15em !important;
+  font-weight: normal !important;
+}
+
+.resume__meta {
+  color: lighten($bodyColor, 25%);
+  font-size: .95em !important;
+  margin-bottom: $spacing-xs !important;
+}
+
+.resume__other-info {
+  margin-bottom: 15%;
+  li {
+    font-size: .95em;
+    line-height: 120%;
+  }
+}
