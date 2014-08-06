@@ -9,9 +9,11 @@ permalink: /portfolio/
 <div class="portfolio__items">
   {% for work in site.work reversed %}
     <article class="portfolio__entry">
-      <figure class="content__image">
-        <img src="{{ work.thumbnail }}" alt="{{ work.title }} thumb">
-      </figure>
+      <a href="{{ work.url }}">
+        <figure class="content__image">
+          <img src="{{ work.thumbnail }}" alt="{{ work.title }} thumb">
+        </figure>
+      </a>
       <h2><a href="{{ work.url}}" title="Link to {{ work.title }}">{{ work.title }}</a></h2>
       <p>{{ work.excerpt }}</p>
     </article>
