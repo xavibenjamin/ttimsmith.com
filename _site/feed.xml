@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Timothy B. Smith</title>
+    <description>Tim Smith is a user interface and web designer based in St. Paul, Minnesota.</description>
+    <link></link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml" />
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>Microsoft Acquiring Nokia is an Important Move</title>
+          <description>&lt;p&gt;Microsoft’s Nokia acquisition is more important than you think. It’s being brushed off by many in the media, and definitely by a lot of Apple fans; we love to ridicule this type of news. &lt;a href=&quot;http://gigaom.com/2013/09/03/why-i-think-the-7-2-billion-microsoft-nokia-deal-is-a-terrible-idea/&quot;&gt;Some just downright think it’s a terrible idea&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;One thing is definitely true, the move is late. This acquisition would’ve interested a lot more people a couple of years ago. The mobile market is very competitive, Apple and Google have years of experience, and it seems Amazon wants a piece of the pie.&lt;/p&gt;
+
+&lt;p&gt;Microsoft and Nokia may be a joke in terms of market share&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;, but them joining forces is important news. The fact that hardware and software are now being done semi-in-house is a big deal, and indicative of some type of vision which could be successful&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt;. Microsoft has noticed something very important, and I talked about this when I wrote about &lt;a href=&quot;/2013/08/why-scott-forstall-should-be-microsofts-next-ceo/&quot;&gt;Scott Forstall becoming CEO&lt;/a&gt;—being responsible for the complete experience is the key to making products people want to use.&lt;/p&gt;
+
+&lt;p&gt;Since its inception, the company has allowed others to create the hardware for their software&lt;sup id=&quot;fnref:3&quot;&gt;&lt;a href=&quot;#fn:3&quot; class=&quot;footnote&quot;&gt;3&lt;/a&gt;&lt;/sup&gt;. They’ve given up control of the experience, and I feel it’s one of the biggest reasons they aren’t the company they want to be. Nokia becoming part of Microsoft begins to fix that.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Microsoft doesn’t want to be &lt;em&gt;just&lt;/em&gt; a software company.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;In Steve Ballmer’s letter to employees, he said, “We are committed to working with partners, helping them build great products and great businesses on our platform, and we believe this deal will increase our partner value proposition over time.” I predict that in 4 years, Microsoft will be exclusively making Windows Phone. It’ll be theirs; software and hardware.&lt;/p&gt;
+
+&lt;p&gt;One of the things that makes Apple so successful is the way they control the ecosystem. Lots of power users are turned away by how little control they have, but to the normal consumer, the careful curation of an ecosystem, makes the experience more enjoyable. It’s also important to note, that companies that don’t exercise this type of control &lt;a href=&quot;http://bits.blogs.nytimes.com/2013/08/28/u-s-government-issues-warning-about-security-on-android-phones/&quot;&gt;have lots of security problems&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The next year and a half will tell whether Microsoft will take this opportunity, and execute well on it. They need a new phone, running a better operating system. If Microsoft is at all successful in the next 5 years, it will be in part because of this move.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;According to &lt;a href=&quot;http://http://www.theverge.com/2013/9/3/4688962/with-nokia-microsoft-wants-to-triple-windows-phone-marketshare-by-2018&quot;&gt;this article&lt;/a&gt;, Microsoft’s marketshare is just over 4% in the smartphone market. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;I think the &lt;a href=&quot;http://www.nokia.com/us-en/phones/phone/lumia1020/&quot;&gt;Nokia Lumia&lt;/a&gt; is a great example of some great hardware decisions. It’s a pretty good-looking phone, and has a 41 megapixel camera which is perfect for what people want to do with their phone: take pictures of themselves and food. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:3&quot;&gt;
+      &lt;p&gt;This is the reason you spend hours uninstalling software from a PC you just bought. Android has this same problem by allowing carriers to make different versions of it. &lt;a href=&quot;#fnref:3&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+          <pubDate>Tue, 03 Sep 2013 11:31:51 -0500</pubDate>
+          <link>/2013/09/microsoft-acquiring-nokia-is-an-important-move</link>
+          <guid isPermaLink="true">/2013/09/microsoft-acquiring-nokia-is-an-important-move</guid>
+        </item>
+      
+    
+      
+    
+      
+        <item>
+          <title>Getting Interested in Front-end Performance</title>
+          <description>&lt;p&gt;Harry Roberts:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It’s hard, if not impossible, to deny that performance is by far one of the most critical aspects of any decent web project, be it a small portfolio site, a mobile-first web app, right through to a full-scale ecommerce project.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;This is an area I’ve been dabbling into more recently. As a wanna-be front-end developer, I’ve tried to do more research into how I can do my job better, and make the sites I create faster. &lt;/p&gt;
+
+&lt;p&gt;This article is quite the extensive guide on various things you could do to make your sites faster. The obvious ones are things like minimizing http requests, and minifying files. Yet, one technique I hadn’t heard of before was using &lt;code&gt;rel=&quot;dns-prefetch&quot;&lt;/code&gt;. On this site, I put this in the head:&lt;/p&gt;
+
+&lt;div class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-html&quot; data-lang=&quot;html&quot;&gt;&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dns-prefetch&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//engine.carbonads.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dns-prefetch&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//static.carbonads.com&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;nt&quot;&gt;&amp;lt;link&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;rel=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;dns-prefetch&amp;quot;&lt;/span&gt; &lt;span class=&quot;na&quot;&gt;href=&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&amp;quot;//use.typekit.net&amp;quot;&lt;/span&gt;&lt;span class=&quot;nt&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Essentially this does exactly what you think it would do. You can prefetch a hostname’s DNS with the code above. This is helpful when you need assets from an external source.&lt;/p&gt;
+
+&lt;p&gt;If you’re building sites of any kind, check out the article, very helpful.&lt;/p&gt;
+
+&lt;h5 id=&quot;further-reading&quot;&gt;Further Reading&lt;/h5&gt;
+&lt;p&gt;&lt;a href=&quot;http://daverupert.com/2010/06/web-performant-wordpress/&quot;&gt;Web Performant WordPress by Dave Rupert&lt;/a&gt; - A really great article if you’re running on WordPress. It is from 2010, so take the advice with a grain of salt.&lt;/p&gt;
+</description>
+          <pubDate>Sun, 01 Sep 2013 16:17:44 -0500</pubDate>
+          <link>/2013/09/getting-interested-in-front-end-performance</link>
+          <guid isPermaLink="true">/2013/09/getting-interested-in-front-end-performance</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>Why Scott Forstall Should Be Microsoft’s Next CEO</title>
+          <description>&lt;p&gt;Scott Forstall could give Microsoft exactly what it’s been missing.&lt;/p&gt;
+
+&lt;p&gt;I for one don’t understand all the hate for Scott Forstall. Is the man a jerk? Maybe. Is he difficult to work with? From what I hear, yes. However, he isn’t given enough credit for what he did at Apple.&lt;/p&gt;
+
+&lt;p&gt;Forstall is a brilliant engineer, and although many don’t necessarily agree with his design sense, his vision for iOS made the platform what it was, and easy to use.&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; class=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+
+&lt;p&gt;Microsoft is in trouble. They’ve missed out on several opportunities, and fired Steve Ballmer &lt;em&gt;really late&lt;/em&gt;.&lt;sup id=&quot;fnref:2&quot;&gt;&lt;a href=&quot;#fn:2&quot; class=&quot;footnote&quot;&gt;2&lt;/a&gt;&lt;/sup&gt; Scott comes from a company that cares about design, and understands the benefit of being responsible for both the software and hardware. Microsoft has historically been horrible in this area.&lt;/p&gt;
+
+&lt;p&gt;I’m not the only one &lt;a href=&quot;http://www.loopinsight.com/2013/08/23/apple-executives-as-microsoft-ceo/&quot;&gt;saying this&lt;/a&gt;. &lt;/p&gt;
+
+&lt;p&gt;This is a prime opportunity for Microsoft. They can make a comeback and create some products that they’re actually proud of, instead of making jealousy-ridden commercials that take cheap shots at Apple. &lt;/p&gt;
+
+&lt;p&gt;This is a really great opportunity for Forstall too. Stick it to Apple and make something great somewhere else. Microsoft doesn’t have to be Apple, but Scott can bring certain philosophies that the company desperately needs. Scrap everything, start fresh, and start thinking differently.&lt;/p&gt;
+
+&lt;p&gt;I find myself weirdly rooting for Microsoft here. Could Microsoft be cool? Could they finally make something that billions of people use, but don’t hate? Yes.&lt;/p&gt;
+
+&lt;div class=&quot;footnotes&quot;&gt;
+  &lt;ol&gt;
+    &lt;li id=&quot;fn:1&quot;&gt;
+      &lt;p&gt;I’m not yet convinced on Jony being in charge of software design too. &lt;a href=&quot;#fnref:1&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+    &lt;li id=&quot;fn:2&quot;&gt;
+      &lt;p&gt;Seriously. I can’t believe this didn’t happen earlier. &lt;a href=&quot;#fnref:2&quot; class=&quot;reversefootnote&quot;&gt;&amp;#8617;&lt;/a&gt;&lt;/p&gt;
+    &lt;/li&gt;
+  &lt;/ol&gt;
+&lt;/div&gt;
+</description>
+          <pubDate>Sun, 25 Aug 2013 00:18:10 -0500</pubDate>
+          <link>/2013/08/why-scott-forstall-should-be-microsofts-next-ceo</link>
+          <guid isPermaLink="true">/2013/08/why-scott-forstall-should-be-microsofts-next-ceo</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>Moving Over to Jekyll</title>
+          <description>&lt;p&gt;Yes, you read that correctly. I’ve moved this blog over to Jekyll. I don’t know why I didn’t do this sooner.&lt;/p&gt;
+
+&lt;p&gt;If you don’t know about &lt;a href=&quot;http://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt;, it’s a static site generator built with Ruby. I was really scared to move over, mostly dreading the work that would go into migrating all of my WordPress posts.  I was able to easily create post formats with the help of some code that my pal &lt;a href=&quot;http://avclark.com&quot;&gt;Adam Clark&lt;/a&gt; pointed me to.&lt;/p&gt;
+
+&lt;p&gt;Although it did take me about 8 total hours to migrate and design, I already feel it’s worth it.  I’ve created an Alfred Workflow that allows me to easily create new posts, with the appropriate &lt;a href=&quot;http://jekyllrb.com/docs/frontmatter/&quot;&gt;front-matter&lt;/a&gt;, and I’ll be recording a screencast on how to do that in the next couple days. The feed should redirect, but if not, you can grab it &lt;a href=&quot;http://ttimsmith.com/feed.xml&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I know this isn’t a huge thing, but I’m so excited about doing this. I’m even thinking about creating a Tim Likes to Teach course on it. If you’d like to see the source of the site, you can &lt;a href=&quot;https://github.com/ttimsmith/ttimsmith.com&quot;&gt;see it on Github&lt;/a&gt;. Feel free to look at the code and submit issues if you see wonky stuff (It’s totally possible. Data migrations aren’t my thing).&lt;/p&gt;
+
+&lt;h3 id=&quot;so-are-you-anti-wordpress-now&quot;&gt;So Are You Anti-WordPress Now?&lt;/h3&gt;
+&lt;p&gt;Not at all. I love WordPress. I’ve been working with WordPress for years. However, I work on this site a lot, and I found myself very frustrated with how WordPress handles a simple blog. The honest truth, WordPress is too much for just a blog these days.&lt;/p&gt;
+
+&lt;p&gt;Using a web editor had become tiresome for me. I like writing posts in Byword. Byword has WordPress publishing support, but no support for post formats, and the process of setting custom fields is not really well done. So in the end, I had to write the post in Byword, and then go to the web editor anyway to set values for the posts.&lt;/p&gt;
+
+&lt;p&gt;With Jekyll, I type &lt;code&gt;jekyll  [post-format] [title]&lt;/code&gt; in Alfred and a Markdown file is generated and opened for me to begin work. It’s perfect.  Also, the speed of this site has dramatically increased. It’s a thing of beauty.&lt;/p&gt;
+
+&lt;p&gt;If you’re considering switching to Jekyll, I really recommend it. It’s not difficult to dive in, and if you’re a fan of optimized workflows, I think you’ll love how time efficient this process is. If you have any questions, let me know, and I’ll try to answer them.&lt;/p&gt;
+</description>
+          <pubDate>Sat, 10 Aug 2013 00:00:00 -0500</pubDate>
+          <link>/2013/08/moving-over-to-jekyll</link>
+          <guid isPermaLink="true">/2013/08/moving-over-to-jekyll</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>Overcoming Yourself</title>
+          <description>&lt;p&gt;Writing for me, is one of those things I wish I could be great at. I can read pieces by other people, and be moved, inspired, motivated, and more with a single paragraph. Great writers are able to convey emotion and tell a story while keeping you interested with every word.&lt;/p&gt;
+
+&lt;p&gt;For as long as I can remember, I&#39;ve told myself that I can&#39;t write. I&#39;ve noticed that I have the power to hold myself back, if I don&#39;t fight against the urge to talk myself out of things. If I want to be a great writer, what better way than to practice a little everyday?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;That’s exactly what I’m doing.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;I&#39;m tired of telling myself I can&#39;t do something; that&#39;s the world&#39;s job. I can&#39;t draw, I can&#39;t play piano, I can&#39;t be fit, etc; it&#39;s rubbish. I can do all those things. The only thing in the way is &lt;strong&gt;me&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s quite an interesting moment when you realize the biggest hurdle to overcome is your own cynicism; that&#39;s ridiculous. If anything, you should be rooting for your own self.&lt;/p&gt;
+
+&lt;p&gt;I give up on trying to stop myself from doing something I really want; you could be on the edge of greatness and not realize it.&lt;/p&gt;
+</description>
+          <pubDate>Mon, 03 Jun 2013 00:00:00 -0500</pubDate>
+          <link>/2013/06/overcoming-yourself</link>
+          <guid isPermaLink="true">/2013/06/overcoming-yourself</guid>
+        </item>
+      
+    
+      
+    
+      
+        <item>
+          <title>On Redesigns</title>
+          <description>&lt;p&gt;What is the point of redesigning something? What&#39;s trying to be accomplished? Whether it be an app, website, or any type of product, clear goals are behind necessary redesigns.&lt;/p&gt;
+
+&lt;p&gt;When clients have come to me in the past to redesign their website or brand, the first question out of my mouth, is why. Often, people have an idea of what they&#39;re trying to accomplish:  they want more customers, they&#39;d like to provide current users with a better experience, they&#39;d like to create a future-friendly website, etc.&lt;/p&gt;
+
+&lt;p&gt;Redesigning for the sake of change is limited to personal sites. This should never be a strategy where the user experience is actually important.&lt;/p&gt;
+
+&lt;p&gt;As designers, it&#39;s necessary we think these things through. Too many people believe that design is purely visual, and sometimes, we contribute to that incorrect assumption. The reality is, design is heavily reliant on asking the right questions, and properly analyzing the answers.&lt;/p&gt;
+
+&lt;p&gt;When we do this, we can create designs that improve an experience, and possibly improve the lives of our users.&lt;/p&gt;
+</description>
+          <pubDate>Fri, 31 May 2013 00:00:00 -0500</pubDate>
+          <link>/2013/05/on-redesigns</link>
+          <guid isPermaLink="true">/2013/05/on-redesigns</guid>
+        </item>
+      
+    
+      
+    
+      
+        <item>
+          <title>Make Your Own Club</title>
+          <description>&lt;p&gt;I&#39;ve never felt like I belong to a club. In school, I wasn&#39;t popular, I didn&#39;t play sports, nor was I a good student. I didn&#39;t really fit in.&lt;/p&gt;
+
+&lt;p&gt;For most of my school years, it bothered me. I became a person I wasn&#39;t, just to be accepted. It wasn&#39;t until the final years of high school that I realized I could just be myself, and not care. I could find friends who liked me for me.&lt;/p&gt;
+
+&lt;p&gt;In a certain way, this type of thing continues in work and on the web. The popular people and the ones who aren&#39;t. Unlike high school, the popular kids are mostly really nice. However, I&#39;ve noticed that I —and many others— continue wanting to be part of the club.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;What is “the club” anyways?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;What we sometimes forget is that there are lots of clubs, and being active on the web is as easy as reaching out. If you don&#39;t seem to find one that suits you, make one. Create a place where you feel comfortable and can be edifying to others.&lt;/p&gt;
+
+&lt;p&gt;Being friends with big names isn&#39;t what makes you awesome, being kind and respectful does. You can&#39;t give people too much importance; sometimes, even your heroes will let you down. Time spent resenting is time not spent on doing great work.&lt;/p&gt;
+</description>
+          <pubDate>Thu, 30 May 2013 00:00:00 -0500</pubDate>
+          <link>/2013/05/make-your-own-club</link>
+          <guid isPermaLink="true">/2013/05/make-your-own-club</guid>
+        </item>
+      
+    
+      
+    
+      
+        <item>
+          <title>I Don’t Know What I’m Doing</title>
+          <description>&lt;p&gt;This is a phrase I’m getting into the habit of saying more. It&#39;s completely true, and the more I say it, the more benefit I seem to get out of it.&lt;/p&gt;
+
+&lt;p&gt;I don’t know why, but as humans, we like to give the illusion of having knowledge; whether it be true or not. I know I do. I love making people feel like I know what&#39;s going on and how to handle a situation.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I don’t.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Instead, I’ve tried to be more open about the things I don&#39;t know and I&#39;ve been very happy with the results. The great part of admitting ones shortcomings, is the opportunity it creates for learning. You’d be amazed how willing people are to give help and advice. It&#39;s my belief that with a little humility, and a willingness to learn, there is nothing you can&#39;t accomplish.&lt;/p&gt;
+
+&lt;p&gt;What are you admitting to not knowing today?&lt;/p&gt;
+</description>
+          <pubDate>Wed, 29 May 2013 00:00:00 -0500</pubDate>
+          <link>/2013/05/i-dont-know-what-im-doing</link>
+          <guid isPermaLink="true">/2013/05/i-dont-know-what-im-doing</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>Dealing with Insecurities</title>
+          <description>&lt;p&gt;I&#39;m not one to suffer of low self-confidence much, but like everyone else, I have my moments. And this is one of them. I&#39;m insecure; I&#39;m scared; I&#39;m worried.&lt;/p&gt;
+
+&lt;p&gt;The past eight months have been interesting. I left a great job for more money somewhere else, and was subsequently fired. I made personal decisions that hurt my family, and those who love me. To say the least, when I felt that everything was going well, the rug was pulled from under me.&lt;/p&gt;
+
+&lt;p&gt;I&#39;ve suffered the consequences of these bad decisions, yet grown in ways I couldn&#39;t have imagined. I&#39;ve become confident with the person I am, proud of the person I&#39;ve become, and am becoming.&lt;/p&gt;
+
+&lt;p&gt;I’ve become a person that thinks about saving money. A person that doesn’t take decisions motivated by greed, but instead with humility and a goal to keep things simple. Someone who understands that my decisions affect others, and to think otherwise is selfish. And what real love is, and how what you do says so much more than anything you could possibly say.&lt;/p&gt;
+
+&lt;p&gt;That said, I deal with the feelings of regret everyday. Why did I let money cloud my good judgement? Why do I miss that company so much when they don’t seem to miss me at all?&lt;/p&gt;
+
+&lt;p&gt;I also feel like one day, someone’s going to figure out I’m a complete fraud. Someone’s going to find out that I don’t really know what I’m doing, that my code sucks, or that there’s really nothing special about the design work I do.&lt;/p&gt;
+
+&lt;p&gt;Years ago, I thought these feelings of regret and fraud would go away. That a day comes when you don&#39;t care what anyone else says or thinks, you just produce great work, and you&#39;re happy. That one day, you don’t seek the validation of others. You don’t care about web traffic, or the praise and/or acceptance of your heroes.&lt;/p&gt;
+
+&lt;p&gt;Turns out that, this doesn’t just happen. You have to work at it. As silly as it seems, I’ve had to actively remind myself not to care. I’m constantly having to tell myself that my mistakes don&#39;t define me, they inform the person I am. I&#39;ve had to force myself not to think of the &quot;what-ifs&quot; in life, but to accept that the past cannot be changed, and that the only way to look is forward.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;However,&lt;/strong&gt; there are moments, where all of these things, that I know to be logically true, go out the window, and we end up where I started this post.&lt;/p&gt;
+
+&lt;p&gt;There are moments when, even though I portray to know what I&#39;m doing, I really don&#39;t. I have no freaking idea. I&#39;m winging it, and waiting for people to find out.&lt;/p&gt;
+
+&lt;p&gt;The job search makes these feelings even stronger. Was I right to quit? Do I just have a huge ego? What if I end up under a bridge somewhere?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;So what happens next?&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The truth is, I don’t know how to “cure” these feelings. What I do know, is that they won’t stop me. There’s no point in allowing yourself to grow stagnent, you have to keep moving forward, and pushing your own boundaries. Sometimes that’s really scary, but I always think that if it’s not scary, you’re not doing something right.&lt;/p&gt;
+
+&lt;p&gt;Vulnerability is frightening, and most people find it to be a weakness. I disagree. Being vulnerable —those moments when you lay everything you’ve got on the table— is when you can truly grow and become a better version of yourself.&lt;/p&gt;
+
+&lt;p&gt;I’ll continue to deal with insecurities, but they won’t be calling the shots.&lt;/p&gt;
+</description>
+          <pubDate>Mon, 29 Apr 2013 00:00:00 -0500</pubDate>
+          <link>/2013/04/dealing-with-insecurities</link>
+          <guid isPermaLink="true">/2013/04/dealing-with-insecurities</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>My Definition of Success</title>
+          <description>&lt;p&gt;It&#39;s 2013. Another year has come and gone in what seems to be a blink of an eye. For me, it&#39;s been a bittersweet year full of mistakes and achievements. As I look back on 2012, I will forever remember it and its many ups and downs.&lt;/p&gt;
+
+&lt;p&gt;However, with a new year, comes a feeling of excitement; a feeling of starting anew, where we all begin at zero and where we have the hope to set and reach new goals. At least for me, the goals seem to be the same for every year: lose weight, get up earlier, etc.&lt;/p&gt;
+
+&lt;p&gt;Recently, I&#39;ve had the time to think a lot about these goals and my life. My first reaction was to get upset and angry at myself for not accomplishing these seemingly simple goals. Yet, I&#39;ve come to the realization that keeping hope and not giving up on these things are in and of itself a feat. I&#39;ve realized that the effort says as much and maybe more about a person than the results.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s only normal to think the other way though. We&#39;ve grown up in a society that measures results; whether it be money, statistics or championships. What about the hard work behind these results? And the work of those that didn&#39;t reach them? Are their efforts of any less value? What about us?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;It makes no sense to measure our results by someone else&#39;s definition of success&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;This past year has been rough for me. I&#39;ve made bad personal decisions, I quit a job that I loved and was fired from the one I quit for. I was left with no savings, a new apartment lease and a hefty car payment. All while being more than 1,600 miles away from my family in a place where below zero temperatures are normal during the winter.&lt;/p&gt;
+
+&lt;p&gt;For a while I was content with saying my life sucked and calling it a day. That&#39;s no longer the case. It goes against my nature to be this way. I&#39;m an optimist and I know that things always find a way to work out. But, you&#39;ve got to put in the work. I refuse to be of the people that are only happy when success is handed to them.&lt;/p&gt;
+
+&lt;p&gt;With that said, here are my goals for this year:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Lose Weight&lt;/strong&gt;&lt;br /&gt;
+Like I&#39;ve said before, this is something I&#39;ve been trying to do forever. I need to eat more vegetables, fruit and less sweets. I just got myself a gym membership too.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Pay Attention to the Relationships that Matter&lt;/strong&gt;&lt;br /&gt;
+I love my family. I love my friends. I need to spend more time with them. At the end of the day, these are the things that make you happy and that really matter in life.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Speak on Design&lt;/strong&gt;&lt;br /&gt;
+I&#39;d really like to speak more in 2013. I did one talk at my local meet up last year and it went great. I&#39;d be a great speaker for any event. Don&#39;t believe me? &lt;a href=&quot;http://theeastwing.net&quot;&gt;Listen to my podcast&lt;/a&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Work Less&lt;/strong&gt;&lt;br /&gt;
+For many, this might seem like a dumb goal if you&#39;re trying to be successful but, again, who&#39;s definition are we measuring it to? I&#39;d like to work just enough to pay my bills and use the rest of my time for other important things.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Travel More&lt;/strong&gt;&lt;br /&gt;
+I&#39;m single and in the prime of my life. I need to get out of my apartment more and get back to exploring the world one cup of coffee at a time.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So these are the goals I hope to accomplish in 2013. If I don&#39;t accomplish them all, there&#39;s always 2014. The point is to never give up on your goals, nor on yourself.&lt;/p&gt;
+
+&lt;p&gt;What about you? What do you want to accomplish?&lt;/p&gt;
+</description>
+          <pubDate>Tue, 01 Jan 2013 00:00:00 -0600</pubDate>
+          <link>/2013/01/my-definition-of-success</link>
+          <guid isPermaLink="true">/2013/01/my-definition-of-success</guid>
+        </item>
+      
+    
+      
+        <item>
+          <title>Sharing is Caring</title>
+          <description>&lt;p&gt;Recently, I’ve been making an effort to have coffee or meet up with fellow designers and developers here in the Twin Cities. We have a very strong community of smart and creative people here so, I&#39;ve been trying to get to know people individually. As you might know, I’m a coffee addict so, these meetings are a great way to feed the vice.&lt;/p&gt;
+
+&lt;p&gt;However, I’ve come across something extraordinary. In each of these coffee meetings, we always end up talking about something fascinating that the other person is working on and my question is always the same: “Why aren’t you writing about this?”.&lt;/p&gt;
+
+&lt;p&gt;I’ve realized that way too many people are shy about writing or documenting about their process and work. Interestingly, I talked about this with &lt;a href=&quot;http://theeastwing.net/episodes/37-brian&quot;&gt;Brian Hoff on The East Wing&lt;/a&gt; the other day. We talked about how helpful it was for him to start &lt;a href=&quot;http://thedesigncubicle.com/&quot;&gt;The Design Cubicle&lt;/a&gt;. That blog has not only been a huge source of work for him; it&#39;s served countless times as a valuable resource for me and likely for many of you.&lt;/p&gt;
+
+&lt;p&gt;What would’ve happened if he hadn’t been keen on sharing? I think it&#39;s safe to say that his career would be completely different.&lt;/p&gt;
+
+&lt;p&gt;Let me tell you another story. I had the pleasure of going to &lt;a href=&quot;http://frontenddesignconference.com/2012&quot;&gt;The Front-End Design Conference&lt;/a&gt; last June. Both &lt;a href=&quot;http://daverupert.com/&quot;&gt;Dave Rupert&lt;/a&gt; and &lt;a href=&quot;http://darcyclarke.me/&quot;&gt;Darcy Clarke&lt;/a&gt; clearly admonished people to share and blog more about what they were working on.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;I completely agree with this movement.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;You might be thinking, “Another blog? Would anyone even be interested in what I write?”. &lt;strong&gt;That doesn&#39;t matter.&lt;/strong&gt; Let me give you a couple of reasons why you should be writing.&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Learn as you go&lt;/strong&gt;&lt;br /&gt;
+Do you think Chris Coyier knew what he was doing when he first started &lt;a href=&quot;http://css-tricks.com/&quot;&gt;CSS-Tricks&lt;/a&gt;? I bet you he didn’t. He was fascinated with what you could do with CSS and just wanted to share what he was learning along the way. In the process, he went from being a beginner to a very respected person in our industry.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Get work&lt;/strong&gt;&lt;br /&gt;
+Most of the work I’ve done, whether it be freelance or the full-time jobs I’ve been so fortunate to hold, have come about either through this blog or &lt;a href=&quot;http://theeastwing.net/&quot;&gt;The East Wing&lt;/a&gt;. Employers and clients like people who are passionate about what they do and sharing things you’re learning is a great way to show that.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;Strengthen Your Personal Brand&lt;/strong&gt;&lt;br /&gt;
+A lot of people want to write for the big blogs or publications to be recognized but, what they’re forgetting is their own brand. I think a great example of this &lt;a href=&quot;http://daringfireball.net/&quot;&gt;John Gruber&lt;/a&gt;. You know him from his own personal writing place: Daring Fireball, not as the writer from another publication. He’s turned his name and brand into a very respected one.&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;So what do you say? Will you throw embarrassment or the thoughts of not having enough experience to the wind and start your own blog? Will you start sharing what you’re working on and help others who may be trying to learn something similar?&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Do it.&lt;/strong&gt;&lt;/p&gt;
+</description>
+          <pubDate>Thu, 27 Dec 2012 00:00:00 -0600</pubDate>
+          <link>/2012/12/sharing-is-caring</link>
+          <guid isPermaLink="true">/2012/12/sharing-is-caring</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>Silicon Valley Can Suck It</title>
+          <description>&lt;p&gt;You might hear me complain about how much I dislike start ups and the Silicon Valley culture. I seem to tweet about it a lot and I have private conversations with friends about it. I thought I&#39;d write to try and organize my thoughts.&lt;/p&gt;
+
+&lt;p&gt;I think the reasons I dislike start up culture come down to two things. It&#39;s detached and not personal, and I feel it&#39;s downright douchey most of the time.&lt;/p&gt;
+
+&lt;h3&gt;Detached and Not Personal&lt;/h3&gt;
+
+&lt;p&gt;This is my biggest gripe against startups and venture capitalists. It&#39;s very detached. There is a common saying that goes, &quot;It&#39;s not personal, it&#39;s business&quot;. Although I mostly agree with these words, I feel like there needs to be a little bit of a personal element.&lt;/p&gt;
+
+&lt;p&gt;Too many companies throw the needs of their users away for the money that the guys with big pockets can throw at them. These companies aren&#39;t solving people problems, they&#39;re coming up with ideas that get them funded. It might seem like the same thing, but it&#39;s not. I know that money pays the bills as much as the next guy but the start up culture promotes making billions, not doing what you love and living with what&#39;s necessary.&lt;/p&gt;
+
+&lt;p&gt;It&#39;s amazing to me that people covet having millions of dollars, a downtown loft and private jets. Everything comes at a price and those who live that life are empty, work most of the time, and don&#39;t have meaningful human relationships.&lt;/p&gt;
+
+&lt;h3&gt;It&#39;s Downright Douchey&lt;/h3&gt;
+
+&lt;p&gt;I don&#39;t care if your buddy is the ex-co-founder of Twitter. Don&#39;t talk to me about pivoting and please don&#39;t tell me your idea is the Facebook &amp;amp; Netflix of mommy blogging.&lt;/p&gt;
+
+&lt;p&gt;Being an entrepreneur used to mean something. Entrepreneurs were innovators. They weren&#39;t content with the way things were and dreamt of new and better ways to do them; it wasn&#39;t something you could just put in your Twitter bio and it certainly didn&#39;t give you license to be a douche.&lt;/p&gt;
+
+&lt;p&gt;Sure, I like to make things. Yes, I might not always think about my products all the way through. I may never be rich. But, damn it, I will have had fun. I will have had passion for the things I get involved in and I will love my family and my friends to the death.&lt;/p&gt;
+
+&lt;p&gt;So, I invite you to make business personal again. Have fun. Be nice. Do what you love and make sure you have time for the important people in your life. Money makes no one happy and I&#39;m pretty damn sure &quot;pivoting&quot; doesn&#39;t either.&lt;/p&gt;
+
+&lt;h3&gt;Further Reading&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://blog.jolieodell.com/2010/10/01/youre-not-an-entrepreneur/&quot;&gt;You&#39;re Not an Entrepreneur&lt;/a&gt; (Via &lt;a href=&quot;https://twitter.com/mattepp/&quot;&gt;@mattepp&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+          <pubDate>Fri, 02 Nov 2012 00:00:00 -0500</pubDate>
+          <link>/2012/11/silicon-valley-can-suck-it</link>
+          <guid isPermaLink="true">/2012/11/silicon-valley-can-suck-it</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+        <item>
+          <title>I Can’t Write</title>
+          <description>&lt;p&gt;I wish I could. I really do. I wish I could be one of those prolific writers that sit down and pump out a thousand words easily. I can count one piece that I&#39;ve written which has exceeded a thousand words and that might even include homework assignments from high school (did I mention I wasn&#39;t a good student?)&lt;/p&gt;
+
+&lt;p&gt;So how do they do it? I&#39;ve heard that some dedicate a time in the day to write. An hour, maybe two where they sit down and write something. My pal &lt;a href=&quot;http://blog.jarederondu.com/&quot;&gt;Jared Erondu&lt;/a&gt; used to write 10-20 pieces a day for a blog he founded and is now the Editor of The Industry at the age of 18. He&#39;s half man, half amazing.&lt;/p&gt;
+
+&lt;p&gt;Is it a gene? A natural talent? Can you develop this talent? At least in our industry, I&#39;m always talking to designers and developers who say its essential to write. Not only to develop your thoughts and truly know what you&#39;re feeling, but to also share the work you&#39;re doing. I&#39;ve tried to do some of that myself and I&#39;ve found it very therapeutic.&lt;/p&gt;
+
+&lt;p&gt;However, I&#39;m coming to realize that the problem I have with my writing is that I feel no one reads it. Maybe that&#39;s the adjustment I need to make. Why do I care if people read my horrendously written thoughts? That&#39;s something I learned from &lt;a href=&quot;http://daneden.me/&quot;&gt;Dan Eden&lt;/a&gt;. He told me in a &lt;a href=&quot;http://theeastwing.net/episodes/29-dan&quot;&gt;recent interview&lt;/a&gt; that he started blogging because of course he wanted to be like Chris Coyier some day, I mean, who doesn&#39;t? But also because it was his playground. Somewhere he could express his thoughts and the latest techniques he was learning.&lt;/p&gt;
+
+&lt;p&gt;To me, it really nailed home the idea that I should be writing because I want to do it and that&#39;s it. If no one reads, that&#39;s quite alright. It helps me organize my thoughts and ultimately makes me a better designer.&lt;/p&gt;
+
+&lt;p&gt;So if you&#39;re thinking of starting a blog or you&#39;ve already started one but you&#39;ve abandoned it, I encourage you to keep it up. Share the link in the comments and I&#39;ll be sure to visit.&lt;/p&gt;
+
+&lt;p&gt;From this day forward, I&#39;m going to write for one hour each day. Some of these are going to really suck but, I hope you&#39;ll join me.&lt;/p&gt;
+</description>
+          <pubDate>Thu, 25 Oct 2012 00:00:00 -0500</pubDate>
+          <link>/2012/10/i-cant-write</link>
+          <guid isPermaLink="true">/2012/10/i-cant-write</guid>
+        </item>
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+  </channel>
+</rss>
