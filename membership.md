@@ -14,16 +14,16 @@ This would allow me to dedicate all work time on these projects, and give me the
 ### Membership Levels
 Members of all levels will receive weekly updates containing information and audio clips of upcoming shows, and behind-the-scenes videos on setup and how shows are produced, and updates on how your membership money is being used. As time goes on, I will be developing more member-exclusive benefits.
 
-- **Americano** - *$5/month*
+- **Americano** - *$5/month*   
    The benefits for all members plus a personal thank you. You've done something very nice for me. I won't forget it.
 
-- **Latte** - *$20/month*
+- **Latte** - *$20/month*   
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, and a mention on The Daily Radio Column at the beginning of the show. Includes a link to something you'd like to plug.
 
-- **Espresso** - *$100/month*
+- **Espresso** - *$100/month*   
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, and two hours a month of my time. We can jump on Skype and talk podcasting, design, front-end development, life; whatever you'd like.
 
-- **Executive Producer** - *$875/month*
+- **Executive Producer** - *$875/month*   
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, five hours a month of my time, and an executive producer credit on For the Record and The East Wing.
 
    Now, I know what you're thinking, "Tim, what happened to the coffee metaphors?" Well… I ran out of them, and Executive Producer best explained what this one was. This level is at a high price *on purpose*. The amount is more than a fifty percent discount on sponsoring all the shows I do, yet includes a lot more benefits than just sponsorship.
@@ -31,24 +31,24 @@ Members of all levels will receive weekly updates containing information and aud
 ### What would I be supporting?
 The projects I currently have, but want to spend more time are:
 
-- **For the Record**
+- **For the Record**   
    This is a weekly show that I do that tries to educate and inspire about technology, design, life, and a lot more. It's a complex show, that I love doing. [Here’s one my favorite episodes](http://goodstuff.fm/ftr/6).
 
    Adam Clark writes on iTunes:
 
    > I know Tim Smith personally, but I didn't give it 5 stars because he's a friend. For the Record really is a fantastic podcast. Unlike any other podcast I listen to. Extremely high production values and very interesting content.
 
-- ***The Bold Report***
+- ***The Bold Report***   
    *The Bold Report* is a blog that I write about tech, Apple, and more. It's my commentary on current events within the tech industry. I'm no good at predicting things, and I'm for sure no [John Gruber](http://daringfireball.net/) or [Stephen Hackett](http://www.512pixels.net/), but I think the strength of the blog is making the connection between advances of technology and what that does to us as people.
 
-- **The East Wing**
+- **The East Wing**   
    This show is a favorite of many that follow me. It's a weekly conversation/interview with people in our industry. We talk about who they are, how the got their start, what they've learned, and where they're going.
 
    Mark Rondina writes on iTunes:
 
    > The East Wing is one of the best podcasts out there from front-end development and design. Tim's personality and passion for designing and developing for the web come through in his insightful questions and laid-back demeanor. I've had a chance to listen to a lot of podcasts and keep coming back to Tim's for its content. Great Stuff.
 
-- **The Daily Radio Column**
+- **The Daily Radio Column**   
    The newest of my shows, The Daily Radio Column has already become a favorite for some. The show serves almost as personal diary where I let people into things, that I probably shouldn't be sharing.
 
    Austin Grigg writes on iTunes:
