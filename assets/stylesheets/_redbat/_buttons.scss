@@ -24,6 +24,10 @@ button[type=submit] {
     background: darken($linkColor, 10%);
     color: white;
   }
+  &.centered-btn {
+    display: block;
+    text-align: center;
+  }
 }
 
 .secondary {

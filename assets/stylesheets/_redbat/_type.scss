@@ -162,6 +162,10 @@ ul, .show-notes {
     font-size: 1.1em;
     line-height: 160%;
     padding: 01.25% 0;
+    p {
+      font-size: inherit !important;
+      margin: 0 0 3.125% 0 !important;
+    }
     &:last-child {
       padding: 01.25% 0 0;
     }
@@ -251,7 +255,7 @@ blockquote {
     margin-left: 0 !important;
     &:first-child {
       color: #777 !important;
-      font-size: 1.1em !important;
+      font-size: inherit !important;
     }
   }
   small {
