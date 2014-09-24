@@ -5,7 +5,9 @@ permalink: /membership/
 ---
 Thank you so much for being interested in supporting me! This page will explain the different levels of support, and why I'm asking for it. I've tried to be as clear and transparent as possible, but if you have any questions, please don't hesitate to [email me](mailto:smith@ttimsmith.com?subject=Membership Question).
 
-**The goal for this membership is to bring in $3,600 USD/month.**
+**Current Membership Numbers:** ***2*** *Total members.* ***$40****/month.*
+
+The goal for this membership is to bring in **$3,600 USD/month.**
 
 This would allow me to dedicate all work time on these projects, and give me the chance to create new shows.
 
@@ -18,12 +20,16 @@ Members of all levels will receive weekly updates containing information and aud
    The benefits for all members plus a personal thank you. You've done something very nice for me. I won't forget it.
 
 - **Latte** - *$20/month*   
+   *Limited 2 out of 4 left*{:.highlighted}
+   
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, and a mention on The Daily Radio Column at the beginning of the show. Includes a link to something you'd like to plug.
 
 - **Espresso** - *$100/month*   
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, and two hours a month of my time. We can jump on Skype and talk podcasting, design, front-end development, life; whatever you'd like.
 
 - **Executive Producer** - *$875/month*   
+   *Limited 3 out of 3 left*{:.highlighted}
+   
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, five hours a month of my time, and an executive producer credit on For the Record and The East Wing.
 
    Now, I know what you're thinking, "Tim, what happened to the coffee metaphors?" Well… I ran out of them, and Executive Producer best explained what this one was. This level is at a high price *on purpose*. The amount is more than a fifty percent discount on sponsoring all the shows I do, yet includes a lot more benefits than just sponsorship.
