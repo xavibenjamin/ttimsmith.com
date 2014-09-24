@@ -209,6 +209,13 @@ em, cite {
 	font-style: italic;
 }
 
+em.highlighted {
+  background: lighten(#fdffb6, 5%);
+  color: #555;
+  // font-style: normal;
+  padding: 0 3px;
+}
+
 sup {
   a {
     border-bottom: none;
