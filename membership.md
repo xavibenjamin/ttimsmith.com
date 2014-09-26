@@ -11,10 +11,15 @@ The goal for this membership is to bring in **$3,600 USD/month.**
 
 This would allow me to dedicate all work time on these projects, and give me the chance to create new shows.
 
-<a href="https://plasso.co/s/CMCU8401Fu" class="btn secondary big centered-btn">Become a member</a>
+[Become a member](https://plasso.co/s/CMCU8401Fu){:.btn.secondary.big.centered-btn}
 
 ### Membership Levels
 Members of all levels will receive weekly updates containing information and audio clips of upcoming shows, and behind-the-scenes videos on setup and how shows are produced, and updates on how your membership money is being used. As time goes on, I will be developing more member-exclusive benefits.
+
+- **One-Time Donation** - *Any amount*   
+   If you'd like to make a one-time donation, you can do so! You'll receive the benefits of a member for one whole month, and the member level benefits depending on your donation amount.
+   
+   [Donate Here](https://plasso.co/s/XqZS2WQU1A){:.btn.centered-btn.plo-button}
 
 - **Americano** - *$5/month*   
    The benefits for all members plus a personal thank you. You've done something very nice for me. I won't forget it.
@@ -75,7 +80,7 @@ To summarize, consider becoming a member because you want to support me in creat
 ### Processing
 The processing and payments of memberships are done through [Plasso](https://plasso.co/), an awesome service made by Drew Wilson. All transactions are done via Stripe which makes everything secure for you. If you have questions about this, send me an [email](mailto:smith@ttimsmith.com?subject=Membership Question).
 
-<a href="https://plasso.co/s/CMCU8401Fu" class="btn secondary big centered-btn">Become a member</a>
+[Become a member](https://plasso.co/s/CMCU8401Fu){:.btn.secondary.big.centered-btn}
 
 [^1]: If you're interested in hiring me, you can find more information about that on the [hire page](/hire/).
 [^2]: If you freelance, you most likely understand that it's not always the most stable of incomes.
