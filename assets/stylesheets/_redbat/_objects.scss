@@ -84,3 +84,21 @@ OBJECTS
     margin-bottom: $spacing-m;
   }
 }
+
+/* Progress Bar */
+
+.progress {
+  background: #eee;
+  border-radius: 20px;
+  display: block;
+  height: 15px;
+  width: 100%;
+  .meter {
+    background: $linkColor;
+    border-radius: 20px;
+    display: block;
+    height: 15px;
+  }
+}
+
+

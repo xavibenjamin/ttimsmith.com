@@ -154,3 +154,29 @@ p.page__description {
     line-height: 120%;
   }
 }
+
+/* Membership Specific Styles */
+
+.funding {
+  margin-bottom: $spacing-s;
+}
+
+.funding-info {
+  margin-left: 0;
+  li {
+    display: inline-block;
+    line-height: 110%;
+    padding-right: percentage(70/940);
+    @extend %sans;
+    strong {
+      font-size: .85em;
+    }
+    small {
+      display: block;
+      font-size: .75em;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}

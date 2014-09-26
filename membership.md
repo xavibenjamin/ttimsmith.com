@@ -5,11 +5,7 @@ permalink: /membership/
 ---
 Thank you so much for being interested in supporting me! This page will explain the different levels of support, and why I'm asking for it. I've tried to be as clear and transparent as possible, but if you have any questions, please don't hesitate to [email me](mailto:smith@ttimsmith.com?subject=Membership Question).
 
-**Current Membership Numbers:** ***2*** *Total members.* ***$40****/month.*
-
-The goal for this membership is to bring in **$3,600 USD/month.**
-
-This would allow me to dedicate all work time on these projects, and give me the chance to create new shows.
+{% include progress-bar.html %}
 
 [Become a member](https://plasso.co/s/CMCU8401Fu){:.btn.secondary.big.centered-btn}
 
