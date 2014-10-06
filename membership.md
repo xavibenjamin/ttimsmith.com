@@ -21,7 +21,7 @@ Members of all levels will receive weekly updates containing information and aud
    The benefits for all members plus a personal thank you. You've done something very nice for me. I won't forget it.
 
 - **Latte** - *$20/month*   
-   *Limited 2 out of 4 left*{:.highlighted}
+   *Limited 1 out of 4 left*{:.highlighted}
    
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, and a mention on The Daily Radio Column at the beginning of the show. Includes a link to something you'd like to plug.
 
