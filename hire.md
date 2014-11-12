@@ -9,7 +9,7 @@ Hi![^1] I'm Tim Smith. I'm a designer, front-end developer, and broadcaster livi
 **I'd love to help you with UI/Web Design, Front-End Development, and Podcast Consulting.**
 
 ### Rates
-My hourly rate is **$175/hour.**[^2] Depending on your circumstances, we can decide on a flat-rate for the project. I require a fifty percent deposit. I would prefer a commitment of at least 10 hours ($1,750).
+My hourly rate is **$125/hour.**[^2] Depending on your circumstances, we can decide on a flat-rate for the project. I require a fifty percent deposit. I would prefer a commitment of at least 10 hours ($1,250).
 
 ### Availability
 I work Monday thru Wednesday. I limit my engagments to *20 hours a week*. Although this can be flexible, please plan accordingly.
