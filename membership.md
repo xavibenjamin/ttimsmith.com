@@ -5,9 +5,7 @@ permalink: /membership/
 ---
 Thank you so much for being interested in supporting me! This page will explain the different levels of support, and why I'm asking for it. I've tried to be as clear and transparent as possible, but if you have any questions, please don't hesitate to [email me](mailto:smith@ttimsmith.com?subject=Membership Question).
 
-{% include progress-bar.html %}
-
-[Become a member](https://plasso.co/s/CMCU8401Fu){:.btn.secondary.big.centered-btn}
+[Become a member](http://www.patreon.com/ttimsmith){:.btn.secondary.big.centered-btn}
 
 ### Membership Levels
 Members of all levels will receive weekly updates containing information and audio clips of upcoming shows, and behind-the-scenes videos on setup and how shows are produced, and updates on how your membership money is being used. As time goes on, I will be developing more member-exclusive benefits.
@@ -30,11 +28,6 @@ Members of all levels will receive weekly updates containing information and aud
 
 - **Espresso** - *$100/month*   
    The benefits for all members, a personal thank you, a recording for your podcast or voicemail, and two hours a month of my time. We can jump on Skype and talk podcasting, design, front-end development, life; whatever you'd like.
-
-- **Executive Producer** - *$875/month*   
-   *Limited 3 out of 3 left*{:.highlighted}
-   
-   The benefits for all members, a personal thank you, a recording for your podcast or voicemail, five hours a month of my time, and an executive producer credit on For the Record and The East Wing.
 
    Now, I know what you're thinking, "Tim, what happened to the coffee metaphors?" Well… I ran out of them, and Executive Producer best explained what this one was. This level is at a high price *on purpose*. The amount is more than a fifty percent discount on sponsoring all the shows I do, yet includes a lot more benefits than just sponsorship.
 
@@ -77,9 +70,9 @@ I decided on a membership because expenses are usually monthly, so a monthly mem
 To summarize, consider becoming a member because you want to support me in creating content, that I'm sure you'll love.
 
 ### Processing
-The processing and payments of memberships are done through [Plasso](https://plasso.co/), an awesome service made by Drew Wilson. All transactions are done via Stripe which makes everything secure for you. If you have questions about this, send me an [email](mailto:smith@ttimsmith.com?subject=Membership Question).
+The processing and payments of memberships are done through [Patreon](http://www.patreon.com/ttimsmith). If you have questions about this, send me an [email](mailto:smith@ttimsmith.com?subject=Membership Question).
 
-[Become a member](https://plasso.co/s/CMCU8401Fu){:.btn.secondary.big.centered-btn}
+[Become a member](http://www.patreon.com/ttimsmith){:.btn.secondary.big.centered-btn}
 
 [^1]: If you're interested in hiring me, you can find more information about that on the [hire page](/hire/).
 [^2]: If you freelance, you most likely understand that it's not always the most stable of incomes.
