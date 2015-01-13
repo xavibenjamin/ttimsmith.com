@@ -57,19 +57,15 @@ PATREON BANNER ----------------------------- */
 
 .patreon-cta {
   background: $borderColor;
-  // color: white;
-  // padding: $spacing-m;
   margin: 0 0 $spacing-m;
   @extend %clearfix;
   .cta__text {
-    // background: $borderColor;
     float: left;
     padding: $spacing-xs $spacing-m;
     width: 70%;
   }
   .cta__action {
     float: left;
-    // padding: $spacing-xs;
     width: 30%;
     a {
       float: right;
@@ -78,7 +74,6 @@ PATREON BANNER ----------------------------- */
     }
   }
   h4 {
-    // color: white;
     font-size: 1.3em;
     font-weight: 700;
     margin: 0 0 $spacing-xs;
