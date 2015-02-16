@@ -21,7 +21,7 @@ permalink: /about/
   <p>You can find me procrastiworking on <a href="https://twitter.com/ttimsmith">Twitter</a>, occasionally posting shots to <a href="http://dribbble.com/ttimsmith">Dribbble</a>, or working on my contribution graph on <a href="https://github.com/ttimsmith">Github</a>. I jam out to my favorite tunes on <a href="http://www.rdio.com/people/ttimsmith/">Rdio</a>, and share pictures of my life on <a href="http://instagram.com/ttimsmith">Instagram</a>.</p>
 
   <h3>Colophon</h3>
-  <p>This site is published using the amazing <a href="http://jekyllrb.com/">Jekyll</a>, hosted by <a href="http://www.mediatemple.net/#a_aid=4f42c6d7d53a5">Media Temple</a>, and deployed with the help of <a href="http://deployhq.com/">Deploy</a>. Fonts are served with <a href="https://typekit.com/">Typekit</a>, and posts are written with <a href="http://bywordapp.com/">Byword</a>.</p>
+  <p>This site is published using the amazing <a href="http://jekyllrb.com/">Jekyll</a>, hosted by <a href="https://mediatemple.7eer.net/c/136705/168246/2795">Media Temple</a>, and deployed with the help of <a href="http://deployhq.com/">Deploy</a>. Fonts are served with <a href="https://typekit.com/">Typekit</a>, and posts are written with <a href="http://bywordapp.com/">Byword</a>.</p>
 
   <p>If you’d like to work with me, have me speak at your event, write for your publication, arrange a time to get some coffee, or just say hi, please <a href="mailto:smith@ttimsmith.com?subject=[ttimsmith.com] Hi Tim!">get in touch</a>. I get a lot of email, but I try to respond quickly.</p>
 </div><!-- .grid-7 .columns -->
