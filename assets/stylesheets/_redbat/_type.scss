@@ -269,9 +269,22 @@ blockquote {
     display: block;
     font-size: .80em;
     margin: 02.34375% 0 0;
-    &:before {
-      content: "—";
-      color: $borderColor;
+  }
+  &.content__pullquote {
+    border: 0;
+    padding: 0;
+    margin: $spacing-xl 0;
+    p, &:first-child {
+      color: #999 !important;
+      font-size: 1.2em !important;
+      font-style: italic;
+      text-align: center;
+    }
+    small {
+      line-height: 120%;
+      strong {
+        display: block;
+      }
     }
   }
 }

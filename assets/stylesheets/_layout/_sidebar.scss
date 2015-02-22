@@ -4,7 +4,8 @@ SIDEBAR
 ------------------------------------------- */
 
 #sidebar {
-  background: $darkColor;
+  // background: $darkColor;
+  background: lighten($borderColor, 2%);
   border-radius: 3px;
   color: lighten($darkColor, 35%);
   padding: $spacing-m $spacing-s;
@@ -12,14 +13,13 @@ SIDEBAR
     padding: $spacing-xl $spacing-m;
   }
   h3 {
-    color: white;
     font-weight: 400;
     @extend %second-sans;
   }
 }
 
 .sidebar-widget {
-  border-bottom: 1px dashed lighten($darkColor, 10%);
+  border-bottom: 1px dashed darken($borderColor, 10%);
   margin: 0 0 percentage(40/940);
   padding: 0 0 percentage(40/940);
   font-size: 80%;
