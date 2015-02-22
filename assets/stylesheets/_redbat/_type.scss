@@ -268,7 +268,7 @@ blockquote {
   small {
     display: block;
     font-size: .80em;
-    margin: 02.34375% 0 0;
+    margin: $spacing-m 0 0;
   }
   &.content__pullquote {
     border: 0;
