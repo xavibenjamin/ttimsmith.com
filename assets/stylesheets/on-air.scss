@@ -1,0 +1,124 @@
+---
+---
+
+/*
+BITS --------------------------------------- */
+
+@import "_redbat/bits";
+
+$darkColor: #646c6f;
+$jazzColor: #fc8833;
+
+/*
+BUTTONS ------------------------------------ */
+
+.btn {
+  background: $jazzColor;
+  &:hover, &:focus {
+    background: lighten($jazzColor, 10%);
+  }
+  &:active {
+    background: darken($jazzColor, 5%);
+  }
+}
+
+.button-pill {
+  border-radius: 40px;
+  padding: 10px 20px;
+}
+
+/*
+OBJECTS ------------------------------------ */
+
+.page__section {
+  padding: $spacing-xl 0;
+  &.section__heading {
+    padding-bottom: 0;
+  }
+}
+
+.bg-dark {
+  background: $darkColor;
+}
+
+.bg-jazz {
+  background: $jazzColor;
+}
+
+/*
+TYPE --------------------------------------- */
+
+.text-center {
+  text-align: center;
+}
+
+.page__title {
+  color: white;
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 100%;
+}
+
+h2.subheader {
+  font-size: 1.8em;
+  color: rgba(white, .7);
+}
+
+/*
+PAGE STYLES -------------------------------- */
+
+.main__content {
+  .cms-landing & {
+    margin-bottom: 0;
+  }
+}
+
+.section__heading {
+  text-align: center;
+}
+
+.header__screenshot {
+  margin-top: $spacing-l;
+  img {
+    margin: 0;
+  }
+}
+
+.features__row {
+  margin-bottom: $spacing-s;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.section__quote {
+  blockquote.content__pullquote {
+    margin: 0;
+    p, p:first-child {
+      color: white !important;
+    }
+    small {
+      color: rgba(white, .6);
+      strong {
+        color: darken($jazzColor, 30%);
+      }
+    }
+  }
+}
+
+.cta {
+  h4 {
+    color: white;
+  }
+  p {
+    color: rgba(white, .7);
+  }
+}
+
+.copyright {
+  margin: $spacing-xl 0 0;
+  small {
+    color: rgba(white, .6);
+    font-size: .85em;
+  }
+}

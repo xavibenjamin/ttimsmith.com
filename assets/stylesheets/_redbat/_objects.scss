@@ -45,6 +45,14 @@ OBJECTS
   margin: 0 auto;
 }
 
+.grid-10 {
+  width: percentage(780/970);
+  @include breakpoint(m) {
+    width: 100%;
+    margin-bottom: $spacing-m;
+  }
+}
+
 .grid-8 {
   width: percentage(620/970);
   @include breakpoint(m) {

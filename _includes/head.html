@@ -58,7 +58,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="/assets/stylesheets/global.css">
-
+    {% if page.custom_css %}
+      <link rel="stylesheet" href="/assets/stylesheets/{{ page.custom_css }}.css">
+    {% endif %}
     <!-- Typekit Code -->
     <script type="text/javascript" src="//use.typekit.net/mev1xgw.js"></script>
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
