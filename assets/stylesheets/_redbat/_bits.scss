@@ -39,9 +39,9 @@ SPACING
 Spacing Variables
 ------------------------------------------- */
 
-$spacing-xxs: percentage(10/940);
-$spacing-xs: percentage(15/940);
-$spacing-s: percentage(20/940);
-$spacing-m: percentage(30/940);
-$spacing-l: percentage(40/940);
-$spacing-xl: percentage(50/940);
+$spacing-xxs:   rem-calc(10px);
+$spacing-xs:    rem-calc(15px);
+$spacing-s:     rem-calc(20px);
+$spacing-m:     rem-calc(30px);
+$spacing-l:     rem-calc(40px);
+$spacing-xl:    rem-calc(50px);
