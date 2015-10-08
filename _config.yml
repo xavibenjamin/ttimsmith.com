@@ -9,7 +9,7 @@ url: http://ttimsmith.com
 markdown: kramdown
 permalink: /:year/:month/:title
 paginate: 20
-exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock']
+exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
 include: ['.htaccess']
 sass:
   sass_dir: assets/stylesheets
