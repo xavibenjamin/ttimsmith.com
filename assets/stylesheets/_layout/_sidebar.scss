@@ -4,7 +4,6 @@ SIDEBAR
 ------------------------------------------- */
 
 #sidebar {
-  // background: $darkColor;
   background: lighten($borderColor, 2%);
   border-radius: 3px;
   color: lighten($darkColor, 35%);
@@ -49,7 +48,7 @@ SIDEBAR
   margin: 0;
   list-style-type: none;
   li {
-    margin-bottom: $spacing-s;
+    margin-bottom: $spacing-xxs;
     a {
       text-decoration: none;
     }
