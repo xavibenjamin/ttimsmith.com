@@ -1,27 +1,7 @@
 /*
 
 TYPE
--------------------------------------------
-Table of Contents
-
-	- Base Type
-
-	- Fonts
-
-	- Headings
-
-	- Text
-
-	- Inline Type
-
-	- Blockquote
-
-	- hr
-
-	- Links
-
 ------------------------------------------- */
-
 
 /*
 
@@ -31,7 +11,8 @@ BASE TYPE
 body {
 	font-size: 115%;
 	line-height: 140%;
-	color: #777;
+	color: $bodyColor;
+  -webkit-font-smoothing: antialiased;
 	@extend %serif;
   @media screen and (max-width: 990px ) {
     font-size: 105%;
@@ -87,7 +68,7 @@ h4,
 h5,
 h6 {
   @extend %sans;
-  color: #4b4b4b;
+  color: $darkColor;
 }
 
 
@@ -98,7 +79,7 @@ TEXT
 
 .main__content {
   p {
-    font-size: 1.1em;
+    font-size: 1.35em;
     line-height: 160%;
     margin: 0 0 3.125%;
     &:last-child {
@@ -107,25 +88,31 @@ TEXT
     @media screen and (max-width: 480px ) {
       margin-bottom: 5%;
     }
+    @include breakpoint(m) {
+      font-size: 1.35rem;
+    }
   }
   h2 {
     margin: 0 0 3.5%;
     line-height: 125%;
   }
   h3 {
-    margin: 6% 0 1%;
-    font-size: 1.3em;
-    font-weight: bold;
+    margin: 1.8rem 0 .3rem;
+    font-size: 1.5em;
+    font-weight: 700;
+    @include breakpoint(m) {
+      font-size: 1.45rem;
+    }
   }
   h4 {
     margin: 6% 0 1%;
     font-size: 1.1em;
-    font-weight: bold;
+    font-weight: 700;
   }
   h5 {
     margin: 6% 0 0;
     font-size: .95em;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     &:before {
       background: $borderColor;

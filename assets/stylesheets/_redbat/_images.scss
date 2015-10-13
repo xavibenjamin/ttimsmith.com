@@ -15,4 +15,10 @@ img {
 	img {
 		margin: 0;
 	}
+  .site__description & {
+    margin-bottom: 0;
+    @include breakpoint(m) {
+      margin-bottom: $spacing-s;
+    }
+  }
 }
