@@ -6,10 +6,10 @@ OBJECTS
 .contain {
   margin: 0 auto;
   width: 100%;
-  max-width: 940px;
+  max-width: 1140px;
   @extend %clearfix;
-  @media (max-width: 940px) {
-    padding: 0 $spacing-m;
+  @media (max-width: 1140px) {
+    padding: 0 $spacing-xs;
   }
 }
 
@@ -92,21 +92,3 @@ OBJECTS
     margin-bottom: $spacing-m;
   }
 }
-
-/* Progress Bar */
-
-.progress {
-  background: #eee;
-  border-radius: 20px;
-  display: block;
-  height: 15px;
-  width: 100%;
-  .meter {
-    background: $linkColor;
-    border-radius: 20px;
-    display: block;
-    height: 15px;
-  }
-}
-
-

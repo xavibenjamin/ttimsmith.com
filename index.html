@@ -1,53 +1,33 @@
 ---
 layout: default
-title: Designer, broadcaster, and coffee addict.
-excerpt: Tim Smith is a user interface and web designer based in St. Paul, Minnesota.
+title: Designer, front-end developer, and aspiring radio producer.
+excerpt: Tim Smith is a designer, front-end developer, and aspiring radio producer based in St. Paul, Minnesota.
 ---
 
 <section class="site__description">
   <div class="contain">
-    <figure class="grid-4 columns content__image">
+    <figure class="grid-5 columns content__image">
       <img src="/uploads/tim_680x510.jpg" alt="Tim Smith">
     </figure>
-    <div class="grid-8 columns">
-      <h1 class="home__title">I’m Tim Smith. A designer, front-end developer, and aspiring radio producer.</h1>
+    <div class="grid-7 columns">
+      <h1 class="home__title">I’m Tim Smith.<br />A designer, front-end developer, and aspiring radio producer.</h1>
     </div>
   </div>
 </section>
 
-<section class="site__services">
+<section class="about-me">
   <div class="contain">
-    <h2 class="section__title">What I Do</h2>
-    <div class="service__widget grid-4 columns">
-      <h3 class="service__title">User Interface/Web Design</h3>
-      <p>Work with me to make your website or interface look great, with wireframes and high-fidelity mockups that make the user first priority.</p>
-    </div>
-    <div class="service__widget grid-4 columns">
-      <h3 class="service__title">Front-End Development</h3>
-      <p>With my attention to detail and understanding of standards-based markup, your website will respond quickly on any device.</p>
-    </div>
-    <div class="service__widget grid-4 columns">
-      <h3 class="service__title">Podcast Consulting</h3>
-      <p>Make your podcast successful by focusing on your audience, choosing the right equipment, and knowing how and when to bring on sponsors.</p>
-    </div>
-  </div>
-</section>
+    <div class="grid-7 centered">
+      <p>During the day, I’m a designer and front-end developer at a great company. At night, I spend time with my wife, and work on my podcast. Speaking of which&hellip;</p>
 
-<section class="portfolio__preview">
-  <div class="contain">
-    <h2 class="section__title">Latest Work</h2>
-    {% for work in site.work %}
-      {% if work.featured == 'affirmative' %}
-        <figure class="grid-7 columns">
-          <img src="{{ work.thumbnail }}" alt="{{ work.title }} thumb">
-        </figure>
+      <p>I’m the host of <a href="http://towermedia.org/ftr">For The Record</a>, a show about the personal struggles of successful, creative people. I designed and built the CMS that powers <a href="http://towermedia.org">Tower</a>, <a href="http://goodstuff.fm">Goodstuff FM</a>, and <a href="http://relay.fm">Relay FM</a>, together with <a href="http://www.single-malt.co/">Phil Duffy</a>. If you’re interested, you can <a href="/cms/">read more about it here</a>.</p>
 
-        <div class="grid-5 columns portfolio__description">
-          <h3>{{ work.title }}</h3>
-          <p>{{ work.excerpt }}</p>
-          <a href="{{ work.url }}" class="btn">View Case Study</a>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-</section>
+      <h3>Around the Internet</h3>
+      <p>You can find me procrastiworking on <a href="https://twitter.com/ttimsmith">Twitter</a>, occasionally posting shots to <a href="http://dribbble.com/ttimsmith">Dribbble</a>, or working on my contribution graph on <a href="https://github.com/ttimsmith">Github</a>. I jam out to my favorite tunes on <a href="http://www.rdio.com/people/ttimsmith/">Rdio</a>, and share pictures of my life on <a href="http://instagram.com/ttimsmith">Instagram</a>.</p>
+
+      <h3>Get in Touch</h3>
+      <p>If you’d like to work with me, have me speak at your event, write for your publication, arrange a time to get some coffee, or just say hi, please <a href="mailto:smith@ttimsmith.com?subject=[ttimsmith.com] Hi Tim!">get in touch</a>. I get a lot of email, but I try to respond quickly.</p>
+
+    </div><!-- .grid-7 .columns -->
+  </div><!-- /.contain -->
+</section><!-- /.about-me -->
