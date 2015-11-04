@@ -31,6 +31,10 @@ MAIN CONTENT
   font-weight: 300;
   line-height: 120%;
   width: 65vw;
+  @include breakpoint(l) {
+    font-size: 5.3vw;
+    padding-bottom: 5vw;
+  }
   @include breakpoint(s) {
     font-size: 10vw;
     width: 100vw;
