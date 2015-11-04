@@ -4,22 +4,50 @@ MAIN CONTENT
 ------------------------------------------- */
 
 .main__content {
-  margin: 0 0 $spacing-xl;
+  // margin: 0 0 $spacing-xl;
 }
 
-.site__description {
-  margin: $spacing-xl 0;
+.site__cover {
+  align-items: flex-end;
+  background: url(../../uploads/me_web.jpg) no-repeat center center;
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: flex-start;
+  padding: 2vw;
+  position: fixed;
+  width: 50vw;
   @include breakpoint(m) {
-    margin: $spacing-s 0 0;
+    height: 75vh;
+    width: 100vw;
+    position: static;
   }
 }
 
+
 .home__title {
-  font-size: 3.2em;
+  color: white;
+  font-size: 3.7vw;
   font-weight: 300;
   line-height: 120%;
+  width: 65vw;
+  @include breakpoint(s) {
+    font-size: 10vw;
+    width: 100vw;
+  }
+}
+
+.about-me {
+  margin-left: 50vw;
+  padding: 6vh 0 4vh 2vw;
+  width: 40vw;
+  @include breakpoint(l) {
+    width: 50vw;
+    padding: 3vw;
+  }
   @include breakpoint(m) {
-    font-size: 2.4rem;
+    width: 100vw;
+    margin-left: 0;
   }
 }
 

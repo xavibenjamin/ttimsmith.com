@@ -14,15 +14,6 @@ body {
 	color: $bodyColor;
   -webkit-font-smoothing: antialiased;
 	@extend %serif;
-  @media screen and (max-width: 990px ) {
-    font-size: 105%;
-  }
-  @media screen and (max-width: 500px ) {
-    font-size: 90%;
-  }
-  @media screen and (max-width: 340px ) {
-    font-size: 83%;
-  }
 }
 
 // TYPE SIZE VARIABLES
@@ -79,7 +70,7 @@ TEXT
 
 .main__content {
   p {
-    font-size: 1.35em;
+    font-size: 1.1em;
     line-height: 160%;
     margin: 0 0 3.125%;
     &:last-child {
@@ -88,9 +79,6 @@ TEXT
     @media screen and (max-width: 480px ) {
       margin-bottom: 5%;
     }
-    @include breakpoint(m) {
-      font-size: 1.35rem;
-    }
   }
   h2 {
     margin: 0 0 3.5%;
@@ -98,7 +86,7 @@ TEXT
   }
   h3 {
     margin: 1.8rem 0 .3rem;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
     @include breakpoint(m) {
       font-size: 1.45rem;
