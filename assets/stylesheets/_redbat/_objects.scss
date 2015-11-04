@@ -13,6 +13,11 @@ OBJECTS
   }
 }
 
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
 .screen-reader-text {
   position: absolute;
   top: -9999px;
