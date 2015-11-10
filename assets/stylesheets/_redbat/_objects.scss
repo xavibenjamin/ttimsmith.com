@@ -6,7 +6,7 @@ OBJECTS
 .contain {
   margin: 0 auto;
   width: 100%;
-  max-width: 1140px;
+  max-width: 1020px;
   @extend %clearfix;
   @media (max-width: 1140px) {
     padding: 0 $spacing-xs;

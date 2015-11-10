@@ -5,7 +5,6 @@ PAGE STYLES
 
 p.page__description {
   border-bottom: 1px solid $borderColor;
-  margin-bottom: $spacing-xl;
   padding-bottom: $spacing-l;
 }
 
@@ -121,13 +120,13 @@ p.page__description {
 /* Resume Specific Styles */
 
 .resume__statement {
-  color: #4b4b4b;
+  color: darken($darkColor, 10%);
   font-size: 1.2em !important;
 }
 
 .resume__heading {
   border-bottom: 1px solid $borderColor;
-  color: darken($borderColor, 35%);
+  color: lighten($darkColor, 25%);
   font-weight: 400;
   font-size: 1.15em;
   padding-bottom: $spacing-xxs;

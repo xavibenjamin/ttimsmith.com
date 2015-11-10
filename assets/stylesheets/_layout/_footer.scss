@@ -20,11 +20,10 @@ FOOTER
 }
 
 .site__footer {
-  background: $darkColor;
-  padding: $spacing-m;
+  margin-bottom: $spacing-m;
   @extend %sans;
   small {
-    color: lighten($darkColor, 25%);
+    color: lighten($darkColor, 15%);
     display: block;
     font-size: .85em;
   }

@@ -20,6 +20,7 @@ MAIN CONTENT
   @include breakpoint(m) {
     height: 75vh;
     width: 100vw;
+    margin: 0 0 $spacing-s;
     position: static;
   }
 }
@@ -89,4 +90,10 @@ MAIN CONTENT
   p {
     font-size: 1em;
   }
+}
+
+
+.page__content {
+  margin-bottom: $spacing-xl;
+  @extend %clearfix;
 }

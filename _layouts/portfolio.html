@@ -1,6 +1,10 @@
 ---
 layout: default
 ---
+<div class="contain">
+  {% include header.html %}
+</div><!-- /.contain -->
+
 <div class="portfolio__hero">
   <img src="{{ site.url }}/{{ page.hero }}" alt="Hero for {{ page.title }}" />
 </div>
@@ -35,3 +39,7 @@ layout: default
     </div>
   </div>
 </div><!-- .contain -->
+
+<div class="contain">
+  {% include footer.html %}
+</div><!-- /.contain -->
