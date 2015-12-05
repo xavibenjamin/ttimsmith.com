@@ -3,10 +3,6 @@
 PAGE STYLES
 ------------------------------------------- */
 
-p.page__description {
-  border-bottom: 1px solid $borderColor;
-  padding-bottom: $spacing-l;
-}
 
 
 /* Portfolio Specific Styles */
@@ -35,7 +31,6 @@ p.page__description {
 .portfolio__sidebar {
   background: lighten($borderColor, 2%);
   border-radius: 3px;
-  // font-size: 80%;
   padding: $spacing-s;
   h3 {
     font-size: 1em;
@@ -49,6 +44,9 @@ p.page__description {
   }
   .sidebar-widget {
     border-bottom-color: darken($borderColor, 10%);
+    p {
+      font-size: 1rem;
+    }
   }
 }
 
@@ -80,19 +78,16 @@ p.page__description {
 }
 
 .post__header {
-  margin: 0 0 $spacing-l;
   h1 {
-    font-size: 2.3em;
+    font-size: 2.4em;
     font-weight: 900;
-    line-height: 110%;
-    margin-bottom: $spacing-xxs;
+    line-height: 100%;
   }
 }
 
 .post__content {
-  p:first-child {
-    color: #4b4b4b;
-    font-size: 1.2em;
+  > p:first-child {
+    @extend .lead-paragraph;
   }
 }
 
@@ -120,13 +115,13 @@ p.page__description {
 /* Resume Specific Styles */
 
 .resume__statement {
-  color: darken($darkColor, 10%);
+  color: $bodyColor;
   font-size: 1.2em !important;
 }
 
 .resume__heading {
   border-bottom: 1px solid $borderColor;
-  color: lighten($darkColor, 25%);
+  color: lighten($bodyColor, 40%);
   font-weight: 400;
   font-size: 1.15em;
   padding-bottom: $spacing-xxs;

@@ -30,6 +30,13 @@ OBJECTS
   list-style-type: none;
 }
 
+.lead-paragraph {
+  color: lighten($bodyColor, 30%);
+  font-size: 1.5rem;
+  line-height: 140%;
+  @extend %sans;
+}
+
 
 // Grid
 

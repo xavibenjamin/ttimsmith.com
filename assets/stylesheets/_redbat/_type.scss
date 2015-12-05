@@ -59,7 +59,7 @@ h4,
 h5,
 h6 {
   @extend %sans;
-  color: $darkColor;
+  color: $bodyColor;
 }
 
 
@@ -68,18 +68,20 @@ h6 {
 TEXT
 ------------------------------------------- */
 
-.main__content {
-  p {
-    font-size: 1.1em;
-    line-height: 160%;
-    margin: 0 0 3.125%;
-    &:last-child {
-      margin-bottom: 0;
-    }
-    @media screen and (max-width: 480px ) {
-      margin-bottom: 5%;
-    }
+p {
+  font-size: 1.3rem;
+  line-height: 160%;
+  margin: 0 0 3.125%;
+  &:last-child {
+    margin-bottom: 0;
   }
+  @media screen and (max-width: 480px ) {
+    margin-bottom: 5%;
+  }
+}
+
+.main__content {
+
   h2 {
     margin: 0 0 3.5%;
     line-height: 125%;
@@ -114,7 +116,6 @@ TEXT
 }
 .page__header {
   h1 {
-    margin: 0 0 $spacing-m;
     font-size: 2.6em;
     font-weight: 300;
     line-height: 140%;
@@ -123,7 +124,7 @@ TEXT
 
 
 p.pubdate, small.pubdate {
-  color: lighten($darkColor, 45%);
+  color: lighten($bodyColor, 45%);
   font-size: .85em;
   margin: 0 0 2% 10%;
 }

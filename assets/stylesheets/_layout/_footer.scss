@@ -23,7 +23,7 @@ FOOTER
   margin-bottom: $spacing-m;
   @extend %sans;
   small {
-    color: lighten($darkColor, 15%);
+    color: lighten($bodyColor, 25%);
     display: block;
     font-size: .85em;
   }
