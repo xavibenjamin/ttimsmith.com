@@ -36,15 +36,15 @@ FONTS
 ------------------------------------------- */
 
 %sans {
-	font-family: "freight-sans-pro", -apple-system, sans-serif;
+	font-family: "freight-sans-pro", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 }
 
 %serif {
-	font-family: "chaparral-pro", -apple-system, sans-serif;
+  font-family: "freight-text-pro", Adobe Garamond Pro, Georgia, system, -apple-system, BlinkMacSystemFont, serif;
 }
 
 %second-sans {
-  font-family: "proxima-nova-condensed", -apple-system, sans-serif;
+  font-family: "proxima-nova-condensed", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 }
 
 /*
@@ -87,7 +87,7 @@ p {
     line-height: 125%;
   }
   h3 {
-    margin: 1.8rem 0 .3rem;
+    margin: 1.8rem 0 0;
     font-size: 1.2em;
     font-weight: 700;
     @include breakpoint(m) {
