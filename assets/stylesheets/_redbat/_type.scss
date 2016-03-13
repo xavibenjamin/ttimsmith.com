@@ -7,6 +7,19 @@ TYPE
 
 BASE TYPE
 ------------------------------------------- */
+html {
+  &.wf-loading {
+    h1, h2, h3, h4, h5, p, li, small {
+      visibility: hidden;
+    }
+  }
+
+  &.wf-active, &.wf-inactive {
+    h1, h2, h3, h4, h5, p, li, small {
+      visibility: visible;
+    }
+  }
+}
 
 body {
 	font-size: 115%;
@@ -89,7 +102,7 @@ p {
   h3 {
     margin: 1.8rem 0 0;
     font-size: 1.2em;
-    font-weight: 700;
+    font-weight: 600;
     @include breakpoint(m) {
       font-size: 1.45rem;
     }
@@ -97,12 +110,12 @@ p {
   h4 {
     margin: 6% 0 1%;
     font-size: 1.1em;
-    font-weight: 700;
+    font-weight: 600;
   }
   h5 {
     margin: 6% 0 0;
     font-size: .95em;
-    font-weight: 700;
+    font-weight: 600;
     text-transform: uppercase;
     &:before {
       background: $borderColor;
