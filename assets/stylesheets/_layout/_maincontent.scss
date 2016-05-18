@@ -3,59 +3,48 @@
 MAIN CONTENT
 ------------------------------------------- */
 
-.main__content {
-  // margin: 0 0 $spacing-xl;
-}
-
 .site__cover {
   align-items: flex-end;
   background: url(../../uploads/me_web.jpg) no-repeat center center;
   background-size: cover;
   display: flex;
-  height: 100vh;
-  justify-content: flex-start;
-  padding: 2vw;
-  position: fixed;
-  width: 50vw;
-  @include breakpoint(m) {
-    height: 75vh;
-    width: 100vw;
-    margin: 0 0 $spacing-s;
-    position: static;
+  height: 80vh;
+  margin-bottom: 1.2rem;
+  padding: 1rem;
+  @media #{$medium-up} {
+    height: 100vh;
+    margin-bottom: 0;
+    margin-right: 2rem;
+    max-width: 680px;
+    overflow: hidden;
+    width: 50vw;
   }
 }
 
-
 .home__title {
   color: white;
-  font-size: 3.7vw;
+  font-size: 2.5rem;
   font-weight: 300;
-  line-height: 120%;
-  margin-bottom: 2vw;
-  width: 65vw;
-  @include breakpoint(l) {
-    font-size: 5.3vw;
-    padding-bottom: 5vw;
+  line-height: 1.1;
+  @media #{$medium-up} {
+    font-size: 2.7rem;
   }
-  @include breakpoint(s) {
-    font-size: 10vw;
-    width: 100vw;
+  @media #{$large-up} {
+    font-size: 3rem;
   }
 }
 
 .about-me {
-  margin-left: 50vw;
-  padding: 6vh 0 4vh 2vw;
-  width: 40vw;
-  @include breakpoint(l) {
-    width: 50vw;
-    padding: 3vw;
-  }
-  @include breakpoint(m) {
-    width: 100vw;
-    margin-left: 0;
+  padding: 0 1rem;
+  @media #{$medium-up} {
+    height: 100vh;
+    max-width: 540px;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: auto;
+    padding: 2.5rem 1rem 3rem 0;
   }
 }
+
 
 .site__services {
   background: $borderColor;
@@ -63,12 +52,13 @@ MAIN CONTENT
 }
 
 .section__title {
+  @extend %second-sans;
+
   color: darken($borderColor, 35%);
   font-size: .95em;
   font-weight: 400;
-  text-transform: uppercase;
   margin: 0 0 $spacing-m !important;
-  @extend %second-sans;
+  text-transform: uppercase;
 }
 
 .service__widget {
@@ -94,6 +84,7 @@ MAIN CONTENT
 
 
 .page__content {
-  margin-bottom: $spacing-xl;
   @extend %clearfix;
+
+  margin-bottom: $spacing-xl;
 }
