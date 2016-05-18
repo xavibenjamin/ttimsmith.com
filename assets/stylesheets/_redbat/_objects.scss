@@ -4,37 +4,40 @@ OBJECTS
 ------------------------------------------- */
 
 .contain {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1020px;
   @extend %clearfix;
+
+  margin: 0 auto;
+  max-width: 1020px;
+  width: 100%;
   @media (max-width: 1140px) {
     padding: 0 $spacing-xs;
   }
 }
 
 .container {
-  display: flex;
-  flex-flow: row wrap;
+  @media #{$medium-up} {
+    display: flex;
+  }
 }
 
 .screen-reader-text {
+  left: -9999px;
   position: absolute;
   top: -9999px;
-  left: -9999px;
 }
 
 .no-bullets {
+  list-style-type: none;
   margin: 0;
   padding: 0;
-  list-style-type: none;
 }
 
 .lead-paragraph {
+  @extend %sans;
+
   color: lighten($bodyColor, 30%);
   font-size: 1.5rem;
   line-height: 140%;
-  @extend %sans;
 }
 
 
@@ -58,49 +61,55 @@ OBJECTS
 }
 
 .grid-10 {
-  width: percentage(780/970);
   @include breakpoint(m) {
-    width: 100%;
     margin-bottom: $spacing-m;
+    width: 100%;
   }
+
+  width: percentage(780/970);
 }
 
 .grid-8 {
-  width: percentage(620/970);
   @include breakpoint(m) {
-    width: 100%;
     margin-bottom: $spacing-m;
+    width: 100%;
   }
+
+  width: percentage(620/970);
 }
 
 .grid-7 {
-  width: percentage(540/970);
   @include breakpoint(m) {
-    width: 100%;
     margin-bottom: $spacing-m;
+    width: 100%;
   }
+
+  width: percentage(540/970);
 }
 
 .grid-5 {
-  width: percentage(380/970);
   @include breakpoint(m) {
-    width: 100%;
     margin-bottom: $spacing-m;
+    width: 100%;
   }
+
+  width: percentage(380/970);
 }
 
 .grid-4 {
-  width: percentage(300/970);
   @include breakpoint(m) {
-    width: 100%;
     margin-bottom: $spacing-m;
+    width: 100%;
   }
+
+  width: percentage(300/970);
 }
 
 .grid-3 {
-  width: percentage(220/970);
   @include breakpoint(m) {
-    width: 100%;
     margin-bottom: $spacing-m;
+    width: 100%;
   }
+
+  width: percentage(220/970);
 }

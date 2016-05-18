@@ -6,12 +6,9 @@ HEADER
 .site__header {
   margin: 30px 0 $spacing-xl;
   .home__header & {
-    left: 2vw;
-    position: fixed;
+    left: 1rem;
+    position: absolute;
     z-index: 2;
-    @include breakpoint(m) {
-      position: absolute;
-    }
   }
 }
 
@@ -49,12 +46,14 @@ HEADER
       a {
         color: lighten($bodyColor, 30%);
         text-decoration: none;
-        &:hover, &:focus {
+        &:hover,
+        &:focus {
           color: $linkColor;
         }
         .home__header & {
           color: rgba(white, .9);
-          &:hover, &:focus {
+          &:hover,
+          &:focus {
             color: white;
           }
         }
