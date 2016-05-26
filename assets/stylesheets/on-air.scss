@@ -7,18 +7,18 @@ BITS --------------------------------------- */
 @import "_redbat/bits";
 
 $darkColor: #646c6f;
-$jazzColor: #fc8833;
+$jazz-color: #fc8833;
 
 /*
 BUTTONS ------------------------------------ */
 
 .btn {
-  background: $jazzColor;
+  background: $jazz-color;
   &:hover, &:focus {
-    background: lighten($jazzColor, 10%);
+    background: lighten($jazz-color, 10%);
   }
   &:active {
-    background: darken($jazzColor, 5%);
+    background: darken($jazz-color, 5%);
   }
 }
 
@@ -42,7 +42,7 @@ OBJECTS ------------------------------------ */
 }
 
 .bg-jazz {
-  background: $jazzColor;
+  background: $jazz-color;
 }
 
 /*
@@ -100,7 +100,7 @@ PAGE STYLES -------------------------------- */
     small {
       color: rgba(white, .6);
       strong {
-        color: darken($jazzColor, 30%);
+        color: darken($jazz-color, 30%);
       }
     }
   }

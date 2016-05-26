@@ -26,7 +26,7 @@ body {
 	line-height: 140%;
 	color: $bodyColor;
   -webkit-font-smoothing: antialiased;
-	@extend %serif;
+	@extend %sans;
 }
 
 // TYPE SIZE VARIABLES
@@ -49,15 +49,11 @@ FONTS
 ------------------------------------------- */
 
 %sans {
-	font-family: "freight-sans-pro", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
-}
-
-%serif {
-  font-family: "freight-text-pro", Adobe Garamond Pro, Georgia, system, -apple-system, BlinkMacSystemFont, serif;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 }
 
 %second-sans {
-  font-family: "proxima-nova-condensed", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+  font-family: "Whitney A", "Whitney B", system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 }
 
 /*
@@ -71,7 +67,7 @@ h3,
 h4,
 h5,
 h6 {
-  @extend %sans;
+  @extend %second-sans;
   color: $bodyColor;
 }
 

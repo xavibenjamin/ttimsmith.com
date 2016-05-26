@@ -31,11 +31,11 @@ button[type=submit] {
 }
 
 .secondary {
-  background: $jazzColor;
+  background: $jazz-color;
   color: white !important;
   // @include transition(.2s ease-in-out);
   &:hover {
-    background: darken($jazzColor, 5%);
+    background: darken($jazz-color, 5%);
   }
 }
 
