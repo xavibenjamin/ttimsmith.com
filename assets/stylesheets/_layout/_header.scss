@@ -9,6 +9,9 @@ HEADER
     left: 1rem;
     position: absolute;
     z-index: 2;
+    @media #{$medium-up} {
+      left: 2rem;
+    }
   }
 }
 
