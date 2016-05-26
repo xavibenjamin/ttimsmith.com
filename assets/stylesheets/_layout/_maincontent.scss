@@ -9,10 +9,12 @@ MAIN CONTENT
   display: flex;
   min-height: 100vh;
   align-items: center;
+  @media #{$medium-up} {
+    padding: 8rem 2rem 2rem;
+  }
 }
 
 .cover__about {
-  padding: 0 2rem;
   flex: 0 1 620px;
   p {
     color: lighten($jazz-color, 25%);
