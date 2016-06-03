@@ -9,8 +9,8 @@ layout: default
   <img src="{{ site.url }}/{{ page.hero }}" alt="Hero for {{ page.title }}" />
 </div>
 
-<div class="contain">
-  <aside class="grid-4 columns portfolio__sidebar">
+<div class="flex-container">
+  <aside class="portfolio__sidebar">
     <div class="sidebar-widget">
       <h3>Role</h3>
       <p>{{ page.role }}</p>
@@ -29,7 +29,7 @@ layout: default
     {% endif %}
   </aside>
 
-  <div class="grid-8 columns">
+  <div class="main-column">
     <header class="post__header">
       <h1>{{ page.title }}</h1>
     </header>

@@ -6,7 +6,7 @@ BITS --------------------------------------- */
 @import "_redbat/mixins";
 @import "_redbat/bits";
 
-$darkColor: #646c6f;
+$dark-color: #646c6f;
 $jazz-color: #fc8833;
 
 /*
@@ -38,7 +38,7 @@ OBJECTS ------------------------------------ */
 }
 
 .bg-dark {
-  background: $darkColor;
+  background: $dark-color;
 }
 
 .bg-jazz {

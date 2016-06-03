@@ -1,22 +1,23 @@
-/*
+// -----------------------------------------
+// PAGE STYLES
+// -----------------------------------------
 
-PAGE STYLES
-------------------------------------------- */
+// Portfolio ---------------------
 
-
-
-/* Portfolio Specific Styles */
+.portfolio__items {
+  margin: 2rem 0;
+}
 
 .portfolio__entry {
-  border-bottom: 1px solid $borderColor;
-  padding: $spacing-xl 0;
+  border-bottom: 1px solid $border-color;
+  padding: 1.6rem 0;
+  &:first-child {
+    padding-top: 0;
+  }
   &:last-child {
     border-bottom: none;
   }
   h2 {
-    font-size: 1.4em;
-    font-weight: 600;
-    margin-bottom: 0;
     a {
       text-decoration: none;
     }
@@ -26,26 +27,27 @@ PAGE STYLES
 .portfolio__hero {
   margin: 0 auto;
   max-width: 1700px;
+  padding: 0 1rem;
 }
 
 .portfolio__sidebar {
-  background: lighten($borderColor, 2%);
+  background: lighten($border-color, 2%);
   border-radius: 3px;
-  padding: $spacing-s;
+  flex: 0 1 32%;
+  align-self: flex-start;
+  padding: 1rem;
+  margin-right: 3rem;
+
   h3 {
-    font-size: 1em;
-    font-weight: 400;
+    font-size: .8rem;
+    margin-bottom: 0;
     text-transform: uppercase;
-    margin-top: $spacing-xl;
-    @extend %second-sans;
-    &:first-child {
-      margin-top: 0;
-    }
   }
+
   .sidebar-widget {
-    border-bottom-color: darken($borderColor, 10%);
+    border-bottom-color: darken($border-color, 10%);
     p {
-      font-size: 1rem;
+      font-size: .85rem;
     }
   }
 }
@@ -72,11 +74,12 @@ PAGE STYLES
 }
 
 .post__pubdate {
-  color: lighten($bodyColor, 15%);
+  @extend %sans;
+
+  color: lighten($text-color, 15%);
   display: block;
   font-size: .90em;
   margin-bottom: 1rem;
-  @extend %sans;
 }
 
 .post__header {
@@ -96,12 +99,12 @@ PAGE STYLES
 .footnotes {
   margin-top: 10%;
   &:before {
-    background: $borderColor;
-    content: "";
+    background: $border-color;
+    content: '';
     display: block;
-    width: 150px;
     height: 3px;
     margin-bottom: $spacing-xl;
+    width: 150px;
   }
   ol {
     margin: 0 0 0 8.5%;
@@ -114,40 +117,42 @@ PAGE STYLES
   }
 }
 
-/* Resume Specific Styles */
+// -------------------------------
+// Resume Specific Styles
 
 .resume__statement {
-  color: $bodyColor;
-  font-size: 1.2em !important;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .resume__heading {
-  border-bottom: 1px solid $borderColor;
-  color: lighten($bodyColor, 40%);
-  font-weight: 400;
-  font-size: 1.15em;
-  padding-bottom: $spacing-xxs;
-  margin: $spacing-xl 0 $spacing-xs !important;
+  border-bottom: 1px solid $border-color;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-bottom: .6rem;
+  padding-bottom: .3rem;
   text-transform: uppercase;
-  @extend %second-sans;
+  + .resume__subheading {
+    margin-top: .6rem;
+  }
 }
 
 .resume__subheading {
-  font-size: 1.15em !important;
-  font-weight: normal !important;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1.3rem;
 }
 
 .resume__meta {
-  color: lighten($bodyColor, 25%);
-  font-size: .95em !important;
-  margin-bottom: $spacing-xxs !important;
+  color: lighten($text-color, 25%);
+  font-size: .9rem;
+  margin-bottom: .4rem;
 }
 
 .resume__other-info {
-  margin-bottom: 15%;
   li {
-    font-size: .95em;
-    line-height: 120%;
+    font-size: .85rem;
+    line-height: .9;
   }
 }
 
@@ -160,10 +165,11 @@ PAGE STYLES
 .funding-info {
   margin-left: 0;
   li {
+    @extend %sans;
+
     display: inline-block;
     line-height: 110%;
     padding-right: percentage(70/940);
-    @extend %sans;
     strong {
       font-size: .85em;
     }

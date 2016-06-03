@@ -4,30 +4,45 @@ MAIN CONTENT
 ------------------------------------------- */
 
 .home__cover {
-  background-color: $jazz-color;
+  background-color: $dark-color;
   padding: 8rem 1rem 2rem;
-  display: flex;
   min-height: 100vh;
-  align-items: center;
   @media #{$medium-up} {
-    padding: 8rem 2rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    padding: 1rem 2rem 0;
   }
 }
 
 .cover__about {
   flex: 0 1 620px;
   p {
-    color: lighten($jazz-color, 25%);
+    color: lighten($dark-color, 55%);
   }
   a {
-    color: lighten($jazz-color, 25%);
+    color: lighten($dark-color, 55%);
+  }
+  @media #{$medium-up} {
+    padding: 5rem 0 2rem;
+  }
+  @media #{$large-up} {
+    padding-top: 0;
   }
 }
 
 .about__title {
-  color: white;
-  font-size: 3rem;
+  color: $jazz-color;
+  font-size: 2.8rem;
   line-height: 1;
   margin-bottom: 1rem;
   font-weight: 300;
+}
+
+.cover__character {
+  flex: 0 1 400px;
+  svg {
+    width: 100%;
+    height: 95vh;
+  }
 }

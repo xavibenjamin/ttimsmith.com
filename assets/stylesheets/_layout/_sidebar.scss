@@ -4,9 +4,9 @@ SIDEBAR
 ------------------------------------------- */
 
 #sidebar {
-  background: lighten($borderColor, 2%);
+  background: lighten($border-color, 2%);
   border-radius: 3px;
-  color: lighten($darkColor, 35%);
+  color: lighten($dark-color, 35%);
   padding: $spacing-m $spacing-s;
   @include breakpoint(s) {
     padding: $spacing-xl $spacing-m;
@@ -18,7 +18,7 @@ SIDEBAR
 }
 
 .sidebar-widget {
-  border-bottom: 1px dashed darken($borderColor, 10%);
+  border-bottom: 1px dashed darken($border-color, 10%);
   margin: 0 0 percentage(40/940);
   padding: 0 0 percentage(40/940);
   font-size: 80%;
@@ -53,7 +53,7 @@ SIDEBAR
       text-decoration: none;
     }
     small {
-      color: lighten($darkColor, 35%);
+      color: lighten($dark-color, 35%);
       display: block;
       font-size: .9em;
       font-weight: normal;

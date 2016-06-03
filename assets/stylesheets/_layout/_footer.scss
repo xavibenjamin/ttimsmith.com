@@ -4,10 +4,10 @@ FOOTER
 ------------------------------------------- */
 
 .footer__work-cta {
-  background: $borderColor;
+  background: $border-color;
   padding: $spacing-s 0;
   h3 {
-    color: $bodyColor;
+    color: $text-color;
     float: left;
     font-size: 1.3em;
     font-weight: 900;
@@ -23,7 +23,7 @@ FOOTER
   margin-bottom: $spacing-m;
   @extend %sans;
   small {
-    color: lighten($bodyColor, 25%);
+    color: lighten($text-color, 25%);
     display: block;
     font-size: .85em;
   }

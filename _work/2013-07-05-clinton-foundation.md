@@ -7,7 +7,6 @@ type: Mobile Web App
 excerpt: I helped the Clinton Foundation—together with the help of Crush + Lovely—to create a mobile Safari app for their visit to Africa.
 thumbnail: /uploads/2013/08/clinton-thumb.png
 date: '2013-07-05 13:27:44'
-permalink: /clinton-foundation/
 featured: affirmative
 ---
 I was honored to be approached by [Crush + Lovely](http://crushlovely.com/) to help with a site for the Clinton Foundation. I was tasked with the front-end development of the app.
