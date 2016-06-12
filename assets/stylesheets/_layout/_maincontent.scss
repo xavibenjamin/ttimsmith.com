@@ -8,7 +8,6 @@
   min-height: 100vh;
   @media #{$medium-up} {
     align-items: center;
-    // justify-content: space-between;
     display: flex;
     padding: 1rem 2rem 0;
   }
@@ -33,10 +32,13 @@
 
 .about__title {
   color: $jazz-color;
-  font-size: 3rem;
+  font-size: 2.4rem;
   line-height: 1;
   margin-bottom: 1rem;
   font-weight: 300;
+  @media #{$medium-up} {
+    font-size: 3rem;
+  }
 }
 
 .cover__character {
@@ -45,7 +47,9 @@
     margin-bottom: 1rem;
   }
   svg {
-    // max-height: 95vh;
+    @media #{$small-only} {
+      height: 50vh;
+    }
   }
   @media #{$medium-up} {
     order: 2;
