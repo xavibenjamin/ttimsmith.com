@@ -22,4 +22,4 @@ post:
 collections:
   work:
     output: true
-    permalink: /portfolio/:path/
+    permalink: /portfolio/:title/

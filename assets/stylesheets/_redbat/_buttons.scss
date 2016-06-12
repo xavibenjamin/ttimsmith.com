@@ -10,7 +10,7 @@ button[type=submit] {
 }
 
 .btn {
-  background: $linkColor;
+  background: $link-color;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -21,7 +21,7 @@ button[type=submit] {
   @include transition(.2s ease-in-out);
   @extend %sans;
   &:hover {
-    background: darken($linkColor, 10%);
+    background: darken($link-color, 10%);
     color: white;
   }
   &.centered-btn {
@@ -31,11 +31,11 @@ button[type=submit] {
 }
 
 .secondary {
-  background: $jazzColor;
+  background: $jazz-color;
   color: white !important;
   // @include transition(.2s ease-in-out);
   &:hover {
-    background: darken($jazzColor, 5%);
+    background: darken($jazz-color, 5%);
   }
 }
 

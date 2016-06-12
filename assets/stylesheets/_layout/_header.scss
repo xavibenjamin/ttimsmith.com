@@ -1,62 +1,61 @@
-/*
-
-HEADER
-------------------------------------------- */
+// =========================================
+// HEADER
+// =========================================
 
 .site__header {
-  margin: 30px 0 $spacing-xl;
+  margin: 1rem 0 2.5rem;
+  display: flex;
+  align-items: center;
   .home__header & {
     left: 1rem;
     position: absolute;
     z-index: 2;
+    @media #{$medium-up} {
+      left: 2rem;
+    }
   }
 }
 
 .site__branding {
-  float: left;
-  margin: 0 $spacing-s 0 0;
+  margin: 0 .8rem 0 0;
   svg {
-    width: 45px;
+    width: 40px;
   }
 }
 
 .supersmith-icon {
-  fill: $darkColor;
+  fill: $dark-color;
   .home__header & {
-    fill: white;
+    fill: $jazz-color;
   }
 }
 
 .main__navigation {
-  @extend %clearfix;
-  @extend %sans;
-  .home__header & {
-    float: left;
-  }
   ul {
+    align-items: center;
+    display: flex;
     list-style-type: none;
-    margin: $spacing-xxs 0 0 0;
-    li {
-      display: inline-block;
-      font-size: .9em;
-      padding: 0 $spacing-xs 0 0;
-      &:last-child {
-        padding-right: 0;
-      }
-      a {
-        color: lighten($bodyColor, 30%);
-        text-decoration: none;
-        &:hover,
-        &:focus {
-          color: $linkColor;
-        }
-        .home__header & {
-          color: rgba(white, .9);
-          &:hover,
-          &:focus {
-            color: white;
-          }
-        }
+    margin: 0;
+  }
+  li {
+    font-size: .8rem;
+    margin: 0 .5rem 0 0;
+    padding: 0;
+    &:last-child {
+      padding: 0;
+    }
+  }
+  a {
+    color: lighten($text-color, 20%);
+    &:focus,
+    &:hover {
+      color: $link-color;
+    }
+    .home__header & {
+      color: lighten($dark-color, 55%);
+      &:focus,
+      &:hover {
+        color: white;
       }
     }
   }

@@ -1,30 +1,32 @@
-/*
-
-FOOTER
-------------------------------------------- */
-
-.footer__work-cta {
-  background: $borderColor;
-  padding: $spacing-s 0;
-  h3 {
-    color: $bodyColor;
-    float: left;
-    font-size: 1.3em;
-    font-weight: 900;
-    margin-top: percentage(9/940);
-    @include breakpoint(s) {
-      font-size: 1.15em;
-      margin-top: percentage(18/940);
-    }
-  }
-}
+// =========================================
+// FOOTER
+// =========================================
 
 .site__footer {
-  margin-bottom: $spacing-m;
-  @extend %sans;
+  background: $dark-color;
+  padding: 1.5rem 1rem;
+  margin-top: 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media #{$medium-up} {
+    padding: 1.5rem 2rem;
+  }
   small {
-    color: lighten($bodyColor, 25%);
+    color: lighten($dark-color, 55%);
     display: block;
-    font-size: .85em;
+    font-size: .75rem;
+    @media #{$small-only} {
+      margin-bottom: .7rem;
+    }
+  }
+  .icon {
+    fill: lighten($dark-color, 55%);
+    transition: fill 300ms ease;
+    width: 24px;
+    &:focus,
+    &:hover {
+      fill: lighten($dark-color, 45%);
+    }
   }
 }

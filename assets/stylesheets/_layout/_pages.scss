@@ -1,89 +1,112 @@
-/*
+// =========================================
+// PAGE STYLES
+// =========================================
 
-PAGE STYLES
-------------------------------------------- */
+// -------------------------------
+// Portfolio
+// -------------------------------
 
-
-
-/* Portfolio Specific Styles */
+.portfolio__items {
+  margin: 2rem 0;
+}
 
 .portfolio__entry {
-  border-bottom: 1px solid $borderColor;
-  padding: $spacing-xl 0;
+  border-bottom: 1px solid $border-color;
+  padding: 1.6rem 0;
+  &:first-child {
+    padding-top: 0;
+  }
   &:last-child {
     border-bottom: none;
   }
   h2 {
-    font-size: 1.4em;
-    font-weight: 600;
-    margin-bottom: 0;
+    margin-top: 1rem;
     a {
       text-decoration: none;
     }
+  }
+}
+
+.portfolio__thumb {
+  img {
+    margin: 0;
   }
 }
 
 .portfolio__hero {
-  margin: 0 auto;
+  // margin: 0 auto;
   max-width: 1700px;
+  padding: 0 1rem;
 }
 
 .portfolio__sidebar {
-  background: lighten($borderColor, 2%);
+  align-self: flex-start;
+  background: lighten($border-color, 2%);
   border-radius: 3px;
-  padding: $spacing-s;
+  flex: 0 1 320px;
+  padding: 1rem;
   h3 {
-    font-size: 1em;
-    font-weight: 400;
+    color: $text-color;
+    font-size: .9rem;
+    margin-bottom: 0;
     text-transform: uppercase;
-    margin-top: $spacing-xl;
-    @extend %second-sans;
-    &:first-child {
-      margin-top: 0;
-    }
   }
   .sidebar-widget {
-    border-bottom-color: darken($borderColor, 10%);
+    border-bottom-color: darken($border-color, 10%);
     p {
-      font-size: 1rem;
+      font-size: .8rem;
     }
+  }
+  @media #{$small-only} {
+    margin: 2rem 0;
+  }
+  @media #{$medium-up} {
+    margin-right: 3rem;
   }
 }
 
-/* Blog Specific Styles */
+// -------------------------------
+// Blog
+// -------------------------------
 
-.content__posts {
+.posts {
+  list-style-type: none;
   margin: 0;
   li {
-    list-style-type: none;
-    margin-bottom: 0;
-    a {
-      text-decoration: none;
-    }
+    line-height: 1.5;
+  }
+  a {
+    text-decoration: none;
   }
   .post__title {
-    display: block;
-    font-size: 1.15em;
-    line-height: 125%;
+    @extend %second-sans;
+
+    font-size: 1.3rem;
+    font-weight: 600;
+    @media #{$medium-up} {
+      font-size: 1.2rem;
+    }
   }
-  .post__pubdate {
-    font-size: .85em;
+  .post__date {
+    margin: 0;
   }
 }
 
-.post__pubdate {
-  color: lighten($bodyColor, 15%);
+.post__date {
+  color: lighten($text-color, 20%);
   display: block;
-  font-size: .90em;
-  margin-bottom: 1rem;
-  @extend %sans;
+  font-size: .85rem;
+  @media #{$medium-up} {
+    font-size: .75rem;
+  }
 }
 
 .post__header {
   h1 {
-    font-size: 2.4em;
+    font-size: 2.4rem;
     font-weight: 600;
-    line-height: 100%;
+    line-height: 1;
+    margin-bottom: 1.875rem;
   }
 }
 
@@ -94,85 +117,101 @@ PAGE STYLES
 }
 
 .footnotes {
-  margin-top: 10%;
-  &:before {
-    background: $borderColor;
-    content: "";
-    display: block;
-    width: 150px;
-    height: 3px;
-    margin-bottom: $spacing-xl;
-  }
+  margin: 2.5rem 0;
   ol {
-    margin: 0 0 0 8.5%;
+    margin: 0 0 0 2rem;
+    width: 83%;
     li {
-      font-size: .95em;
-      p:first-child {
-        color: #777;
+      font-size: .9rem;
+      margin: 0;
+      padding: 0;
+      @media #{$medium-up} {
+        font-size: .8rem;
+      }
+      code {
+        font-size: .8rem;
       }
     }
   }
-}
-
-/* Resume Specific Styles */
-
-.resume__statement {
-  color: $bodyColor;
-  font-size: 1.2em !important;
-}
-
-.resume__heading {
-  border-bottom: 1px solid $borderColor;
-  color: lighten($bodyColor, 40%);
-  font-weight: 400;
-  font-size: 1.15em;
-  padding-bottom: $spacing-xxs;
-  margin: $spacing-xl 0 $spacing-xs !important;
-  text-transform: uppercase;
-  @extend %second-sans;
-}
-
-.resume__subheading {
-  font-size: 1.15em !important;
-  font-weight: normal !important;
-}
-
-.resume__meta {
-  color: lighten($bodyColor, 25%);
-  font-size: .95em !important;
-  margin-bottom: $spacing-xxs !important;
-}
-
-.resume__other-info {
-  margin-bottom: 15%;
-  li {
-    font-size: .95em;
-    line-height: 120%;
+  &:before {
+    background: $border-color;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-bottom: 1rem;
+    width: 150px;
   }
 }
 
-/* Membership Specific Styles */
+// -------------------------------
+// Resume
+// -------------------------------
 
-.funding {
-  margin-bottom: $spacing-s;
+.resume__image {
+  margin-bottom: 2rem;
+  img {
+    object-fit: cover;
+    max-width: 700px;
+    max-height: 400px;
+  }
 }
 
-.funding-info {
-  margin-left: 0;
+.resume__sidebar {
+  background: lighten($border-color, 2%);
+  padding: 1rem;
+  flex: 0 1 320px;
+  @media #{$small-only} {
+    margin-top: 2rem;
+  }
+  @media #{$medium-up} {
+    margin-right: 1.5rem;
+  }
+  p {
+    font-size: .9rem;
+  }
+  .resume__heading {
+    border-color: darken($border-color, 5%);
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}
+
+.resume__statement {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.resume__heading {
+  border-bottom: 1px solid $border-color;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: .6rem;
+  padding-bottom: .3rem;
+  text-transform: uppercase;
+  + .resume__subheading {
+    margin-top: .6rem;
+  }
+}
+
+.resume__subheading {
+  color: $text-color;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1.3rem;
+  text-transform: none;
+}
+
+.resume__meta {
+  color: lighten($text-color, 20%);
+  font-size: .85rem;
+  margin-bottom: .4rem;
+}
+
+.resume__other-info {
   li {
-    display: inline-block;
-    line-height: 110%;
-    padding-right: percentage(70/940);
-    @extend %sans;
-    strong {
-      font-size: .85em;
-    }
-    small {
-      display: block;
-      font-size: .75em;
-    }
-    &:last-child {
-      padding-right: 0;
-    }
+    font-size: .85rem;
+    line-height: .9;
   }
 }

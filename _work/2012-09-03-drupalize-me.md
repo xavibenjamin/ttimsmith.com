@@ -8,7 +8,6 @@ type: Web App
 item_url: http://drupalize.me/
 excerpt: Learn Drupal from the experts where you get over 231 hours of Drupal training. You can see these videos from anywhere with our apps for iOS, Android and Roku.
 date: '2012-09-03 13:27:44'
-permalink: /drupalize-me/
 ---
 While working at [Lullabot](http://www.lullabot.com/), I was also put on the Drupalize.Me project. Drupalize.Me is a product created by Lullabot in an effort to teach people [Drupal](http://drupal.org/).
 

@@ -4,13 +4,13 @@ title: Blog
 permalink: /blog/
 ---
 
-<ul class="content__posts">
+<ul class="posts">
 {% for post in site.posts %}
   {% if post.hidden != true %}
   <li>
     <a href="{{ post.url }}">
       <span class="post__title">{{ post.title }}</span>
-      <small class="post__pubdate meta"><time datetime="{{ post.date | date_to_xmlschema }}">{% assign d = post.date | date: "%-d"  %}{{ post.date | date: "%B" }} {% case d %}{% when '1' or '21' or '31' %}{{ d }}st{% when '2' or '22' %}{{ d }}nd{% when '3' or '23' %}{{ d }}rd{% else %}{{ d }}th{% endcase %}, {{ post.date | date: "%Y" }}</time></small>
+      <small class="post__date"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%a, %b %d, %Y" }}</time></small>
     </a>
   </li>
   {% endif %}

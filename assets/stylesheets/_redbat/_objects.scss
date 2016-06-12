@@ -4,19 +4,20 @@ OBJECTS
 ------------------------------------------- */
 
 .contain {
-  @extend %clearfix;
-
-  margin: 0 auto;
-  max-width: 1020px;
+  max-width: 722px;
+  padding: 0 1rem;
   width: 100%;
-  @media (max-width: 1140px) {
-    padding: 0 $spacing-xs;
+  @media #{$medium-up} {
+    padding: 0 2rem;
   }
 }
 
-.container {
+.flex-container {
+  max-width: 1200px;
+  padding: 0 1rem;
   @media #{$medium-up} {
     display: flex;
+    padding: 0 2rem;
   }
 }
 
@@ -33,83 +34,55 @@ OBJECTS
 }
 
 .lead-paragraph {
-  @extend %sans;
-
-  color: lighten($bodyColor, 30%);
-  font-size: 1.5rem;
-  line-height: 140%;
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
-
-// Grid
-
-.right {
-  float: right;
+.main-column {
+  flex: 0 1 650px;
 }
 
-.columns {
-  float: left;
-  margin-right: $spacing-m;
-  &:last-child {
-    float: right;
-    margin-right: 0;
+.main-column--left, .side-column--left {
+  @media #{$medium-up} {
+    margin-right: 3rem;
   }
 }
 
-.centered {
-  margin: 0 auto;
+.side-column {
+  flex: 0 1 320px;
+  @media #{$small-only} {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
-.grid-10 {
-  @include breakpoint(m) {
-    margin-bottom: $spacing-m;
-    width: 100%;
-  }
-
-  width: percentage(780/970);
+.order--one {
+  order: 1;
 }
 
-.grid-8 {
-  @include breakpoint(m) {
-    margin-bottom: $spacing-m;
-    width: 100%;
-  }
-
-  width: percentage(620/970);
+.order--two {
+  order: 2;
 }
 
-.grid-7 {
-  @include breakpoint(m) {
-    margin-bottom: $spacing-m;
-    width: 100%;
+// -------------------------------
+// Social Icons
+// -------------------------------
+
+.social-icons {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  li {
+    line-height: 1;
+    margin: 0 .3rem 0 0;
+    padding: 0;
+    &:last-child {
+      padding: 0;
+    }
+    a {
+      display: block;
+    }
   }
-
-  width: percentage(540/970);
-}
-
-.grid-5 {
-  @include breakpoint(m) {
-    margin-bottom: $spacing-m;
-    width: 100%;
-  }
-
-  width: percentage(380/970);
-}
-
-.grid-4 {
-  @include breakpoint(m) {
-    margin-bottom: $spacing-m;
-    width: 100%;
-  }
-
-  width: percentage(300/970);
-}
-
-.grid-3 {
-  @include breakpoint(m) {
-    margin-bottom: $spacing-m;
-    width: 100%;
-  }
-
-  width: percentage(220/970);
 }

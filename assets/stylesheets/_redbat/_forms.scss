@@ -6,30 +6,30 @@ FORMS
 
 // Webkit Placeholder
 ::-webkit-input-placeholder {
-   color: lighten($darkColor, 50%);
+   color: lighten($dark-color, 50%);
    // @include transition(all .2s ease-in-out);
 }
 
 input:focus::-webkit-input-placeholder {
-  color: lighten($darkColor, 65%);
+  color: lighten($dark-color, 65%);
 }
 
 // Firefox 18
 :-moz-placeholder { /* Firefox 18- */
-   color: lighten($darkColor, 50%);
+   color: lighten($dark-color, 50%);
 }
 
 input:focus:-moz-placeholder {
-  color: lighten($darkColor, 65%);
+  color: lighten($dark-color, 65%);
 }
 
 // Firefox 19
 ::-moz-placeholder {  /* Firefox 19+ */
-   color: lighten($darkColor, 50%);
+   color: lighten($dark-color, 50%);
 }
 
 input:focus::-moz-placeholder {
-  color: lighten($darkColor, 65%);
+  color: lighten($dark-color, 65%);
 }
 
 .page__newsletter-form, .page__search-form {
@@ -43,7 +43,7 @@ input:focus::-moz-placeholder {
     font-weight: normal;
   }
   input[type="text"], input[type="email"] {
-    border: 1px solid darken($borderColor, 10%);
+    border: 1px solid darken($border-color, 10%);
     border-radius: 3px;
     box-shadow: inset 1px 1px 4px rgba(black, .1);
     padding: 5px 8px;
@@ -68,7 +68,7 @@ input:focus::-moz-placeholder {
     }
   }
   input[type="text"] {
-    border: 1px solid darken($borderColor, 10%);
+    border: 1px solid darken($border-color, 10%);
     border-radius: 3px;
     box-shadow: inset 1px 1px 4px rgba(black, .1);
     font-size: .8em;
@@ -87,7 +87,7 @@ input:focus::-moz-placeholder {
 }
 
 .form-error {
-  color: $alertColor !important;
+  color: $alert-color !important;
 }
 
 .form-success {
