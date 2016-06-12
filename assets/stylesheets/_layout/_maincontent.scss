@@ -1,15 +1,14 @@
-/*
-
-MAIN CONTENT
-------------------------------------------- */
+// =========================================
+// MAIN CONTENT
+// =========================================
 
 .home__cover {
   background-color: $dark-color;
-  padding: 8rem 1rem 2rem;
+  padding: 4rem 1rem 2rem;
   min-height: 100vh;
   @media #{$medium-up} {
     align-items: center;
-    justify-content: space-between;
+    // justify-content: space-between;
     display: flex;
     padding: 1rem 2rem 0;
   }
@@ -25,6 +24,7 @@ MAIN CONTENT
   }
   @media #{$medium-up} {
     padding: 5rem 0 2rem;
+    order: 1;
   }
   @media #{$large-up} {
     padding-top: 0;
@@ -33,7 +33,7 @@ MAIN CONTENT
 
 .about__title {
   color: $jazz-color;
-  font-size: 2.8rem;
+  font-size: 3rem;
   line-height: 1;
   margin-bottom: 1rem;
   font-weight: 300;
@@ -41,8 +41,13 @@ MAIN CONTENT
 
 .cover__character {
   flex: 0 1 400px;
+  @media #{$small-only} {
+    margin-bottom: 1rem;
+  }
   svg {
-    width: 100%;
-    height: 95vh;
+    // max-height: 95vh;
+  }
+  @media #{$medium-up} {
+    order: 2;
   }
 }

@@ -13,7 +13,7 @@ Although it did take me about 8 total hours to migrate and design, I already fee
 
 I know this isn't a huge thing, but I'm so excited about doing this. I'm even thinking about creating a Tim Likes to Teach course on it. If you'd like to see the source of the site, you can [see it on Github](https://github.com/ttimsmith/ttimsmith.com). Feel free to look at the code and submit issues if you see wonky stuff (It's totally possible. Data migrations aren't my thing).
 
-### So Are You Anti-WordPress Now?
+## So Are You Anti-WordPress Now?
 Not at all. I love WordPress. I've been working with WordPress for years. However, I work on this site a lot, and I found myself very frustrated with how WordPress handles a simple blog. The honest truth, WordPress is too much for just a blog these days.
 
 Using a web editor had become tiresome for me. I like writing posts in Byword. Byword has WordPress publishing support, but no support for post formats, and the process of setting custom fields is not really well done. So in the end, I had to write the post in Byword, and then go to the web editor anyway to set values for the posts.

@@ -27,7 +27,7 @@ body {
 }
 
 %second-sans {
-  font-family: 'Whitney A', 'Whitney B', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+  font-family: 'Whitney Cond A', 'Whitney Cond B', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 }
 
 // HEADINGS ----------------------
@@ -53,6 +53,9 @@ h5 {
   font-size: 2.3rem;
   margin-bottom: 1.5rem;
   width: 100%;
+  .subheader {
+    margin-top: 0;
+  }
 }
 
 // TEXT --------------------------
@@ -84,9 +87,11 @@ h2 {
 }
 
 h3 {
+  color: lighten($text-color, 35%);
   font-size: 1.2rem;
   font-weight: 600;
   margin: 2.3rem 0 .5rem;
+  text-transform: uppercase;
 }
 
 
@@ -156,6 +161,7 @@ ul {
 ol {
   list-style-type: decimal;
   margin-bottom: rem-calc(25px);
+  margin-left: 2.3rem;
   text-align: left;
   li {
     font-size: 1.1rem;
@@ -188,10 +194,10 @@ ol {
 // INLINE TYPE -------------------
 
 strong {
-  font-weight: 700;
+  font-weight: 600;
   em {
     font-style: italic;
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 
@@ -235,7 +241,7 @@ pre {
 code {
   background: #F5F5F5;
   border-radius: 3px;
-  color: $dark-color;
+  color: $text-color;
   font-family: Inconsolata, 'Inconsolata-g for Powerline', monospace;
   font-size: 1.1rem;
   padding: 2px 5px;
@@ -299,7 +305,7 @@ hr {
 a {
   color: $link-color;
   text-decoration: underline;
-  transition: .2s ease;
+  transition: color 500ms ease;
   &:hover {
     color: lighten($link-color, 10%);
   }

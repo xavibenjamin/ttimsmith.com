@@ -4,8 +4,8 @@ OBJECTS
 ------------------------------------------- */
 
 .contain {
-  padding: 0 1rem;
   max-width: 722px;
+  padding: 0 1rem;
   width: 100%;
   @media #{$medium-up} {
     padding: 0 2rem;
@@ -42,10 +42,47 @@ OBJECTS
   flex: 0 1 650px;
 }
 
-.main-column--left {
-  margin-right: 3rem;
+.main-column--left, .side-column--left {
+  @media #{$medium-up} {
+    margin-right: 3rem;
+  }
 }
 
 .side-column {
-  flex: 0 1 32%;
+  flex: 0 1 320px;
+  @media #{$small-only} {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+.order--one {
+  order: 1;
+}
+
+.order--two {
+  order: 2;
+}
+
+// -------------------------------
+// Social Icons
+// -------------------------------
+
+.social-icons {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  li {
+    line-height: 1;
+    margin: 0 .3rem 0 0;
+    padding: 0;
+    &:last-child {
+      padding: 0;
+    }
+    a {
+      display: block;
+    }
+  }
 }
