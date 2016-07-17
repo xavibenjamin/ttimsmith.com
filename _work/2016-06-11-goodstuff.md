@@ -43,6 +43,14 @@ This was all made easy with On-Air (the custom CMS) where you're able to upload 
 
 The other big pain point was links. If you've ever hosted a podcast, you know that remembering all the links that you referenced during a show can be quite the job. In fact, some shows pay a separate person to collect them all. We wanted to make On-Air handle this better so that a hosts job was easier. On-Air comes with an awesome bookmarklet that you just click on the webpage you want to save, and it'll add it to the most recent episode.
 
+<blockquote class="content__pullquote">
+  <p>On Air gives our hosts exactly what they need to create notes, upload audio, and manage their show on their own. The show management interface is fantastic; simple and intuitive for both beginners and professionals.</p>
+  <small>
+    <strong>Kyle Roderick</strong>
+    Co-Founder, Goodstuff Broadcasting, LLC.
+  </small>
+</blockquote>
+
 ## Conclusion
 
 This is one of those projects that I loved working on. Although a personal project, I learned so much about front-end development, thinking through use cases for the CMS, and I learned a lot of Ruby on Rails from Phil. I learned so much, yet still know so little about the framework.
