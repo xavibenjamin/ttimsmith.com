@@ -16,10 +16,10 @@
 .cover__about {
   flex: 0 1 620px;
   p {
-    color: lighten($dark-color, 55%);
+    color: lighten($dark-color, 65%);
   }
   a {
-    color: lighten($dark-color, 55%);
+    color: lighten($dark-color, 65%);
   }
   @media #{$medium-up} {
     padding: 5rem 0 2rem;
@@ -50,6 +50,7 @@
     @media #{$small-only} {
       height: 50vh;
     }
+    max-height: 95vh;
   }
   @media #{$medium-up} {
     order: 2;
