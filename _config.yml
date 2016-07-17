@@ -3,7 +3,7 @@ name: Timothy B. Smith
 title: "Designer who codes, blabber mouth, and coffee addict."
 email: smith@ttimsmith.com
 description: "Tim Smith is a user interface and web designer based in St. Paul, Minnesota."
-url: http://ttimsmith.com
+url: https://ttimsmith.com
 
 # Build settings
 markdown: kramdown
