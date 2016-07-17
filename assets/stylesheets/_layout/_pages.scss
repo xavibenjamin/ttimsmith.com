@@ -7,17 +7,26 @@
 // -------------------------------
 
 .portfolio__items {
+  display: flex;
+  flex-wrap: wrap;
   margin: 2rem 0;
+  padding: 0 1rem;
+  @media #{$medium-up} {
+    padding: 0 2rem;
+  }
 }
 
 .portfolio__entry {
-  border-bottom: 1px solid $border-color;
-  padding: 1.6rem 0;
-  &:first-child {
-    padding-top: 0;
+  margin-bottom: 2.5rem;
+  &:nth-child(3n) {
+    padding-right: 0;
   }
-  &:last-child {
-    border-bottom: none;
+  @media #{$medium-up} {
+    flex: 0 1 50%;
+    padding-right: 1.5rem;
+  }
+  @media #{$large-up} {
+    flex: 0 1 33.3%;
   }
   h2 {
     margin-top: 1rem;
@@ -34,7 +43,6 @@
 }
 
 .portfolio__hero {
-  // margin: 0 auto;
   max-width: 1700px;
   padding: 0 1rem;
 }
@@ -150,16 +158,16 @@
 .resume__image {
   margin-bottom: 2rem;
   img {
-    object-fit: cover;
-    max-width: 700px;
     max-height: 400px;
+    max-width: 700px;
+    object-fit: cover;
   }
 }
 
 .resume__sidebar {
   background: lighten($border-color, 2%);
-  padding: 1rem;
   flex: 0 1 320px;
+  padding: 1rem;
   @media #{$small-only} {
     margin-top: 2rem;
   }

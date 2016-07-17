@@ -268,7 +268,7 @@ blockquote {
     font-size: .8rem;
     margin: rem-calc(10px) 0 0;
     &:before {
-      color: $border-color;
+      color: darken($border-color, 10%);
       content: '—';
     }
   }
@@ -278,9 +278,21 @@ blockquote {
 }
 
 .content__pullquote {
-  strong {
-    display: block;
-    line-height: 1.3;
+  border: 0;
+  margin: 1.5rem 0;
+  padding: 0;
+  text-align: center;
+  p {
+    color: lighten($text-color, 20%);
+    font-size: 1.2rem;
+    font-style: italic;
+    line-height: 1.7;
+  }
+  small {
+    line-height: 1.2;
+    strong {
+      display: block;
+    }
   }
 }
 
