@@ -1,7 +1,7 @@
 ---
 layout: portfolio
 title: Goodstuff Broadcasting
-hero: uploads/2016/07/goodstuff-full.png
+hero: /uploads/2016/07/goodstuff-image-full.png
 thumbnail: /uploads/2016/07/goodstuff-thumb.png
 role: Design, Front-End Development, (Some) Rails Development
 type: Website & Custom CMS
