@@ -197,12 +197,14 @@
   margin-bottom: .6rem;
   padding-bottom: .3rem;
   text-transform: uppercase;
-  + .resume__subheading {
+  + .resume__subheading,
+  + .job__title {
     margin-top: .6rem;
   }
 }
 
-.resume__subheading {
+.resume__subheading,
+.job__title {
   color: $text-color;
   font-size: 1.3rem;
   font-weight: normal;
@@ -211,7 +213,8 @@
   text-transform: none;
 }
 
-.resume__meta {
+.resume__meta,
+.job__meta {
   color: lighten($text-color, 20%);
   font-size: .85rem;
   margin-bottom: .4rem;

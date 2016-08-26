@@ -23,3 +23,6 @@ collections:
   work:
     output: true
     permalink: /portfolio/:title/
+  jobs:
+    output: false
+
