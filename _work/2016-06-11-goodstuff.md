@@ -7,6 +7,7 @@ role: Design, Front-End Development, (Some) Rails Development
 type: Website & Custom CMS
 excerpt: I designed and built a website and custom content management system for Goodstuff Broadcasting.
 date: 2016-06-11 23:15
+item_url: http://goodstuff.fm/
 ---
 Goodstuff was a personal project with [Chris Enns](http://www.chrisenns.com/) and [Adam Clark](http://avclark.com/). I designed and built a website and custom content management system to publish podcasts.
 
@@ -19,6 +20,7 @@ One thing's for sure, we needed a custom content management system. In the past,
 The first thing Phil Duffy and I talked about when creating On-Air (the CMS) was making it easy for multiple people to publish podcasts easily. On the other hand, you want those running the network to give the right permissions to people using the system.
 
 ## Hosts and People
+
 On-Air allows you to easily add new users. When adding them, you can pick specific permissions for them whether they're hosts of a show, or a person that has appeared on a show. In addition, you can give hosts the permission to add an episode to the Auxiliary feed, and host live shows.
 
 Hosts and people also get a public profile where you can see their bio, links to their website and social media, and the list of broadcasts they host or have appeared on.
@@ -32,11 +34,13 @@ Hosts and people also get a public profile where you can see their bio, links to
 </blockquote>
 
 ## Shows
+
 Creating a new podcast is usually a hassle. iTunes and directories like it, have a lot of requirements to be included. Most people don't know much about RSS feeds, and podcast feeds are even more complicated.
 
 We built the CMS so that an admin can fill out a few inputs, select categories, add a host, and create an iTunes-ready feed in just a few moments. You can even decide whether to mark the show as explicit, and On-Air will add it to the feed so it shows up correctly in iTunes.
 
 ## Episodes &amp; Links
+
 When designing the CMS, episodes and links were two things we really wanted to get right. Filling out a form to create a new episode is easy enough, but uploading the audio is where things get difficult. You'd have to manually add details like how long the episode was, and the size of the file. There's also the issue of adding metadata to the audio file like the name of the episode, the name of the show, the artwork, etc.
 
 This was all made easy with On-Air (the custom CMS) where you're able to upload a file, and it'll read the file for length and size, then write important episode information to the audio file.
