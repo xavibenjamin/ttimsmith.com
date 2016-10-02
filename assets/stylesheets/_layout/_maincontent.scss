@@ -8,26 +8,22 @@
   @media #{$medium-up} {
     align-items: center;
     display: flex;
-    padding: 1rem 2rem 0;
+    padding: 0;
   }
 }
 
 .cover__about {
   flex: 0 1 620px;
   @media #{$medium-up} {
-    padding: 5rem 0 2rem;
+    padding: 8rem 0 0 2rem;
     order: 1;
-  }
-  @media #{$large-up} {
-    padding-top: 0;
   }
 }
 
 .about__title {
-  color: $dark-color;
   font-size: 2.2rem;
   line-height: 1;
-  font-weight: 300;
+  font-weight: 600;
   @media #{$medium-up} {
     font-size: 2.7rem;
   }
@@ -36,27 +32,29 @@
 .about__subtitle {
   margin-top: 0;
   margin-bottom: 1.7rem;
+  font-weight: normal;
+  color: lighten($text-color, 30%);
 }
 
 .cover__character {
+
   @media #{$small-only} {
     margin-bottom: 1rem;
   }
   @media #{$medium-up} {
-    height: 97vh;
+    width: 460px;
+    max-height: 100vh;
     overflow: hidden;
   }
   svg {
     @media #{$small-only} {
-      height: 50vh;
+      height: 40vh;
     }
     @media #{$medium-up} {
-      max-width: 460px;
       width: 100%;
     }
   }
   @media #{$medium-up} {
     order: 2;
-
   }
 }
