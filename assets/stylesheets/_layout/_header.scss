@@ -26,9 +26,6 @@
 
 .supersmith-icon {
   fill: $dark-color;
-  .home__header & {
-    fill: $jazz-color;
-  }
 }
 
 .main__navigation {
@@ -52,12 +49,12 @@
     &:hover {
       color: $link-color;
     }
-    .home__header & {
-      color: lighten($dark-color, 55%);
-      &:focus,
-      &:hover {
-        color: white;
-      }
-    }
+    // .home__header & {
+    //   color: lighten($dark-color, 55%);
+    //   &:focus,
+    //   &:hover {
+    //     color: white;
+    //   }
+    // }
   }
 }
