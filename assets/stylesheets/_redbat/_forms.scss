@@ -7,7 +7,6 @@ FORMS
 // Webkit Placeholder
 ::-webkit-input-placeholder {
    color: lighten($dark-color, 50%);
-   // @include transition(all .2s ease-in-out);
 }
 
 input:focus::-webkit-input-placeholder {
@@ -48,12 +47,10 @@ input:focus::-moz-placeholder {
     box-shadow: inset 1px 1px 4px rgba(black, .1);
     padding: 5px 8px;
     width: 75%;
-    // @include transition(all .2s ease-in);
     @media screen and (max-width: 400px ) {
       width: 100%;
     }
     &:focus {
-      // @include transition(all .2s ease-in);
       border: 1px solid #51a7e8;
       box-shadow: inset 0px 0px 2px rgba(black, .1), 0 0 3px rgba(#51a7e8, .5);
     }
@@ -74,12 +71,10 @@ input:focus::-moz-placeholder {
     font-size: .8em;
     padding: 5px 8px;
     width: 45%;
-    // @include transition(all .2s ease-in);
     @media screen and (max-width: 400px ) {
       width: 55%;
     }
     &:focus {
-      // @include transition(all .2s ease-in);
       border: 1px solid #51a7e8;
       box-shadow: inset 0px 0px 2px rgba(black, .1), 0 0 3px rgba(#51a7e8, .5);
     }
@@ -93,5 +88,3 @@ input:focus::-moz-placeholder {
 .form-success {
   color: #77be65 !important;
 }
-
-

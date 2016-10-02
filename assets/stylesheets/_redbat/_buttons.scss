@@ -18,7 +18,7 @@ button[type=submit] {
   font-weight: bold;
   padding: 8px 12px;
   text-decoration: none;
-  @include transition(.2s ease-in-out);
+  transition: .2s ease-in-out;
   @extend %sans;
   &:hover {
     background: darken($link-color, 10%);
