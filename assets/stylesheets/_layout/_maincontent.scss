@@ -3,7 +3,6 @@
 // =========================================
 
 .home__cover {
-  background-color: $dark-color;
   padding: 4rem 1rem 2rem;
   min-height: 100vh;
   @media #{$medium-up} {
@@ -15,12 +14,6 @@
 
 .cover__about {
   flex: 0 1 620px;
-  p {
-    color: lighten($dark-color, 65%);
-  }
-  a {
-    color: lighten($dark-color, 65%);
-  }
   @media #{$medium-up} {
     padding: 5rem 0 2rem;
     order: 1;
@@ -31,10 +24,9 @@
 }
 
 .about__title {
-  color: $jazz-color;
+  color: $dark-color;
   font-size: 2.2rem;
   line-height: 1;
-  // margin-bottom: 1rem;
   font-weight: 300;
   @media #{$medium-up} {
     font-size: 2.7rem;
@@ -44,21 +36,27 @@
 .about__subtitle {
   margin-top: 0;
   margin-bottom: 1.7rem;
-  color: white;
 }
 
 .cover__character {
-  flex: 0 1 400px;
   @media #{$small-only} {
     margin-bottom: 1rem;
+  }
+  @media #{$medium-up} {
+    height: 97vh;
+    overflow: hidden;
   }
   svg {
     @media #{$small-only} {
       height: 50vh;
     }
-    max-height: 95vh;
+    @media #{$medium-up} {
+      max-width: 460px;
+      width: 100%;
+    }
   }
   @media #{$medium-up} {
     order: 2;
+
   }
 }
