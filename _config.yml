@@ -9,7 +9,6 @@ url: https://ttimsmith.com
 markdown: kramdown
 permalink: /:year/:month/:title
 exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
-include: ['.htaccess']
 sass:
   sass_dir: assets/stylesheets
   style: :compressed
@@ -25,4 +24,3 @@ collections:
     permalink: /portfolio/:title/
   jobs:
     output: false
-
