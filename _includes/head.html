@@ -1,19 +1,16 @@
 <head>
-
   <!--
-
   Are you a beaver? Cuz daaaaaaaam.
 
   Made with love in beautiful Saint Paul, Minnesota.
   © 2008–{{ site.time | date: "%Y" }} Timothy B. Smith.
-
   -->
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %} {% if page.layout == 'post' %}by Tim Smith{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/apple-touch-icon.png" rel="apple-touch-icon">
+  <meta name="keywords" content="tim smith, timothy b smith, designer, frontend developer, ux design, product design">
 
   <!-- Author Info for Google -->
   <link rel="author" href="https://plus.google.com/117161754644004218749">
@@ -23,7 +20,7 @@
 
   <!-- Facebook Article Info -->
   <meta property="og:image" content="/uploads/tim_680x510.jpg">
-  <meta property="og:title" content="{{ page.title }}">
+  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}">
   <meta property="og:site_name" content="Timothy B. Smith">
   <meta property="og:url" content="//ttimsmith.com{{ page.url }}">
   <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
@@ -36,8 +33,6 @@
   <meta name="twitter:site" content="@ttimsmith_com">
   <meta name="twitter:creator" content="@smithtimmytim">
 
-  <link rel="alternate" type="application/rss+xml" title="RSS Feed for ttimsmith.com" href="/feed.xml" />
-
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/stylesheets/global.css">
   {% if page.custom_css %}
@@ -49,7 +44,6 @@
 
   {% if page.title == "On-Air CMS" %}
     <!-- Gumroad JS -->
-    <script type="text/javascript" src="//gumroad.com/js/gumroad.js"> </script>
+    <script type="text/javascript" src="//gumroad.com/js/gumroad.js"></script>
   {% endif %}
-
 </head>
