@@ -18,6 +18,7 @@ body {
 
   color: $text-color;
   line-height: 140%;
+  margin: 0;
 }
 
 // FONTS -------------------------
@@ -41,6 +42,7 @@ h6 {
   @extend %second-sans;
 
   line-height: 130%;
+  margin: 0;
 }
 
 h1,
@@ -50,11 +52,14 @@ h5 {
 }
 
 .page__header {
-  font-size: 2.3rem;
   margin-bottom: 1.5rem;
   width: 100%;
   .subheader {
     margin-top: 0;
+  }
+  h1 {
+    font-size: 2.3rem;
+    font-weight: normal;
   }
 }
 
@@ -64,6 +69,7 @@ p {
   font-size: 1.1rem;
   line-height: 1.7;
   margin-bottom: rem-calc(15px);
+  margin-top: 0;
   &:last-child {
     margin-bottom: 0;
   }
