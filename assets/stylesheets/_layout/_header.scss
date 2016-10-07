@@ -3,9 +3,9 @@
 // =========================================
 
 .site__header {
-  margin: 1rem 0 2.5rem;
-  display: flex;
   align-items: center;
+  display: flex;
+  margin: 1rem 0 2.5rem;
   .home__header & {
     left: 1rem;
     position: absolute;
@@ -34,6 +34,7 @@
     display: flex;
     list-style-type: none;
     margin: 0;
+    padding: 0;
   }
   li {
     font-size: .8rem;
