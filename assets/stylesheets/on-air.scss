@@ -1,72 +1,70 @@
 ---
 ---
+// -------------------------------
+// BITS
+// -------------------------------
+@import '_redbat/mixins';
+@import '_redbat/bits';
+$dark-color: #646C6F;
+$jazz-color: #FC8833;
 
-/*
-BITS --------------------------------------- */
-@import "_redbat/mixins";
-@import "_redbat/bits";
-
-$dark-color: #646c6f;
-$jazz-color: #fc8833;
-
-/*
-BUTTONS ------------------------------------ */
-
-.btn {
-  background: $jazz-color;
-  &:hover, &:focus {
-    background: lighten($jazz-color, 10%);
-  }
-  &:active {
-    background: darken($jazz-color, 5%);
+// -------------------------------
+// BUTTONS
+// -------------------------------
+.button {
+  box-shadow: 0 0 0 1px $jazz-color;
+  color: $jazz-color;
+  display: inline-block;
+  text-decoration: none;
+  transition: color 300ms ease,
+  background-color 300ms ease;
+  &:hover,
+  &:focus {
+    background-color: $jazz-color;
+    color: white;
   }
 }
 
-.button-pill {
+.button--outline {
   border-radius: 40px;
-  padding: 10px 20px;
+  padding: .7rem 1.2rem;
 }
 
-/*
-OBJECTS ------------------------------------ */
-
+// -------------------------------
+// OBJECTS
+// -------------------------------
 .page__section {
   padding: $spacing-xl 0;
-  &.section__heading {
-    padding-bottom: 0;
-  }
 }
 
-.bg-dark {
+.section--dark {
   background: $dark-color;
 }
 
-.bg-jazz {
+.section--jazz {
   background: $jazz-color;
 }
 
-/*
-TYPE --------------------------------------- */
-
-.text-center {
-  text-align: center;
-}
-
+// -------------------------------
+// TYPE
+// -------------------------------
 .page__title {
   color: white;
-  font-size: 4em;
+  font-size: 4rem;
   font-weight: 900;
   line-height: 100%;
 }
 
-h2.subheader {
-  font-size: 1.8em;
+.subheader {
   color: rgba(white, .7);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
 }
 
-/*
-PAGE STYLES -------------------------------- */
-
+// -------------------------------
+// PAGE STYLES
+// -------------------------------
 .main__content {
   .cms-landing & {
     margin-bottom: 0;
@@ -74,6 +72,10 @@ PAGE STYLES -------------------------------- */
 }
 
 .section__heading {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
   text-align: center;
 }
 
@@ -85,6 +87,7 @@ PAGE STYLES -------------------------------- */
 }
 
 .features__row {
+  align-items: center;
   margin-bottom: $spacing-s;
   &:last-child {
     margin-bottom: 0;
@@ -92,9 +95,15 @@ PAGE STYLES -------------------------------- */
 }
 
 .section__quote {
-  blockquote.content__pullquote {
+  .content__pullquote {
     margin: 0;
-    p, p:first-child {
+    width: 100%;
+    @media #{$medium-up} {
+      margin: 0 auto;
+      width: 70%;
+    }
+    p,
+    p:first-child {
       color: white !important;
     }
     small {
@@ -106,7 +115,29 @@ PAGE STYLES -------------------------------- */
   }
 }
 
-.cta {
+.feature__image {
+  flex: 1 1 500px;
+}
+
+.feature__content {
+  flex: 0 1 580px;
+}
+
+.columns {
+  @media #{$medium-up} {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
+.section--cta {
+  text-align: center;
   h4 {
     color: white;
   }
@@ -119,6 +150,6 @@ PAGE STYLES -------------------------------- */
   margin: $spacing-xl 0 0;
   small {
     color: rgba(white, .6);
-    font-size: .85em;
+    font-size: .8rem;
   }
 }

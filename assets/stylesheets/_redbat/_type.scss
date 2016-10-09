@@ -93,11 +93,10 @@ h2 {
 }
 
 h3 {
-  color: lighten($text-color, 35%);
-  font-size: 1.2rem;
+  color: lighten($text-color, 30%);
+  font-size: 1.3rem;
   font-weight: 600;
-  margin: 2.3rem 0 .5rem;
-  text-transform: uppercase;
+  margin: 2.3rem 0 0;
 }
 
 
@@ -288,6 +287,7 @@ blockquote {
   margin: 1.5rem 0;
   padding: 0;
   text-align: center;
+  width: 100%;
   p {
     color: lighten($text-color, 20%);
     font-size: 1.2rem;
