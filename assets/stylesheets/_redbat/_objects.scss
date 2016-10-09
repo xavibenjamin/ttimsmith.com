@@ -21,6 +21,24 @@ OBJECTS
   }
 }
 
+.full-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+  @media #{$medium-up} {
+    width: 95%;
+  }
+  @media #{$large-up} {
+    width: 100%;
+  }
+}
+
+.wrapper--flex {
+  @media #{$medium-up} {
+    display: flex;
+  }
+}
+
 .screen-reader-text {
   left: -9999px;
   position: absolute;
