@@ -10,6 +10,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: 2rem 0;
+  max-width: 1300px;
   padding: 0 1rem;
   @media #{$medium-up} {
     padding: 0 2rem;
@@ -42,34 +43,102 @@
   }
 }
 
+.portfolio__header {
+  // margin-bottom: 1.5rem;
+  margin-top: -1.5rem;
+  padding: 3rem 0;
+  text-align: center;
+}
+
+.portfolio-header__title {
+  color: white;
+  font-size: 3rem;
+  font-weight: normal;
+}
+
+.portfolio-header__lead {
+  color: rgba(white, .7);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.1;
+  margin-top: 0;
+  width: 100%;
+}
+
 .portfolio__hero {
+  margin: 0 auto;
   max-width: 1700px;
   padding: 0 1rem;
 }
-
-.portfolio__sidebar {
-  align-self: flex-start;
-  background: lighten($border-color, 2%);
-  border-radius: 3px;
-  flex: 0 1 320px;
-  padding: 1rem;
-  h3 {
-    color: $text-color;
-    font-size: .9rem;
+.portfolio__meta {
+  // background: $border-color;
+  margin-bottom: 2rem;
+}
+.meta__info {
+  align-items: center;
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  margin-left: 0;
+  padding-left: 0;
+  li {
+    // border-right: 1px dashed darken($border-color, 15%);
+    flex: 0 1 33.333333333%;
+    line-height: 1;
     margin-bottom: 0;
-    text-transform: uppercase;
-  }
-  .sidebar-widget {
-    border-bottom-color: darken($border-color, 10%);
-    p {
-      font-size: .8rem;
+    padding-left: .8rem;
+    padding-right: .8rem;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: 0;
+      padding-right: 0;
     }
   }
-  @media #{$small-only} {
-    margin: 2rem 0;
-  }
+}
+
+.info__title {
+  @extend %second-sans;
+
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: .2rem;
+}
+
+.info__description {
+  font-size: .8rem;
+  line-height: 1.5;
+}
+
+.info__link {
+  align-self: center;
+}
+
+.portfolio__container {
+  margin: 0 auto;
+  width: 100%;
   @media #{$medium-up} {
-    margin-right: 3rem;
+    max-width: 768px;
+  }
+  @media #{$large-up} {
+    max-width: 1000px;
+  }
+  .portfolio__content > h2,
+  .portfolio__content > p,
+  .portfolio__meta {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    @media #{$large-up} {
+      width: 65%;
+    }
+  }
+  .content__pullquote {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
   }
 }
 

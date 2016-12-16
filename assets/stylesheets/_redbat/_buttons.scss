@@ -4,22 +4,23 @@ BUTTONS
 --------------------------------------------------------- */
 
 button[type=submit] {
+  -webkit-appearance: none;
   border: 0;
   outline: 0;
-  -webkit-appearance: none;
 }
 
 .btn {
+  @extend %sans;
+
   background: $link-color;
   border-radius: 3px;
   color: white;
   display: inline-block;
   font-size: .85em;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 10px 15px;
   text-decoration: none;
   transition: .2s ease-in-out;
-  @extend %sans;
   &:hover {
     background: darken($link-color, 10%);
     color: white;
@@ -33,7 +34,6 @@ button[type=submit] {
 .secondary {
   background: $jazz-color;
   color: white !important;
-  // @include transition(.2s ease-in-out);
   &:hover {
     background: darken($jazz-color, 5%);
   }

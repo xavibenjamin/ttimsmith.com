@@ -8,6 +8,15 @@ type: Website & Custom CMS
 excerpt: I designed and built a website and custom content management system for Goodstuff Broadcasting.
 date: 2016-06-11 23:15
 item_url: http://goodstuff.fm/
+subtitle: Goodstuff was a personal project with Chris Enns and Adam Clark. I designed and built a website and custom content management system to publish podcasts.
+portfolio_css: |
+  .portfolio__header {
+    background-color: #e35d5d;
+  }
+
+  .supersmith-icon {
+    fill: #e35d5d;
+  }
 ---
 Goodstuff was a personal project with [Chris Enns](http://www.chrisenns.com/) and [Adam Clark](http://avclark.com/). I designed and built a website and custom content management system to publish podcasts.
 
