@@ -5,39 +5,41 @@ layout: default
   {% include header.html %}
 </div><!-- /.contain -->
 
+
+<header class="portfolio__header">
+  <div class="portfolio__container">
+    <h1 class="portfolio-header__title">{{ page.title }}</h1>
+    <h2 class="portfolio-header__lead">{{ page.subtitle }}</h2>
+  </div>
+</header>
+
+
 <div class="portfolio__hero">
-  <img src="{{ site.url }}/{{ page.hero }}" alt="Hero for {{ page.title }}" />
+  <img src="{% if jekyll.environment == 'production' %}{{ site.url }}{% endif %}{{ page.hero }}" alt="Hero for {{ page.title }}" />
 </div>
 
-<div class="flex-container">
-  <aside class="portfolio__sidebar">
-    <div class="sidebar-widget">
-      <h3>Role</h3>
-      <p>{{ page.role }}</p>
-    </div>
-
-    <div class="sidebar-widget">
-     <h3>Type</h3>
-     <p>{{ page.type }}</p>
-    </div>
-
+<aside class="portfolio__meta">
+  <ul class="meta__info">
+    <li class="info__role">
+      <span class="info__title">Role</span>
+      <span class="info__description">{{ page.role }}</span>
+    </li>
+    <li class="info__type">
+      <span class="info__title">Type</span>
+      <span class="info__description">{{ page.type }}</span>
+    </li>
     {% if page.item_url %}
-      <div class="sidebar-widget">
-        <h3>Live Site</h3>
-        <p><a href="{{ page.item_url }}">{{ page.title }}</a></p>
-      </div>
+      <li class="info__link">
+        <a class="button button--large" href="{{ page.item_url }}">Visit Project</a>
+      </li>
     {% endif %}
-  </aside>
+  </ul>
+</aside>
 
-  <div class="main-column">
-    <header class="post__header">
-      <h1>{{ page.title }}</h1>
-    </header>
-
-    <div class="post__content">
-      {{ content }}
-    </div>
+<div class="portfolio__container">
+  <div class="portfolio__content">
+    {{ content }}
   </div>
-</div><!-- .contain -->
+</div>
 
 {% include footer.html %}

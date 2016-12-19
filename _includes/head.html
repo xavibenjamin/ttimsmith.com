@@ -39,6 +39,12 @@
     <link rel="stylesheet" href="/assets/stylesheets/{{ page.custom_css }}.css">
   {% endif %}
 
+  {% if page.portfolio_css %}
+    <style>
+      {{ page.portfolio_css }}
+    </style>
+  {% endif %}
+
   <!-- Cloud Typography -->
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6973314/6451952/css/fonts.css" />
 

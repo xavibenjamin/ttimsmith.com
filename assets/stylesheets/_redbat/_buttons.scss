@@ -4,22 +4,24 @@ BUTTONS
 --------------------------------------------------------- */
 
 button[type=submit] {
+  -webkit-appearance: none;
   border: 0;
   outline: 0;
-  -webkit-appearance: none;
 }
 
-.btn {
+.btn,
+.button {
+  @extend %sans;
+
   background: $link-color;
   border-radius: 3px;
   color: white;
   display: inline-block;
-  font-size: .85em;
+  font-size: .85rem;
   font-weight: bold;
-  padding: 8px 12px;
+  padding: 10px 15px;
   text-decoration: none;
   transition: .2s ease-in-out;
-  @extend %sans;
   &:hover {
     background: darken($link-color, 10%);
     color: white;
@@ -28,17 +30,20 @@ button[type=submit] {
     display: block;
     text-align: center;
   }
+  &.button--large {
+    padding: .9rem 1.2rem;
+  }
 }
 
 .secondary {
   background: $jazz-color;
   color: white !important;
-  // @include transition(.2s ease-in-out);
   &:hover {
     background: darken($jazz-color, 5%);
   }
 }
 
-.big {
-  font-size: 110%;
+.big,
+.button--big {
+  font-size: 105%;
 }
