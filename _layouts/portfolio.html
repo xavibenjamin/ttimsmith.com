@@ -15,7 +15,7 @@ layout: default
 
 
 <div class="portfolio__hero">
-  <img src="{{ site.url }}/{{ page.hero }}" alt="Hero for {{ page.title }}" />
+  <img src="{% if jekyll.environment == 'production' %}{{ site.url }}{% endif %}{{ page.hero }}" alt="Hero for {{ page.title }}" />
 </div>
 
 <aside class="portfolio__meta">

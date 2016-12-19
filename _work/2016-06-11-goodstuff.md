@@ -20,9 +20,8 @@ portfolio_css: |
     fill: #e35d5d;
   }
 ---
-Goodstuff was a personal project with [Chris Enns](http://www.chrisenns.com/) and [Adam Clark](http://avclark.com/). I designed and built a website and custom content management system to publish podcasts.
 
-Working on Goodstuff was so much fun. It's one of those personal projects that I learned a lot from.
+Back in 2013, Chris Enns, Adam Clark, and I got together to create a podcast network. There were many technical challenges to publishing a network of podcasts. A custom CMS and website were the solution.
 
 ## Why a Custom CMS?
 

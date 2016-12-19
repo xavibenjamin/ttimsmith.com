@@ -47,41 +47,43 @@
   margin-top: -1.5rem;
   padding: 4rem 0 2rem;
   text-align: center;
+  .portfolio__container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    @media #{$large-up} {
+      width: 100%;
+    }
+  }
 }
 
 .portfolio-header__title {
   color: white;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: normal;
+  @media #{$medium-up} {
+    font-size: 3rem;
+  }
 }
 
 .portfolio-header__lead {
   color: rgba(white, .7);
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 300;
   line-height: 1.1;
   margin-top: 0;
   width: 100%;
+  @media #{$medium-up} {
+    font-size: 2rem;
+  }
 }
 
 .portfolio__hero {
   border-bottom: 1px solid #EEE;
   margin: 0 auto;
-  max-height: 900px;
   max-width: 1700px;
   overflow: hidden;
   padding: 2rem 1rem 0;
-  position: relative;;
-
-  &:after {
-    background-image: linear-gradient(transparent, rgba(black, .08));
-    bottom: 0;
-    content: '';
-    height: 10px;
-    left: 0;
-    position: absolute;
-    right: 0;
-  }
 }
 
 .portfolio__meta {
@@ -94,25 +96,35 @@
 }
 
 .meta__info {
-  align-items: center;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   list-style: none;
   margin-bottom: 0;
   margin-left: 0;
   margin-top: 0;
   padding-left: 0;
+  @media #{$large-up} {
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+  }
   li {
     line-height: 1;
-    margin-bottom: 0;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    &:first-child {
-      padding-left: 0;
+    margin-bottom: 1.2rem;
+    @media #{$large-up} {
+      margin-bottom: 0;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        border-right: 0;
+        padding-right: 0;
+      }
     }
     &:last-child {
-      border-right: 0;
-      padding-right: 0;
+      margin-bottom: 0;
     }
   }
 }
@@ -136,7 +148,9 @@
 }
 
 .info__link {
-  align-self: center;
+  @media #{$large-up} {
+    align-self: center;
+  }
 }
 
 .portfolio__content > p:first-child {
