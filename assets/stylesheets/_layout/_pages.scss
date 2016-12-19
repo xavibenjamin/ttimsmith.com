@@ -5,12 +5,11 @@
 // -------------------------------
 // Portfolio
 // -------------------------------
-
 .portfolio__items {
   display: flex;
   flex-wrap: wrap;
   margin: 2rem 0;
-  max-width: 1300px;
+  max-width: 1400px;
   padding: 0 1rem;
   @media #{$medium-up} {
     padding: 0 2rem;
@@ -18,9 +17,13 @@
 }
 
 .portfolio__entry {
+  flex: 0 1 100%;
   margin-bottom: 2.5rem;
   &:nth-child(3n) {
     padding-right: 0;
+  }
+  &:last-child {
+    margin-bottom: 0;
   }
   @media #{$medium-up} {
     flex: 0 1 50%;
@@ -183,6 +186,32 @@
   }
 }
 
+.entry__cta {
+  align-items: center;
+  background-color: lighten($link-color, 42%);
+  border: 1px dashed lighten($link-color, 35%);
+  border-radius: 3px;
+  display: block;
+  height: 100%;
+  justify-content: center;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  @media #{$medium-up} {
+    display: flex;
+  }
+  .cta__title,
+  .cta__subtitle {
+    display: block;
+  }
+  .cta__title {
+    font-size: 1.1rem;
+    font-weight: 600;
+  }
+  .cta__subtitle {
+    font-size: .95rem;
+  }
+}
 // -------------------------------
 // Blog
 // -------------------------------
