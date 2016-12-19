@@ -3,12 +3,12 @@
 // =========================================
 
 .site__footer {
-  background: $dark-color;
-  padding: 1.5rem 1rem;
-  margin-top: 5rem;
+  align-items: center;
+  background-color: $dark-color;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 5rem;
+  padding: 1.5rem 1rem;
   @media #{$medium-up} {
     padding: 1.5rem 2rem;
   }

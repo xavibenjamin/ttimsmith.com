@@ -18,28 +18,28 @@ layout: default
   <img src="{{ site.url }}/{{ page.hero }}" alt="Hero for {{ page.title }}" />
 </div>
 
-<div class="portfolio__container">
-  <div class="portfolio__content">
-    {{ content }}
-  </div>
-</div>
-
 <aside class="portfolio__meta">
   <ul class="meta__info">
-    <li>
+    <li class="info__role">
       <span class="info__title">Role</span>
       <span class="info__description">{{ page.role }}</span>
     </li>
-    <li>
+    <li class="info__type">
       <span class="info__title">Type</span>
       <span class="info__description">{{ page.type }}</span>
     </li>
     {% if page.item_url %}
       <li class="info__link">
-        <a class="btn" href="{{ page.item_url }}">Visit Project</a>
+        <a class="button button--large" href="{{ page.item_url }}">Visit Project</a>
       </li>
     {% endif %}
   </ul>
 </aside>
+
+<div class="portfolio__container">
+  <div class="portfolio__content">
+    {{ content }}
+  </div>
+</div>
 
 {% include footer.html %}

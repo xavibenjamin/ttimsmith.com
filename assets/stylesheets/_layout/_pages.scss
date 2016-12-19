@@ -44,9 +44,8 @@
 }
 
 .portfolio__header {
-  // margin-bottom: 1.5rem;
   margin-top: -1.5rem;
-  padding: 3rem 0;
+  padding: 4rem 0 2rem;
   text-align: center;
 }
 
@@ -66,28 +65,48 @@
 }
 
 .portfolio__hero {
+  border-bottom: 1px solid #EEE;
   margin: 0 auto;
+  max-height: 900px;
   max-width: 1700px;
-  padding: 0 1rem;
+  overflow: hidden;
+  padding: 2rem 1rem 0;
+  position: relative;;
+
+  &:after {
+    background-image: linear-gradient(transparent, rgba(black, .08));
+    bottom: 0;
+    content: '';
+    height: 10px;
+    left: 0;
+    position: absolute;
+    right: 0;
+  }
 }
+
 .portfolio__meta {
-  // background: $border-color;
-  margin-bottom: 2rem;
+  background-color: $border-color;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  @media #{$medium-up} {
+    padding: 1rem 2rem;
+  }
 }
+
 .meta__info {
   align-items: center;
   display: flex;
+  justify-content: space-between;
   list-style: none;
   margin-bottom: 0;
   margin-left: 0;
+  margin-top: 0;
   padding-left: 0;
   li {
-    // border-right: 1px dashed darken($border-color, 15%);
-    flex: 0 1 33.333333333%;
     line-height: 1;
     margin-bottom: 0;
-    padding-left: .8rem;
-    padding-right: .8rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     &:first-child {
       padding-left: 0;
     }
@@ -112,8 +131,17 @@
   line-height: 1.5;
 }
 
+.info__type {
+  flex: 2;
+}
+
 .info__link {
   align-self: center;
+}
+
+.portfolio__content > p:first-child {
+  font-size: 1.2rem;
+  line-height: 1.6;
 }
 
 .portfolio__container {
@@ -126,8 +154,7 @@
     max-width: 1000px;
   }
   .portfolio__content > h2,
-  .portfolio__content > p,
-  .portfolio__meta {
+  .portfolio__content > p {
     margin-left: auto;
     margin-right: auto;
     width: 90%;

@@ -9,14 +9,15 @@ button[type=submit] {
   outline: 0;
 }
 
-.btn {
+.btn,
+.button {
   @extend %sans;
 
   background: $link-color;
   border-radius: 3px;
   color: white;
   display: inline-block;
-  font-size: .85em;
+  font-size: .85rem;
   font-weight: bold;
   padding: 10px 15px;
   text-decoration: none;
@@ -29,6 +30,9 @@ button[type=submit] {
     display: block;
     text-align: center;
   }
+  &.button--large {
+    padding: .9rem 1.2rem;
+  }
 }
 
 .secondary {
@@ -39,6 +43,7 @@ button[type=submit] {
   }
 }
 
-.big {
-  font-size: 110%;
+.big,
+.button--big {
+  font-size: 105%;
 }
