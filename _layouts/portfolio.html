@@ -42,4 +42,16 @@ layout: default
   </div>
 </div>
 
+{% if page.previous %}
+<section class="portfolio__next" style="background-color: #{{ page.previous.color }}">
+  <div class="portfolio__container">
+    <span class="next__title">Next Project</span>
+    <span class="next__project-title">{{ page.previous.title }}</span>
+    <span class="next__project-subtitle">{{ page.previous.subtitle }}</span>
+    <a href="{{ page.previous.url }}" title="Read the {{ page.previous.title }} case study" class="button button--white button--outline">Read the Case Study</a>
+  </div>
+</section>
+{% endif %}
+
+
 {% include footer.html %}

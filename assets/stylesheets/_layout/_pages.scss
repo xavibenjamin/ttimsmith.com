@@ -212,6 +212,39 @@
     font-size: .95rem;
   }
 }
+
+.portfolio__next {
+  margin-bottom: -5rem;
+  margin-top: 4rem;
+  padding: 3.5rem 0;
+  text-align: center;
+}
+
+.next__title {
+  color: rgba(black, .45);
+  display: block;
+}
+
+.next__project-title {
+  color: white;
+  display: block;
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+
+.next__project-subtitle {
+  color: rgba(white, .7);
+  display: block;
+  font-size: .95rem;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  @media #{$medium-up} {
+    max-width: 60%;
+  }
+}
+
 // -------------------------------
 // Blog
 // -------------------------------
