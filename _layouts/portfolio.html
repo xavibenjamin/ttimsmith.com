@@ -6,17 +6,19 @@ layout: default
 </div><!-- /.contain -->
 
 
-<header class="portfolio__header">
+<header class="portfolio__header" {% if page.color %}style="background-color: #{{ page.color }}"{% endif %}>
   <div class="portfolio__container">
     <h1 class="portfolio-header__title">{{ page.title }}</h1>
     <h2 class="portfolio-header__lead">{{ page.subtitle }}</h2>
   </div>
+
+  <div class="portfolio__hero">
+    <img src="{% if jekyll.environment == 'production' %}{{ site.url }}{% endif %}{{ page.hero }}" alt="Hero for {{ page.title }}" />
+  </div>
 </header>
 
 
-<div class="portfolio__hero">
-  <img src="{% if jekyll.environment == 'production' %}{{ site.url }}{% endif %}{{ page.hero }}" alt="Hero for {{ page.title }}" />
-</div>
+
 
 <aside class="portfolio__meta">
   <ul class="meta__info">

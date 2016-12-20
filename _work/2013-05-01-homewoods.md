@@ -9,15 +9,6 @@ excerpt: Homewoods on the Willamette is a beautiful retirement community located
 subtitle: While at Rocket Lift, I worked on a website for Homewoods on the Willamette, a beautiful retirement community just outside of Portland.
 thumbnail: /uploads/2013/04/homewoods-thumb.png
 date: '2013-05-01 13:27:44'
-portfolio_css: |
-  .portfolio__header,
-  .portfolio__hero {
-    background-color: #d8835b;
-  }
-
-  .supersmith-icon {
-    fill: #d8835b;
-  }
 color: d8835b
 ---
 

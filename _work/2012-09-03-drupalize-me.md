@@ -9,15 +9,6 @@ item_url: http://drupalize.me/
 excerpt: Learn Drupal from the experts where you get over 231 hours of Drupal training. You can see these videos from anywhere with our apps for iOS, Android and Roku.
 subtitle: While at Lullabot, I lead a redesign on Drupalize.me, once a product of theirs, which helps people learn Drupal from the experts.
 date: '2012-09-03 13:27:44'
-portfolio_css: |
-  .portfolio__header,
-  .portfolio__hero {
-    background-color: #ed783f;
-  }
-
-  .supersmith-icon {
-    fill: #ed783f;
-  }
 color: ed783f
 ---
 While working at [Lullabot](http://www.lullabot.com/), I was also put on the Drupalize.Me project. Drupalize.Me is a product created by Lullabot in an effort to teach people [Drupal](http://drupal.org/).
