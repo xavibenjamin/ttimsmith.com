@@ -11,14 +11,14 @@ item_url: http://goodstuff.fm/
 subtitle: Goodstuff was a personal project with Chris Enns and Adam Clark. I designed and built a website and custom content management system to publish podcasts.
 portfolio_css: |
   .portfolio__header,
-  .portfolio__hero,
-  .site__footer {
+  .portfolio__hero {
     background-color: #e35d5d;
   }
 
   .supersmith-icon {
     fill: #e35d5d;
   }
+color: e35d5d
 ---
 
 Back in 2013, Chris Enns, Adam Clark, and I got together to create a podcast network. There were many technical challenges to publishing a network of podcasts. A custom CMS and website were the solution.

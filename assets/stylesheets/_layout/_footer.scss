@@ -4,7 +4,7 @@
 
 .site__footer {
   align-items: center;
-  background-color: $dark-color;
+  background-color: #393C40;
   display: flex;
   justify-content: space-between;
   margin-top: 5rem;
@@ -13,7 +13,7 @@
     padding: 1.5rem 2rem;
   }
   small {
-    color: lighten($dark-color, 55%);
+    color: rgba(white, .4);
     display: block;
     font-size: .75rem;
     @media #{$small-only} {
@@ -21,12 +21,12 @@
     }
   }
   .icon {
-    fill: lighten($dark-color, 55%);
+    fill: rgba(white, .5);
     transition: fill 300ms ease;
     width: 24px;
     &:focus,
     &:hover {
-      fill: lighten($dark-color, 45%);
+      fill: white;
     }
   }
 }

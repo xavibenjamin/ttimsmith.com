@@ -13,7 +13,7 @@ button[type=submit] {
 .button {
   @extend %sans;
 
-  background: $link-color;
+  background-color: $link-color;
   border-radius: 3px;
   color: white;
   display: inline-block;
@@ -21,9 +21,9 @@ button[type=submit] {
   font-weight: bold;
   padding: 10px 15px;
   text-decoration: none;
-  transition: .2s ease-in-out;
+  transition: background-color .2s ease-in-out, color .2s ease-in-out;
   &:hover {
-    background: darken($link-color, 10%);
+    background-color: darken($link-color, 10%);
     color: white;
   }
   &.centered-btn {
@@ -32,6 +32,22 @@ button[type=submit] {
   }
   &.button--large {
     padding: .9rem 1.2rem;
+  }
+  &.button--white {
+    background-color: white;
+    &:hover,
+    &:focus {
+      background-color: rgba(white, .9);
+    }
+    &.button--outline {
+      background-color: transparent;
+      box-shadow: 0 0 0 1px white;
+      &:hover,
+      &:focus {
+        background-color: rgba(white, .15);
+        color: white;
+      }
+    }
   }
 }
 
