@@ -329,16 +329,20 @@
 .resume__image {
   margin-bottom: 2rem;
   img {
-    max-height: 400px;
-    max-width: 700px;
+    max-height: 240px;
     object-fit: cover;
+    @media #{$medium-up} {
+      max-height: 550px;
+      max-width: 900px;
+    }
   }
 }
 
 .resume__sidebar {
-  background: lighten($border-color, 2%);
+  background-color: lighten($border-color, 2%);
+  border: 1px solid darken($border-color, 3%);
   flex: 0 1 320px;
-  padding: 1rem;
+  padding: 2rem 1.5rem;
   @media #{$small-only} {
     margin-top: 2rem;
   }

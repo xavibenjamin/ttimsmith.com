@@ -14,11 +14,7 @@
   }
   small {
     color: rgba(white, .4);
-    display: block;
     font-size: .75rem;
-    @media #{$small-only} {
-      margin-bottom: .7rem;
-    }
   }
   .icon {
     fill: rgba(white, .5);
