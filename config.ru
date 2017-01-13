@@ -8,8 +8,6 @@ use Rack::Deflater
 # Redirects for feeds and http
 use Rack::Rewrite do
   r301 %r{.*}, 'https://ttimsmith.com$&', :scheme => 'http'
-
-  r301 '/feed.xml', 'https://feedpress.me/theboldreport'
 end
 
 # Serving Static Files
