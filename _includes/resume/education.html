@@ -1,0 +1,7 @@
+{% if section.heading == 'Education' %}
+{% for school in section.contents %}
+  <h3 class="resume__subheading"><strong>{{ school.school }}</strong></h3>
+  <p class="resume__meta">{{ school.from }}&ndash;{{ school.to }}</p>
+  {{ school.description | markdownify }}
+{% endfor %}
+{% endif %}
