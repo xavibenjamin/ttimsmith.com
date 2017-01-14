@@ -22,8 +22,8 @@ OBJECTS
 }
 
 .full-wrapper {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 1200px;
   width: 90%;
   @media #{$medium-up} {
     width: 95%;
@@ -60,7 +60,8 @@ OBJECTS
   flex: 0 1 650px;
 }
 
-.main-column--left, .side-column--left {
+.main-column--left,
+.side-column--left {
   @media #{$medium-up} {
     margin-right: 3rem;
   }
@@ -72,6 +73,13 @@ OBJECTS
     border-bottom: 1px solid $border-color;
     margin-bottom: 2rem;
     padding-bottom: 2rem;
+  }
+}
+
+.only-print-show {
+  display: none;
+  @media print {
+    display: block;
   }
 }
 

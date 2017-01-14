@@ -1,0 +1,82 @@
+- statement:
+  - text: |
+      My name is Tim Smith, and I’m a frontend designer based in St. Paul, Minnesota. I bridge the gap between designers and back-end developers.
+
+      I started out as a graphic designer back in 2009. Over time, I’ve found myself interested in writing front-end code. My eye for design helps me markup sites and interfaces the way designers intended.
+
+      My ideal role allows me to create sites and interfaces by writing standards-based markup and CSS, foster collaboration between engineering and design teams, and help maintain or create a styleguide for UI components and front-end markup.
+- section:
+  - heading: Experience
+    contents:
+    - title: Design Mentor
+      company: Bloc
+      from: January 2017
+      to: Present
+      description: >
+        Meet with students one to three times a week. Give advice and critique as they progress through curriculum. Write new curriculum to fill gaps.
+    - title: Owner, Frontend Designer
+      company: Anythin’ Goes
+      from: September 2012
+      to: Present
+      description: >
+        Managed the design & development consulting business. Produced an award-nominated podcast focused on design. Wrote and produced video screencasts.
+    - title: UX Designer &amp; Developer
+      company: ACL Services
+      from: April 2015
+      to: November 2016
+      description: >
+        Worked on a team of designers to keep a consistent design language across various products. Help maintain a styleguide. Develop features within products of different technologies like Ruby on Rails, and Angular. Write about the design team’s process and how we solved problems.
+    - title: Frontend Designer
+      company: Rocket Lift
+      from: November 2012
+      to: May 2013
+      description: >
+        Lead design, front-end development, and internal marketing. Provided direction to hired designers. Responsible for the company’s rebrand.
+    - title: Web Designer
+      company: Lullabot
+      from: March 2012
+      to: September 2012
+      description: >
+        Helped Drupalize.me with content infrastructure and a redesign. Created wireframes and mockups for client projects. Wrote blog posts on design to help promote the company.
+    - title: Lead Designer
+      company: Bundly
+      from: April 2011
+      to: October 2011
+      description: >
+        Lead design of the user interface. Crafted personable body copy for the site and automated emails. Directed and advised the strengthening of the brand in different mediums.
+- section:
+  - heading: Education
+    contents:
+    - school: Palomar Community College
+      from: January 2006
+      to: May 2009
+      description: >
+        Majored in Graphic Communications. Received a number of certificates.
+- sidebar:
+  - section:
+    - heading: Skills
+      contents:
+      - description: >
+          Design with a focus on web applications and user experience; front-end development with a focus on standards-based markup and (S)CSS architecture; Git; presentational JavaScript (including jQuery and some CoffeeScript); some experience with Ruby, PHP, Angular, and React.
+  - section:
+    - heading: Side Projects
+      contents:
+      - title: Writer
+        company: The Bold Report
+        company_link: theboldreport.net
+        company_url: https://theboldreport.net
+        description: >
+          My writing place for design, development, technology, geek culture, Apple, and more.
+  - section:
+    - heading: Previous Projects
+      contents:
+      - title: Acquisition Scout
+        company: A List Apart
+        company_link: alistapart.com
+        company_url: http://alistapart.com
+        description: >
+          *A List Apart* explores the design, development, and meaning of web content, with a special focus on web standards and best practices.
+      - title: Host
+        company: The East Wing
+        description: >
+          *The East Wing* is a show about the web and those who create it.

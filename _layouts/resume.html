@@ -2,22 +2,21 @@
 layout: default
 ---
 
-<div class="contain">
-  {% include header.html %}
-  <header class="page__header">
-    <h1>Timothy B. Smith</h1>
-    <h2 class="subheader">{{ page.subhead }}</h2><!-- /.subheader -->
-  </header>
-</div><!-- /.contain -->
+{% include header.html %}
 
-<figure class="resume__image">
+<header class="page__header">
+  <h1>Timothy B. Smith</h1>
+  <h2 class="subheader">{{ page.subhead }}</h2><!-- /.subheader -->
+</header>
+
+<figure class="resume__image print-hide">
   <img
     src="{{ page.image | append: '-small' }}.jpg"
-    srcset="{{ page.image | append: '-medium' }}.jpg 2x, {{ page.image | append: '-large' }}.jpg 3x"
+    srcset="{{ page.image | append: '-large' }}.jpg 500w"
     alt="Tim Smith is a silly person.">
 </figure>
 
-<div class="flex-container">
+<div class="resume__wrapper">
   {{ content }}
 </div><!-- /.contain -->
 
