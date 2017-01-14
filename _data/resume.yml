@@ -8,6 +8,12 @@
 - section:
   - heading: Experience
     contents:
+    - title: Design Mentor
+      company: Bloc
+      from: January 2017
+      to: Present
+      description: >
+        Meet with students one to three times a week. Give advice and critique as they progress through curriculum. Write new curriculum to fill gaps.
     - title: Owner, Frontend Designer
       company: Anythin’ Goes
       from: September 2012
@@ -73,4 +79,4 @@
       - title: Host
         company: The East Wing
         description: >
-          *The East Wing* is a show about the web and those who create i
+          *The East Wing* is a show about the web and those who create it.
