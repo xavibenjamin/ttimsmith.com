@@ -1,0 +1,178 @@
+// -------------------------------
+// RESUME
+// -------------------------------
+
+.resume__image {
+  margin-bottom: 2rem;
+  img {
+    max-height: 240px;
+    object-fit: cover;
+    @media #{$medium-up} {
+      max-height: 550px;
+      max-width: 900px;
+    }
+  }
+}
+
+.resume__wrapper {
+  display: grid;
+  grid-gap: 3rem;
+  max-width: 1120px;
+  width: 90%;
+  @media #{$small-only} {
+    margin: 0 auto;
+  }
+  @media #{$medium-up} {
+    grid-template-columns: repeat(8, 1fr);
+    padding-left: 2rem;
+  }
+}
+
+.resume__main {
+  @media #{$medium-up} {
+    grid-column: 1 / 6;
+  }
+  @supports not (display: grid) {
+    margin-bottom: 2rem;
+    max-width: 650px;
+  }
+}
+
+.resume__sidebar {
+  background-color: lighten($border-color, 3%);
+  border: 1px solid darken($border-color, 3%);
+  padding: 2rem 1.5rem;
+  @media #{$medium-up} {
+    grid-column: 6 / -1;
+  }
+  p {
+    font-size: .9rem;
+  }
+  .resume__heading {
+    border-color: darken($border-color, 5%);
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  > section {
+    margin-bottom: 2.3rem;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.resume__contact-info {
+  list-style: none;
+  padding: 0;
+  li {
+    font-size: .75rem;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.resume__statement {
+  > p:first-child {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+}
+
+.resume__heading {
+  border-bottom: 1px solid $border-color;
+  font-size: 1.2rem;
+  font-weight: normal;
+  margin-bottom: .6rem;
+  padding-bottom: .3rem;
+  text-transform: uppercase;
+  + .resume__subheading,
+  + .job__title {
+    margin-top: .6rem;
+  }
+}
+
+.resume__subheading,
+.job__title {
+  color: $text-color;
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 1.3rem;
+  text-transform: none;
+}
+
+.resume__meta,
+.job__meta {
+  color: lighten($text-color, 20%);
+  font-size: .8rem;
+  line-height: 1.2;
+  margin-bottom: .4rem;
+}
+
+// -------------------------------
+// Resume Printing
+// -------------------------------
+
+@media print {
+  html {
+    font-size: 10pt;
+  }
+
+  @page {
+    margin: .5in;
+  }
+  .site__header,
+  .site__footer,
+  .print-hide,
+  .page__header {
+    display: none;
+  }
+
+  .resume__wrapper {
+    grid-gap: 1in;
+    grid-template-columns: 4fr 3fr;
+    max-width: none;
+    width: 100%;
+  }
+
+  .resume__statement {
+    > p:first-child {
+      color: #000;
+      font-size: .9rem;
+    }
+  }
+
+  .resume__sidebar {
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+  }
+
+  p,
+  .resume__sidebar p {
+    font-size: .75rem;
+    line-height: 1.5;
+    orphans: 3;
+    widows: 4;
+  }
+
+  .resume__heading {
+    font-size: 1rem;
+  }
+
+  .resume__subheading,
+  .job__title {
+    font-size: 1.1rem;
+  }
+
+  .resume__meta,
+  .job__meta {
+    font-size: .7rem;
+  }
+
+  a {
+    color: inherit;
+  }
+}
