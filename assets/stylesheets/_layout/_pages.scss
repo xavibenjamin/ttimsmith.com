@@ -2,6 +2,31 @@
 // PAGE STYLES
 // =========================================
 
+.page__header {
+  margin-bottom: 1.5rem;
+  max-width: 720px;
+  width: 90%;
+  @media #{$small-only} {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media #{$medium-up} {
+    padding-left: 2rem;
+  }
+  .subheader {
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 2.6rem;
+    font-weight: 300;
+  }
+  p {
+    font-size: 1.13rem;
+    line-height: 1.6;
+  }
+}
+
+
 // -------------------------------
 // Portfolio
 // -------------------------------
@@ -248,26 +273,33 @@
 // Blog
 // -------------------------------
 
-.posts {
+.column-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 2rem;
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
   list-style-type: none;
-  margin: 0;
+  margin-left: 0;
+  margin-top: 2rem;
+  padding-left: 0;
   li {
+    display: inline-block;
+    font-size: .77rem;
     line-height: 1.5;
+    margin-bottom: .3rem;
   }
   a {
     text-decoration: none;
   }
-  .post__title {
-    @extend %second-sans;
+}
 
-    font-size: 1.3rem;
-    font-weight: 600;
-    @media #{$medium-up} {
-      font-size: 1.2rem;
-    }
-  }
-  .post__date {
-    margin: 0;
+.column-list--four {
+  @media #{$medium-up} {
+    -webkit-column-count: 4;
+    -moz-column-count: 4;
+    column-count: 4;
   }
 }
 

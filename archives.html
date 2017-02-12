@@ -1,0 +1,23 @@
+---
+layout: page
+title: The Archives
+description: >
+  I started writing here in 2008. Due to corrupted databases, and my failure to properly back up my content, the furthest my archive goes is 2012. My recent writing now lives on [*The Bold Report*](https://theboldreport.net), where I discuss design, development, technology, Star Wars, movies, and much more. I encourage you to visit.
+seo_title: Articles by Tim Smith
+permalink: /archives/
+---
+
+<div class="full-wrapper">
+  <ul class="column-list column-list--four">
+    {% for post in site.posts %}
+    {% assign current_year = post.date | date: '%Y' %}
+    {% if year != current_year %}
+  </ul>
+      <h2 class="divide">{{ post.date | date: '%Y' }}</h2>
+      <ul class="column-list column-list--four">
+    {% endif %}
+        <li><a href="{{ post.url }}">{{ post.title }} <br><span class="post__date">{{ post.date | date: '%m.%d.%Y' }}</span></a></li>
+      {% assign year = post.date | date: '%Y' %}
+    {% endfor %}
+      </ul>
+</div>
