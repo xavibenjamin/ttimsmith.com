@@ -51,25 +51,6 @@ h5 {
   color: $text-color;
 }
 
-.page__header {
-  margin-bottom: 1.5rem;
-  width: 90%;
-  @media #{$small-only} {
-    margin-left: auto;
-    margin-right: auto;
-  }
-  @media #{$medium-up} {
-    padding-left: 2rem;
-  }
-  .subheader {
-    margin-top: 0;
-  }
-  h1 {
-    font-size: 2.3rem;
-    font-weight: normal;
-  }
-}
-
 // TEXT --------------------------
 
 p {
