@@ -1,0 +1,17 @@
+---
+layout: page
+title:  Microblog
+seo_title: Tim Smith’s Microblog
+permalink: /microblog/
+---
+
+<section class="microblog-posts">
+  {% for post in site.microblog reversed %}
+    <div class="microblog-post">
+      {{ post.content }}
+      <footer class="microblog-post__footer">
+        <<small><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></small>
+      </footer>
+    </div>
+  {% endfor %}
+</section>
