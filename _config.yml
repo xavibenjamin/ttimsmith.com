@@ -24,3 +24,15 @@ collections:
     permalink: /portfolio/:title/
   jobs:
     output: false
+  microblog:
+    output: true
+    permalink: /microblog/:year/:month/:slug/
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "microblog"
+    values:
+      layout: "microblog-post"

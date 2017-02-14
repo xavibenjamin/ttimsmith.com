@@ -1,0 +1,46 @@
+// -------------------------------
+// MICROBLOG
+// -------------------------------
+
+.microblog-post {
+  border-bottom: 1px solid $border-color;
+  padding: 1rem 0;
+  &:first-child {
+    padding-top: 0;
+  }
+  &:last-child {
+    border-bottom: 0;
+    padding-bottom: 0;
+  }
+  p {
+    margin: 0;
+  }
+  img {
+    margin: 1rem 0;
+    max-width: 450px;
+  }
+}
+
+.microblog-post--single {
+  margin: 6rem auto 0;
+  max-width: 1000px;
+  text-align: center;
+  p {
+    font-size: 2rem;
+    line-height: 1.4;
+    margin: 0;
+  }
+  img {
+    margin: 1rem auto;
+    max-width: 450px;
+  }
+}
+
+.microblog-post__footer {
+  color: lighten($text-color, 20%);
+  font-size: .9rem;
+  padding-top: .5rem;
+  a {
+    color: inherit;
+  }
+}

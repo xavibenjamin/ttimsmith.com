@@ -61,6 +61,15 @@ h5 {
     font-size: 2.3rem;
     font-weight: normal;
   }
+  .page__description {
+    border-bottom: 1px solid $border-color;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+    }
+  }
 }
 
 // TEXT --------------------------
