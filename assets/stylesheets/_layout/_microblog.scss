@@ -15,15 +15,24 @@
   p {
     margin: 0;
   }
+  img {
+    margin: 1rem 0;
+    max-width: 450px;
+  }
 }
 
 .microblog-post--single {
   margin: 6rem auto 0;
   max-width: 1000px;
+  text-align: center;
   p {
     font-size: 2rem;
     line-height: 1.4;
     margin: 0;
+  }
+  img {
+    margin: 1rem auto;
+    max-width: 450px;
   }
 }
 
