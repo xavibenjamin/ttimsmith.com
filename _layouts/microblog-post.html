@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<div class="microblog-post--single">
+  {{ content }}
+  <footer class="microblog-post__footer">
+    <small><time datetime="{{ page.date | date_to_xmlschema }}"><a href="{{ page.url }}" title="Permalink to Microblog post">{{ page.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></a> by Timothy B. Smith</small>
+  </footer>
+</div>
