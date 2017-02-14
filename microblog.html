@@ -10,7 +10,7 @@ permalink: /microblog/
     <div class="microblog-post">
       {{ post.content }}
       <footer class="microblog-post__footer">
-        <<small><time datetime="{{ post.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></small>
+        <small><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ post.url }}" title="Permalink to Microblog post">{{ post.date | date: "%a, %b %d, %Y at %I:%M%P" }}</time></a></small>
       </footer>
     </div>
   {% endfor %}
