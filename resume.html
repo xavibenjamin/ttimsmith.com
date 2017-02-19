@@ -15,7 +15,7 @@ image: /uploads/2016/12/me-2016
     {% endfor %}
     {% for section in item.section %}
       <section class="resume__{{ section.heading | downcase }}">
-        <h2 class="resume__heading">{{ section.heading }}</h2>
+        <h2 class="resume__section-title">{{ section.heading }}</h2>
         {% include resume/experience.html %}
         {% include resume/education.html %}
       </section>
@@ -24,21 +24,11 @@ image: /uploads/2016/12/me-2016
 </section>
 
 <aside class="resume__sidebar">
-  <figure class="resume__image only-print-show">
-    <img
-      src="{{ page.image | append: '-large' }}.jpg"
-      alt="Tim Smith is a silly person.">
-  </figure>
-  <ul class="resume__contact-info only-print-show">
-    <li>612.267.8758</li>
-    <li>smith@ttimsmith.com</li>
-    <li>ttimsmith.com</li>
-  </ul>
   {% for item in site.data.resume %}
     {% for sidebar in item.sidebar %}
       {% for section in sidebar.section %}
         <section class="sidebar__{{ section.heading | downcase | replace: ' ', '-' }}">
-          <h2 class="resume__heading">{{ section.heading }}</h2>
+          <h2 class="resume__section-title">{{ section.heading }}</h2>
           {% include resume/sidebar.html %}
         </section>
       {% endfor %}

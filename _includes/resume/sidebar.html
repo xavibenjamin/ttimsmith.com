@@ -1,9 +1,9 @@
 {% for project in section.contents %}
   {% if project.title %}
-    <h3 class="resume__subheading"><strong>{{ project.title }}</strong> at {{ project.company }}</h3>
+    <h3 class="entry__title"><strong>{{ project.title }}</strong> at {{ project.company }}</h3>
   {% endif %}
   {% if project.company_link %}
-    <p class="resume__meta"><a href="{{ project.company_url }}">{{ project.company_link }}</a></p>
+    <p class="entry__meta"><a href="{{ project.company_url }}">{{ project.company_link }}</a></p>
   {% endif %}
   {{ project.description | markdownify }}
 {% endfor %}

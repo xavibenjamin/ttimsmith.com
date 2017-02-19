@@ -1,8 +1,8 @@
 {% if section.heading == 'Experience' %}
 {% for job in section.contents %}
-<div class="job">
-  <h3 class="job__title"><strong>{{ job.title }}</strong> at {{ job.company | smartify }}</h3>
-  <p class="job__meta">{{ job.from }}&ndash;{{ job.to }}</p>
+<div class="entry">
+  <h3 class="entry__title"><strong>{{ job.title }}</strong> at {{ job.company | smartify }}</h3>
+  <small class="entry__meta">{{ job.from }}&ndash;{{ job.to }}</small>
   {{ job.description | markdownify }}
 </div>
 {% endfor %}

@@ -7,6 +7,8 @@ url: https://ttimsmith.com
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
 permalink: /:year/:month/:title/
 exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
 sass:

@@ -1,0 +1,19 @@
+// -------------------------------
+// IMAGES
+// -------------------------------
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.resume__image {
+  margin-bottom: 1rem;
+  img {
+    max-height: 240px;
+    object-fit: cover;
+    @media #{$medium-up} {
+      max-height: 400px;
+      width: 720px;
+    }
+  }
+}

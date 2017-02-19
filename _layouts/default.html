@@ -2,11 +2,13 @@
 <html>
   {% include head.html %}
 
-  <body>
+  <body {% if page.css_class or layout.css_class %}class="{{ page.css_class }}{{ layout.css_class }}"{% endif %}>
 
     <main class="main__content" role="main">
       {{ content }}
     </main>
-    
+
+    {% include footer.html %}
+
   </body>
 </html>

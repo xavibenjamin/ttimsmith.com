@@ -1,0 +1,70 @@
+// -------------------------------
+// TYPE
+// -------------------------------
+
+// -------------------------------
+// Base Type
+// -------------------------------
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  @media #{$medium-up} {
+    font-size: 18px;
+  }
+}
+
+body {
+  color: $text-color;
+  font-family: $sans;
+  line-height: 1.4;
+  margin: 0 auto;
+  max-width: 1100px;
+  width: 90%;
+}
+
+// -------------------------------
+// Headings
+// -------------------------------
+
+h1,
+h2, {
+  color: #333;
+}
+
+h2,
+h3,
+h5 {
+  font-weight: 600;
+}
+
+// -------------------------------
+// Text
+// -------------------------------
+
+
+p {
+  font-size: 1rem;
+  &:not(:last-of-type) {
+    margin-bottom: 1rem;
+  }
+}
+
+// -------------------------------
+// Inline Text
+// -------------------------------
+
+strong {
+  font-weight: 600;
+}
+
+// -------------------------------
+// Links
+// -------------------------------
+a {
+  color: $secondary-color;
+  &:hover,
+  &:focus {
+    color: lighten($secondary-color, 10%);
+  }
+}

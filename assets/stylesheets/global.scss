@@ -1,0 +1,48 @@
+---
+---
+/*
+-------------------------------
+GLOBAL
+
+This is the global stylesheet.
+It's a table of contents of all
+the styles.
+------------------------------- */
+
+
+// -------------------------------
+// Base
+// -------------------------------
+// Section for resetting, bringing
+// in our variables, and defaults
+// for type
+// -------------------------------
+@import '_base/reset';
+@import '_base/bits';
+@import '_base/type';
+
+
+// -------------------------------
+// Components
+// -------------------------------
+// This section is about things that
+// we can easily absract.
+// -------------------------------
+@import '_components/buttons';
+@import '_components/forms';
+@import '_components/images';
+
+
+// -------------------------------
+// Layout
+// -------------------------------
+// The layout section is for styles
+// tied to place where they find
+// themselves.
+// -------------------------------
+@import '_layout/header';
+@import '_layout/maincontent';
+@import '_layout/pages';
+@import '_layout/sidebar';
+@import '_layout/footer';
+@import '_layout/resume';
