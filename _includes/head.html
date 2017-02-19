@@ -1,7 +1,5 @@
 <head>
   <!--
-  Are you a beaver? Cuz daaaaaaaam.
-
   Made with love in beautiful Saint Paul, Minnesota.
   © 2008–{{ site.time | date: "%Y" }} Timothy B. Smith.
   -->
@@ -11,45 +9,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/apple-touch-icon.png" rel="apple-touch-icon">
   <meta name="keywords" content="tim smith, timothy b smith, designer, frontend developer, ux design, product design">
-
-  <!-- Author Info for Google -->
-  <link rel="author" href="https://plus.google.com/117161754644004218749">
-  <meta name="author" content="Tim Smith">
-  <link rel="canonical" href="//ttimsmith.com{{ page.url }}">
-  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
-
-  <!-- Facebook Article Info -->
-  <meta property="og:image" content="/uploads/tim_680x510.jpg">
-  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}">
-  <meta property="og:site_name" content="Timothy B. Smith">
-  <meta property="og:url" content="//ttimsmith.com{{ page.url }}">
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
-  {% if page.custom_type %}
-  <meta property="og:type" content="article">
-  {% endif %}
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- Twitter Info -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@ttimsmith_com">
   <meta name="twitter:creator" content="@smithtimmytim">
-
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="/assets/stylesheets/global.css">
-  {% if page.custom_css %}
-    <link rel="stylesheet" href="/assets/stylesheets/{{ page.custom_css }}.css">
-  {% endif %}
-
-  {% if page.portfolio_css %}
-    <style>
-      {{ page.portfolio_css }}
-    </style>
-  {% endif %}
 
   <!-- Cloud Typography -->
   <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6973314/6451952/css/fonts.css" />
 
-  {% if page.title == "On-Air CMS" %}
-    <!-- Gumroad JS -->
-    <script type="text/javascript" src="//gumroad.com/js/gumroad.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/assets/stylesheets/global.css">
+  {% if page.portfolio_css %}
+    <style>
+      {{ page.portfolio_css }}
+    </style>
   {% endif %}
 </head>

@@ -4,28 +4,3 @@ title: Portfolio
 seo_title: Work by Tim Smith
 permalink: /portfolio/
 ---
-<div class="contain">
-  <p class="lead-paragraph">Thanks for visiting my portfolio! I specialize in interface design, and front-end development. Here’s some of my proudest work. If you’d like to look at code I've written, take a look at my <a href="https://github.com/smithtimmytim" title="Homie can code!">GitHub profile</a>.</p>
-</div><!-- /.contain -->
-
-<div class="portfolio__items">
-  {% for work in site.work reversed %}
-    <article class="portfolio__entry">
-      <a href="{{ work.url }}">
-        <figure class="portfolio__thumb">
-          <img src="{{ work.thumbnail }}" alt="{{ work.title }} thumb">
-        </figure>
-      </a>
-      <h2><a href="{{ work.url}}" title="Link to {{ work.title }}">{{ work.title }}</a></h2>
-      <p>{{ work.excerpt }}</p>
-    </article>
-  {% endfor %}
-    <article class="portfolio__entry">
-      <a href="mailto:smith@ttimsmith.com?subject=[ttimsmith.com] Let’s Work Together!" class="entry__cta">
-        <div class="cta__text">
-          <span class="cta__title">Your project!</span>
-          <span class="cta__subtitle">Send me an email &rarr;</span>
-        </div>
-      </a>
-    </article>
-</div><!-- .portfolio__items -->

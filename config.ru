@@ -21,7 +21,7 @@ use Rack::TryStatic,
     [['js'],    { 'Content-Type'  => 'text/javascript' }],
     [['png'],   { 'Content-Type'  => 'image/png' }],
     ['/assets', { 'Cache-Control' => 'public, max-age=31536000', 'Vary' => 'Accept-Encoding' }],
-    ['/uploads/me_web.jpg', { 'Cache-Control' => 'public, max-age=31536000' }],
+    ['/uploads/2016/12/me-2016.jpg', { 'Cache-Control' => 'public, max-age=31536000' }],
     ]
 
 # Serving pretty 404 page
