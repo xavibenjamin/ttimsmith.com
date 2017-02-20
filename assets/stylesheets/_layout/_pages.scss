@@ -4,6 +4,10 @@
 
 .page__header {
   margin-bottom: 1rem;
+  max-width: 640px;
+  .page-header__description {
+    font-size: 1.2rem;
+  }
 }
 
 .page-header__title {

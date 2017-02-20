@@ -1,0 +1,19 @@
+// -------------------------------
+// VIDEOS
+// -------------------------------
+
+.video-container {
+  height: 0;
+  margin-bottom: 1.5rem;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  position: relative;
+}
+
+.video-container iframe {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}

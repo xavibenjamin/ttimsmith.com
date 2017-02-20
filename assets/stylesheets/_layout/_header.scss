@@ -13,6 +13,10 @@
 
 .site__name {
   text-decoration: none;
+  @media #{$small-only} {
+    display: block;
+    margin-bottom: .8rem;
+  }
   @media #{$medium-up} {
     margin-right: 2.5rem;
   }
@@ -32,8 +36,12 @@
 
 .site__navigation {
   display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
   li {
     font-size: .9rem;
+    margin-bottom: 0;
     &:not(:last-of-type) {
       margin-right: .7rem;
     }
