@@ -1,0 +1,13 @@
+.footer {
+  color: lighten($text-color, 20%);
+  font-size: .8rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.footer__social-links {
+  display: inline-flex;
+  li:not(:last-of-type) {
+    margin-right: .5rem;
+  }
+}

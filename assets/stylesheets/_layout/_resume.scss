@@ -5,7 +5,44 @@
   @supports (display: grid) {
     display: grid;
     grid-column-gap: 2rem;
-    grid-template-columns: 3fr 2fr;
+    @media #{$medium-up} {
+      grid-template-columns: 3fr 2fr;
+    }
+  }
+  @supports not (display: grid) {
+    @media #{$medium-up} {
+      display: flex;
+    }
+  }
+}
+
+.resume__main {
+  @supports not (display: grid) {
+    @media #{$medium-up} {
+      padding-right: 2rem;
+      width: 80%;
+    }
+    @media #{$large-up} {
+      width: 55%;
+    }
+  }
+}
+
+.resume__statement {
+  > p:first-child {
+    font-size: 1.4rem;
+  }
+}
+
+.resume__sidebar {
+  @media #{$medium-up} {
+    max-width: 330px;
+  }
+}
+
+.resume-sidebar__skills {
+  .resume__section-title {
+    margin-top: 0;
   }
 }
 
@@ -21,8 +58,9 @@
 
 .entry__title {
   color: #333;
+  font-size: 1rem;
   font-weight: normal;
-  margin-top: 1.2rem;
+  margin-top: 1.4rem;
 }
 
 .entry__meta {

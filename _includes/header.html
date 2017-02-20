@@ -1,0 +1,16 @@
+<header class="header" role="banner">
+  <a href="/" class="site__name">
+    <h1 class="site__title">Timothy B. Smith</h1>
+    <h2 class="site__subtitle">Designer &amp; Frontend Developer</h2>
+  </a>
+
+  <nav class="navigation" role="navigation">
+    <ul class="site__navigation">
+      <li><a href="/" {% if page.url == '/' %}class="current"{% endif %}>Home</a></li>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Archives</a></li>
+      <li><a href="#">Speaking</a></li>
+      <li><a href="/resume/" {% if page.url == '/resume/' %}class="current"{% endif %}>Résumé</a></li>
+    </ul>
+  </nav>
+</header>

@@ -1,0 +1,48 @@
+// -------------------------------
+// HEADER
+// -------------------------------
+
+.header {
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+  @media #{$medium-up} {
+    align-items: flex-end;
+    display: flex;
+  }
+}
+
+.site__name {
+  text-decoration: none;
+  @media #{$medium-up} {
+    margin-right: 2.5rem;
+  }
+}
+
+.site__title {
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.site__subtitle {
+  color: lighten($text-color, 20%);
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.site__navigation {
+  display: flex;
+  li {
+    font-size: .9rem;
+    &:not(:last-of-type) {
+      margin-right: .7rem;
+    }
+  }
+  a {
+    text-decoration: none;
+    &:hover,
+    &:focus,
+    &.current {
+      border-bottom: 2px solid $primary-color;
+    }
+  }
+}

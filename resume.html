@@ -27,7 +27,7 @@ image: /uploads/2016/12/me-2016
   {% for item in site.data.resume %}
     {% for sidebar in item.sidebar %}
       {% for section in sidebar.section %}
-        <section class="sidebar__{{ section.heading | downcase | replace: ' ', '-' }}">
+        <section class="resume-sidebar__{{ section.heading | downcase | replace: ' ', '-' }}">
           <h2 class="resume__section-title">{{ section.heading }}</h2>
           {% include resume/sidebar.html %}
         </section>
