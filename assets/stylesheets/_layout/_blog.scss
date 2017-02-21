@@ -20,11 +20,12 @@ ul.posts {
   -webkit-column-count: 3;
   -moz-column-count: 3;
   column-count: 3;
-  -webkit-column-gap: 2rem;
-  -moz-column-gap: 2rem;
-  column-gap: 2rem;
+  -webkit-column-gap: 5rem;
+  -moz-column-gap: 5rem;
+  column-gap: 5rem;
   list-style-type: none;
   .post {
+    break-inside: avoid-column;
     display: block;
     font-size: .9rem;
     line-height: 1.3;
@@ -33,6 +34,9 @@ ul.posts {
   }
   a {
     text-decoration: none;
+  }
+  .post__date {
+    display: block;
   }
 }
 
