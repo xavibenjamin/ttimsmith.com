@@ -21,11 +21,12 @@ collections:
   work:
     output: true
     permalink: /portfolio/:title/
-  jobs:
-    output: false
   microblog:
     output: true
     permalink: /microblog/:year/:month/:slug/
+  talks:
+    output: true
+    permalink: /speaking/:title/
 
 # Defaults
 defaults:
@@ -35,3 +36,12 @@ defaults:
       type: "microblog"
     values:
       layout: "microblog-post"
+  -
+    scope:
+      path: ""
+      type: "talks"
+    values:
+      layout: "talk"
+
+#Misc
+mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA

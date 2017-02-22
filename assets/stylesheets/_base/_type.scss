@@ -66,7 +66,7 @@ h5 {
 p {
   font-size: 1rem;
   line-height: 1.5;
-  &:not(:last-of-type) {
+  &:not(:last-child) {
     margin-bottom: 1rem;
   }
 }

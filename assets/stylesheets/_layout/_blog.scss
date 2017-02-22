@@ -2,6 +2,10 @@
 // BLOG
 // -------------------------------
 
+// -------------------------------
+// Archives Page
+// -------------------------------
+
 .post__section {
   margin-bottom: 3rem;
 }
@@ -40,34 +44,19 @@ ul.posts {
   }
 }
 
-.post--single {
-  max-width: 640px;
-  img {
-    margin-bottom: 1rem;
-  }
-}
+// -------------------------------
+// Single Post
+// -------------------------------
+// For more single post styles,
+// consult _components/_entries.scss
+// -------------------------------
 
-.post__header {
-  margin-bottom: 1.5rem;
-}
-
-.post-header__title {
-  font-size: 1.5rem;
-  font-weight: 600;
-}
-
-.post-header__title--link {
-  font-size: 1.3rem;
+.entry-header__title--link {
   .arrow {
     color: lighten($text-color, 30%);
     font-size: 1.1rem;
     margin-left: .7rem;
   }
-}
-
-.post__date {
-  color: lighten($text-color, 20%);
-  font-size: .8rem;
 }
 
 .footnotes {

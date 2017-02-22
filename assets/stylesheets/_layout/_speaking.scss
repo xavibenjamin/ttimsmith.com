@@ -1,0 +1,63 @@
+// -------------------------------
+// SPEAKING
+// -------------------------------
+
+.talks {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+.talk {
+  background-color: lighten($text-color, 64%);
+  border-radius: 3px;
+  padding: .7rem;
+  p {
+    font-size: .9rem;
+  }
+  &:not(:last-of-type) {
+    margin-bottom: 0;
+  }
+}
+
+.talk__map {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+.talk__status {
+  border-radius: 3px;
+  display: inline-block;
+  font-size: .8rem;
+  font-weight: 600;
+  margin-bottom: .3rem;
+  padding: .1rem .3rem;
+}
+
+.talk__status--past {
+  background-color: lighten($text-color, 58%);
+}
+
+.talk__status--upcoming {
+  background-color: $primary-color;
+  color: white;
+}
+
+.talk__venue {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  a {
+    text-decoration: none;
+  }
+}
+
+.talk__date {
+  color: lighten($text-color, 15%);
+  display: block;
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}

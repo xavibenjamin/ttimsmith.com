@@ -1,0 +1,31 @@
+---
+layout: default
+title: Speaking
+seo_title: Invite Tim Smith to Speak
+---
+
+<h2>Past &amp; Upcoming Events</h2>
+<ul class="talks">
+  {% for talk in site.talks reversed %}
+  <li class="talk">
+    <span class="talk__map">
+      <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v8/static/{{ talk.coordinates }},12/400x150@2x?access_token={{ site.mapbox_token }}" alt="Location of {{ talk.title }}">
+    </span>
+    {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+    {% capture talktime %}{{ talk.event_date | date: '%s' }}{% endcapture %}
+    {% if talktime < nowunix %}
+      <span class="talk__status talk__status--past">Past Event</span>
+    {% else %}
+      <span class="talk__status talk__status--upcoming">Upcoming Event</span>
+    {% endif %}
+
+    <span class="talk__venue">{% if talktime < nowunix %}<a href="{{ talk.url }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</span>
+    <small class="talk__date">{{ talk.event_date | date: "%a, %b %d, %Y" }}</small>
+    {{ talk.excerpt | markdownify }}
+
+    {% if talktime > nowunix %}
+      <p><a href="{{ talk.event_url }}">Get Tickets</a></p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>
