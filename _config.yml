@@ -21,9 +21,6 @@ collections:
   work:
     output: true
     permalink: /portfolio/:title/
-  microblog:
-    output: true
-    permalink: /microblog/:year/:month/:slug/
   talks:
     output: true
     permalink: /speaking/:title/
@@ -33,9 +30,9 @@ defaults:
   -
     scope:
       path: ""
-      type: "microblog"
+      type: "pages"
     values:
-      layout: "microblog-post"
+      layout: "page"
   -
     scope:
       path: ""

@@ -20,7 +20,7 @@ seo_title: Invite Tim Smith to Speak
     <li>Using Jekyll for Client Websites</li>
   </ul>
 
-  <p>I only attend and speak at events who enforce a <a href="https://alistapart.com/article/tweaking-the-moral-ui">code of conduct</a>. As an independent designer and developer, I’ll need you to cover the costs of my travel and lodging. <strong>I expect to be paid</strong>, but will consider waiving my fee for events who are actively promoting diversity within our industry.</p>
+  <p>I only attend and speak at events who enforce a <a href="https://alistapart.com/article/tweaking-the-moral-ui">code of conduct</a>. As an independent designer and developer, I’ll need you to cover the costs of my travel and lodging. <strong>I expect to be paid</strong>, but will consider waiving my fee for events who are actively promoting diversity within our industry. Here’s <a href="/speaking/press-kit/">my press kit</a> if you need it.</p>
 
   <a href="mailto:smith@ttimsmith.com?subject=Speaking Request" class="button button--primary">Get in touch</a>
 </div>
@@ -44,7 +44,7 @@ seo_title: Invite Tim Smith to Speak
     <small class="talk__date">{{ talk.event_date | date: "%a, %b %d, %Y" }}</small>
     {{ talk.excerpt | markdownify }}
 
-    {% if talktime > nowunix %}
+    {% if talktime > nowunix and talk.event_url %}
       <p><a href="{{ talk.event_url }}">Get Tickets</a></p>
     {% endif %}
   </li>

@@ -4,20 +4,18 @@
 
 .header {
   margin-bottom: 2.5rem;
-  padding-top: 1rem;
-  @media #{$medium-up} {
+  @media #{$large-up} {
     align-items: flex-end;
     display: flex;
   }
 }
 
 .site__name {
+  display: block;
+  margin-bottom: .8rem;
   text-decoration: none;
-  @media #{$small-only} {
-    display: block;
-    margin-bottom: .8rem;
-  }
-  @media #{$medium-up} {
+  @media #{$large-up} {
+    margin-bottom: 0;
     margin-right: 2.5rem;
   }
 }
