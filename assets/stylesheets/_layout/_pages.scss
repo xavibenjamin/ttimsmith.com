@@ -13,11 +13,16 @@
 .page-header__title {
   font-size: 2rem;
   font-weight: 900;
-  line-height: 1.3;
+  line-height: 1;
 }
 
 .page-header__subtitle {
   color: lighten($text-color, 20%);
   font-size: 1.4rem;
   font-weight: normal;
+  margin-top: 0;
+}
+
+.page__content {
+  max-width: 620px;
 }
