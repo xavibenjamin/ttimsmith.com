@@ -3,12 +3,18 @@
 // -------------------------------
 
 .talks {
-  display: grid;
-  grid-gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr);
   list-style: none;
   margin-top: 1rem;
   padding: 0;
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @supports not (display: grid) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .talk {
@@ -18,8 +24,32 @@
   p {
     font-size: .9rem;
   }
-  &:not(:last-of-type) {
-    margin-bottom: 0;
+  @supports (display: grid) {
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+    }
+  }
+  @supports not (display: grid) {
+    @media #{$medium-up} {
+      flex: 1 1 45%;
+      margin-right: 1.5rem;
+    }
+    @media #{$medium-only} {
+      &:nth-child(2n+2) {
+        margin-right: 0;
+      }
+    }
+    @media #{$large-up} {
+      flex: 1 1 30%;
+      max-width: 325px;
+      &:nth-child(3n+3) {
+        margin-right: 0;
+      }
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 1.5rem;
+    }
   }
 }
 
