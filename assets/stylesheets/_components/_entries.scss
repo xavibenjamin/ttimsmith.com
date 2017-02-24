@@ -1,0 +1,34 @@
+// -------------------------------
+// ENTRIES
+// -------------------------------
+
+.entry--single {
+  max-width: 620px;
+  img {
+    margin-bottom: 1rem;
+  }
+}
+
+.entry__header {
+  margin-bottom: 1.5rem;
+}
+
+.entry-header__title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.entry-header__title--link {
+  font-size: 1.3rem;
+}
+
+.entry-header__meta {
+  color: lighten($text-color, 20%);
+  font-size: .8rem;
+}
+
+.speakerdeck-iframe {
+  // necessary because it has some
+  // inline styles I can't remove.
+  margin: 2rem 0 !important;
+}

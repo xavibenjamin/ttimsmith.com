@@ -6,7 +6,7 @@
     display: grid;
     grid-column-gap: 4rem;
     @media #{$medium-up} {
-      grid-template-columns: 3fr 2fr;
+      grid-template-columns: minmax(auto, 620px) minmax(auto, 330px);
     }
   }
   @supports not (display: grid) {
@@ -23,7 +23,15 @@
       width: 80%;
     }
     @media #{$large-up} {
-      width: 55%;
+      width: 65%;
+    }
+  }
+}
+
+@supports not (display: grid) {
+  @media #{$medium-up} {
+    .resume__sidebar {
+      max-width: 330px;
     }
   }
 }
@@ -34,15 +42,11 @@
   }
 }
 
-.resume__sidebar {
-  @media #{$medium-up} {
-    max-width: 330px;
-  }
-}
-
 .resume-sidebar__skills {
   .resume__section-title {
-    margin-top: 0;
+    @media #{$medium-up} {
+      margin-top: 0;
+    }
   }
 }
 
