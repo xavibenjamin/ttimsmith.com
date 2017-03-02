@@ -90,7 +90,7 @@
     }
   }
 
-  @media #{$xxlarge-up} {
+  @media #{$xlarge-up} {
     max-width: 450px;
   }
 
@@ -98,10 +98,10 @@
     @media #{$medium-up} {
       position: absolute;
       top: 4rem;
-      width: 40%;
+      width: 36%;
     }
 
-    @media #{$large-up} {
+    @media #{$xxlarge-up} {
       width: 30%;
     }
   }

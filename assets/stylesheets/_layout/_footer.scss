@@ -5,10 +5,7 @@
   padding-top: 3rem;
   .home & {
     @supports not (display: grid) {
-      @media #{$medium-up} {
-        bottom: 1.5rem;
-        position: absolute;
-      }
+      visibility: hidden;
     }
   }
 }
