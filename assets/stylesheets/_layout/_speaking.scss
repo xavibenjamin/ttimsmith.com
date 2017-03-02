@@ -18,7 +18,7 @@
 }
 
 .talk {
-  background-color: lighten($text-color, 64%);
+  background-color: $creme;
   border-radius: 3px;
   padding: .8rem;
   p {
@@ -68,7 +68,7 @@
 }
 
 .talk__status--past {
-  background-color: lighten($text-color, 58%);
+  background-color: darken($creme, 8%);
 }
 
 .talk__status--upcoming {

@@ -39,8 +39,10 @@
   margin-bottom: 0;
   padding-left: 0;
   li {
-    font-size: .9rem;
+    font-size: .8rem;
+    font-weight: 600;
     margin-bottom: 0;
+    text-transform: uppercase;
     &:not(:last-of-type) {
       margin-right: .7rem;
     }
