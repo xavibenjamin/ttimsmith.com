@@ -12,6 +12,9 @@ html {
   @media #{$medium-up} {
     font-size: 18px;
   }
+  @media #{$xxlarge-up} {
+    font-size: 21px;
+  }
 }
 
 body {

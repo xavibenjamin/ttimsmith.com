@@ -7,4 +7,7 @@ body {
   margin: 0 auto;
   max-width: 1300px;
   width: 90%;
+  @media #{$xxlarge-up} {
+    max-width: 1700px;
+  }
 }
