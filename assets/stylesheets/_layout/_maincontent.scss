@@ -98,10 +98,14 @@
     @media #{$medium-up} {
       position: absolute;
       top: 4rem;
-      width: 36%;
+      width: 45%;
     }
 
-    @media #{$xxlarge-up} {
+    @media #{$large-up} {
+      width: 35%;
+    }
+
+    @media #{$xlarge-up} {
       width: 30%;
     }
   }
