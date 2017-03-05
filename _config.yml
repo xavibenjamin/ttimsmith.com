@@ -22,7 +22,7 @@ collections:
   work:
     output: true
     permalink: /portfolio/:title/
-  talks:
+  events:
     output: true
     permalink: /speaking/:title/
 
@@ -37,9 +37,9 @@ defaults:
   -
     scope:
       path: ""
-      type: "talks"
+      type: "events"
     values:
-      layout: "talk"
+      layout: "event"
 
 #Misc
 mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA

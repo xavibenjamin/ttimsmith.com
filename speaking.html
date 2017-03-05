@@ -29,26 +29,26 @@ seo_title: Invite Tim Smith to Speak
 </div>
 
 <h2>Past &amp; Upcoming Events</h2>
-<ul class="talks">
-  {% for talk in site.talks reversed %}
-  <li class="talk">
-    <span class="talk__map">
-      <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v8/static/{{ talk.coordinates }},12/400x150@2x?access_token={{ site.mapbox_token }}" alt="Location of {{ talk.title }}">
+<ul class="events">
+  {% for event in site.events reversed %}
+  <li class="event">
+    <span class="event__map">
+      <img src="https://api.mapbox.com/styles/v1/mapbox/streets-v8/static/{{ event.coordinates }},12/400x150@2x?access_token={{ site.mapbox_token }}" alt="Location of {{ event.title }}">
     </span>
     {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
-    {% capture talktime %}{{ talk.event_date | date: '%s' }}{% endcapture %}
-    {% if talktime < nowunix %}
-      <span class="talk__status talk__status--past">Past Event</span>
+    {% capture eventtime %}{{ event.event_date | date: '%s' }}{% endcapture %}
+    {% if eventtime < nowunix %}
+      <span class="event__status event__status--past">Past Event</span>
     {% else %}
-      <span class="talk__status talk__status--upcoming">Upcoming Event</span>
+      <span class="event__status event__status--upcoming">Upcoming Event</span>
     {% endif %}
 
-    <span class="talk__venue">{% if talktime < nowunix %}<a href="{{ talk.url }}">{{ talk.title }}</a>{% else %}{{ talk.title }}{% endif %}</span>
-    <small class="talk__date">{{ talk.event_date | date: "%b %Y" }}</small>
-    {{ talk.excerpt | markdownify }}
+    <span class="event__venue">{% if eventtime < nowunix %}<a href="{{ event.url }}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</span>
+    <small class="event__date">{{ event.event_date | date: "%b %Y" }}</small>
+    {{ event.excerpt | markdownify }}
 
-    {% if talktime > nowunix and talk.event_url %}
-      <p><a href="{{ talk.event_url }}">Get Tickets</a></p>
+    {% if eventtime > nowunix and event.event_url %}
+      <p><a href="{{ event.event_url }}">Get Tickets</a></p>
     {% endif %}
   </li>
   {% endfor %}
