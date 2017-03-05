@@ -3,6 +3,11 @@
   font-size: .8rem;
   margin-bottom: 2rem;
   padding-top: 3rem;
+  .home & {
+    @supports not (display: grid) {
+      visibility: hidden;
+    }
+  }
 }
 
 .footer__social-links {
