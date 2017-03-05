@@ -1,16 +1,7 @@
 <header class="header" role="banner">
-  <a href="/" class="site__name">
-    <h1 class="site__title">Timothy B. Smith</h1>
-    <h2 class="site__subtitle">Designer &amp; Frontend Developer</h2>
+  <a href="/" class="site__logo">
+    {% include icons/icon-supersmith.html %}
   </a>
 
-  <nav class="navigation" role="navigation">
-    <ul class="site__navigation">
-      <li><a href="#">Contact</a></li>
-      <li><a href="#">Portfolio</a></li>
-      <li><a href="/archives/" {% if page.url == '/archives/' or page.layout == 'post' %}class="current"{% endif %}>Archives</a></li>
-      <li><a href="/speaking/" {% if page.url == '/speaking/' or page.url == '/speaking/press-kit/' or page.layout == 'talk' %}class="current"{% endif %}>Speaking</a></li>
-      <li><a href="/resume/" {% if page.url == '/resume/' %}class="current"{% endif %}>Résumé</a></li>
-    </ul>
-  </nav>
+  {% include navigation.html %}
 </header>

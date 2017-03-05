@@ -1,0 +1,9 @@
+<nav class="navigation" role="navigation">
+  <ul class="site__navigation">
+    <li><a href="/contact/" {% if page.url == '/contact/' %}class="current"{% endif %}>Contact</a></li>
+    <li><a href="#">Portfolio</a></li>
+    <li><a href="/archives/" {% if page.url == '/archives/' or page.layout == 'post' %}class="current"{% endif %}>Archives</a></li>
+    <li><a href="/speaking/" {% if page.url == '/speaking/' or page.url == '/speaking/press-kit/' or page.layout == 'talk' %}class="current"{% endif %}>Speaking</a></li>
+    <li><a href="/resume/" {% if page.url == '/resume/' %}class="current"{% endif %}>Résumé</a></li>
+  </ul>
+</nav>

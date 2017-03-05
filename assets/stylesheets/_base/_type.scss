@@ -7,8 +7,34 @@
 // -------------------------------
 
 html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  @media #{$medium-up} {
+    font-size: 20px;
+  }
+  @media #{$xxlarge-up} {
+    font-size: 21px;
+  }
+}
+
+.wf-loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wf-active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+  visibility: visible;
+}
+
+.wf-inactive {
+  font-family: system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
   font-size: 16px;
   -webkit-font-smoothing: antialiased;
+  opacity: 1;
+  transition: opacity 500ms ease;
+  visibility: visible;
   @media #{$medium-up} {
     font-size: 18px;
   }

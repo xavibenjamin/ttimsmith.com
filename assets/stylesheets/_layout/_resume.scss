@@ -6,7 +6,7 @@
     display: grid;
     grid-column-gap: 4rem;
     @media #{$medium-up} {
-      grid-template-columns: minmax(auto, 620px) minmax(auto, 330px);
+      grid-template-columns: minmax(auto, 620px) minmax(auto, 360px);
     }
   }
   @supports not (display: grid) {
@@ -31,14 +31,16 @@
 @supports not (display: grid) {
   @media #{$medium-up} {
     .resume__sidebar {
-      max-width: 330px;
+      max-width: 360px;
     }
   }
 }
 
 .resume__statement {
   > p:first-child {
+    color: #333;
     font-size: 1.4rem;
+    line-height: 1.3;
   }
 }
 

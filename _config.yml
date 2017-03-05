@@ -9,6 +9,7 @@ url: https://ttimsmith.com
 markdown: kramdown
 kramdown:
   input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
 permalink: /:year/:month/:title/
 exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
 sass:

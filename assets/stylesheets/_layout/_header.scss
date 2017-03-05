@@ -4,11 +4,18 @@
 
 .header {
   margin-bottom: 2.5rem;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   @media #{$large-up} {
-    align-items: flex-end;
+    align-items: center;
     display: flex;
+    .home & {
+      justify-content: space-between;
+    }
   }
+}
+
+.header--home {
+  padding-top: 1.5rem;
 }
 
 .site__name {
@@ -21,9 +28,33 @@
   }
 }
 
+.supersmith-icon {
+  fill: lighten($text-color, 40%);
+  transition: fill 300ms ease-in-out;
+}
+
+.site__logo {
+  height: 40px;
+  width: 40px;
+  @media #{$small-only} {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+  @media #{$medium-up} {
+    margin-right: 1.2rem;
+  }
+  &:hover,
+  &:focus {
+    .supersmith-icon {
+      fill: $primary-color;
+    }
+  }
+}
+
 .site__title {
   font-size: 1.4rem;
-  font-weight: 900;
+  font-weight: 600;
+  line-height: .9;
 }
 
 .site__subtitle {
@@ -38,16 +69,24 @@
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
+  @media #{$small-only} {
+    justify-content: center;
+    .header--home & {
+      justify-content: flex-start;
+    }
+  }
+
   li {
-    font-size: .8rem;
+    font-size: .85rem;
     font-weight: 600;
     margin-bottom: 0;
-    text-transform: uppercase;
     &:not(:last-of-type) {
       margin-right: .7rem;
     }
   }
   a {
+    display: inline-block;
+    line-height: 1;
     text-decoration: none;
     &:hover,
     &:focus,

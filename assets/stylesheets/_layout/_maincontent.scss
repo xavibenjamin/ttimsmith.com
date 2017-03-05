@@ -30,6 +30,11 @@
     min-height: 300px;
     width: 100%;
   }
+  @media #{$medium-up} {
+    &:hover {
+      background-image: url('/../uploads/home/tim-tongue-4x3.jpg');
+    }
+  }
   @supports (display: grid) {
     grid-row: 1;
     @media #{$medium-up} {
@@ -40,9 +45,6 @@
       grid-column: 2 / 8;
       grid-row: 1 / 10;
     }
-  }
-  &:hover {
-    background-image: url('/../uploads/home/tim-tongue-4x3.jpg');
   }
   @supports not (display: grid) {
     @media #{$medium-up} {
@@ -113,6 +115,7 @@
   h1 {
     font-size: 2.5rem;
     font-weight: 900;
+    line-height: 1;
   }
   h2 {
     color: lighten($text-color, 20%);
