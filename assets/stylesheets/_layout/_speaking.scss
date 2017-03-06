@@ -2,7 +2,7 @@
 // SPEAKING
 // -------------------------------
 
-.talks {
+.events {
   list-style: none;
   margin-top: 1rem;
   padding: 0;
@@ -17,7 +17,7 @@
   }
 }
 
-.talk {
+.event {
   background-color: $creme;
   border-radius: 3px;
   padding: .8rem;
@@ -53,12 +53,12 @@
   }
 }
 
-.talk__map {
+.event__map {
   display: block;
   margin-bottom: .5rem;
 }
 
-.talk__status {
+.event__status {
   border-radius: 3px;
   display: inline-block;
   font-size: .8rem;
@@ -67,16 +67,16 @@
   padding: .1rem .3rem;
 }
 
-.talk__status--past {
+.event__status--past {
   background-color: darken($creme, 8%);
 }
 
-.talk__status--upcoming {
+.event__status--upcoming {
   background-color: $primary-color;
   color: white;
 }
 
-.talk__venue {
+.event__venue {
   display: block;
   font-size: 1.1rem;
   font-weight: 600;
@@ -85,7 +85,7 @@
   }
 }
 
-.talk__date {
+.event__date {
   color: lighten($text-color, 15%);
   display: block;
   font-size: .8rem;
