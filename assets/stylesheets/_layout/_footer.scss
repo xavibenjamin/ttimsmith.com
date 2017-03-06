@@ -1,12 +1,36 @@
 .footer {
-  color: lighten($text-color, 20%);
   font-size: .8rem;
-  margin-bottom: 2rem;
-  padding-top: 3rem;
   .home & {
     @supports not (display: grid) {
       visibility: hidden;
     }
+  }
+}
+
+.footer--primary {
+  background-color: $primary-color;
+  color: lighten($primary-color, 26%);
+  padding: 2.2rem 0;
+  a {
+    color: inherit;
+    &:focus,
+    &:hover {
+      color: white;
+    }
+  }
+}
+
+.footer--home {
+  color: lighten($text-color, 20%);
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+
+.footer__about {
+  margin-bottom: 1.5rem;
+  max-width: 620px;
+  p {
+    font-size: .9rem;
   }
 }
 
@@ -18,7 +42,8 @@
   li {
     font-size: .8rem;
     &:not(:last-of-type) {
-      margin-right: .5rem;
+      margin-bottom: 0;
+      margin-right: .3rem;
     }
   }
 }

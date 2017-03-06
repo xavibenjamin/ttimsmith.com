@@ -45,6 +45,8 @@ html {
 
 body {
   font-family: $sans;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   line-height: 1.4;
 }
 
