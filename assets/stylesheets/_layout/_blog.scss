@@ -24,11 +24,13 @@ ul.posts {
   list-style-type: none;
   @media #{$medium-up} {
     -webkit-column-count: 3;
-    -moz-column-count: 3;
     column-count: 3;
     -webkit-column-gap: 5rem;
-    -moz-column-gap: 5rem;
     column-gap: 5rem;
+  }
+  @media #{$xxlarge-up} {
+    -webkit-column-count: 4;
+    column-count: 4;
   }
   .post {
     break-inside: avoid-column;
@@ -54,6 +56,13 @@ ul.posts {
 // For more single post styles,
 // consult _components/_entries.scss
 // -------------------------------
+
+.single-post .entry__content {
+  > p:first-child {
+    font-size: 1.2rem;
+    line-height: 1.3;
+  }
+}
 
 .entry-header__title--link {
   .arrow {

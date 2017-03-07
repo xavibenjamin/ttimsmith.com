@@ -29,6 +29,9 @@
 .footer__about {
   margin-bottom: 1.5rem;
   max-width: 620px;
+  @media #{$xxlarge-up} {
+    max-width: 660px;
+  }
   p {
     font-size: .9rem;
   }

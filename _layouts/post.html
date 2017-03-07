@@ -3,7 +3,7 @@ layout: default
 css_class: single-post
 ---
 
-<article class="entry--single">
+<article class="entry--single {% if page.custom_type == 'post' %}entry--fun{% endif %}">
   {% if page.custom_type == 'video' %}
     <div class="video-container">
       {{ page.video-embed }}

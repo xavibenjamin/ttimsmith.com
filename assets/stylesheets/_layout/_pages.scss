@@ -5,6 +5,9 @@
 .page__header {
   margin-bottom: 1rem;
   max-width: 640px;
+  @media #{$xxlarge-up} {
+    max-width: 720px;
+  }
   .page-header__description {
     font-size: 1.2rem;
   }
@@ -26,4 +29,7 @@
 
 .page__content {
   max-width: 620px;
+  @media #{$xxlarge-up} {
+    max-width: 660px;
+  }
 }

@@ -8,6 +8,9 @@
     @media #{$medium-up} {
       grid-template-columns: minmax(auto, 620px) minmax(auto, 360px);
     }
+    @media #{$xxlarge-up} {
+      grid-template-columns: minmax(auto, 660px) minmax(auto, 410px);
+    }
   }
   @supports not (display: grid) {
     @media #{$medium-up} {

@@ -5,12 +5,12 @@
 .header {
   margin-bottom: 2.5rem;
   padding-top: 1rem;
-  @media #{$large-up} {
+  @media #{$medium-up} {
     align-items: center;
     display: flex;
-    .home & {
-      justify-content: space-between;
-    }
+  }
+  .home & {
+    justify-content: space-between;
   }
 }
 
@@ -34,10 +34,10 @@
 }
 
 .site__logo {
+  display: block;
   height: 40px;
   width: 40px;
   @media #{$small-only} {
-    display: block;
     margin: 0 auto 1rem;
   }
   @media #{$medium-up} {
