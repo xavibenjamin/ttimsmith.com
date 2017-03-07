@@ -4,8 +4,19 @@
 
 .entry--single {
   max-width: 620px;
+  @media #{$xxlarge-up} {
+    max-width: 660px;
+  }
   img {
     margin-bottom: 1rem;
+  }
+  &.entry--fun {
+    @media #{$large-up} {
+      max-width: 1000px;
+    }
+    @media #{$xxlarge-up} {
+      max-width: none;
+    }
   }
 }
 
@@ -27,6 +38,18 @@
 .entry-header__meta {
   color: lighten($text-color, 20%);
   font-size: .8rem;
+}
+
+.entry__content {
+  .entry--fun & {
+    @media #{$large-up} {
+      column-count: 2;
+      column-gap: 4rem;
+    }
+    @media #{$xxlarge-up} {
+      column-count: 3;
+    }
+  }
 }
 
 .speakerdeck-iframe {
