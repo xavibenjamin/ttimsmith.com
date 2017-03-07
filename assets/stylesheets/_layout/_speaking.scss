@@ -9,7 +9,15 @@
   @supports (display: grid) {
     display: grid;
     grid-gap: 1.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    @media #{$medium-up} {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @media #{$large-up} {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @media #{$xxlarge-up} {
+      grid-template-columns: repeat(4, 1fr);
+    }
   }
   @supports not (display: grid) {
     display: flex;
