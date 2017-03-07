@@ -45,6 +45,8 @@ html {
 
 body {
   font-family: $sans;
+  -webkit-hyphens: auto;
+  hyphens: auto;
   line-height: 1.4;
 }
 
@@ -183,6 +185,8 @@ hr {
 // -------------------------------
 a {
   color: $secondary-color;
+  -webkit-hyphens: none;
+  hyphens: none;
   &:hover,
   &:focus {
     color: lighten($secondary-color, 10%);
