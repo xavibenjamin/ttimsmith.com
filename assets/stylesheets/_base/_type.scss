@@ -185,6 +185,8 @@ hr {
 // -------------------------------
 a {
   color: $secondary-color;
+  -webkit-hyphens: none;
+  hyphens: none;
   &:hover,
   &:focus {
     color: lighten($secondary-color, 10%);
