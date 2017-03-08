@@ -8,9 +8,12 @@
 }
 
 .footer--primary {
-  background-color: $primary-color;
-  color: lighten($primary-color, 26%);
+  background-color: #393C40;
+  color: lighten(#393C40, 40%);
   padding: 2.2rem 0;
+  .copyright {
+    color: lighten(#393C40, 20%);
+  }
   a {
     color: inherit;
     &:focus,

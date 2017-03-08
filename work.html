@@ -1,6 +1,15 @@
 ---
-layout: full-width-page
+layout: default
 title: Portfolio
 seo_title: Work by Tim Smith
 permalink: /portfolio/
 ---
+
+<ul class="portfolio-items">
+  {% for work in site.work reversed %}
+  <li class="portfolio-item" style="background-color: #{{ work.color }}; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url({{ work.hero }});">
+    <span class="work__title"><a href="{{ work.url }}">{{ work.title }}</a></span>
+    <p class="work__description">{{ work.subtitle }}</p>
+  </li>
+  {% endfor %}
+</ul>
