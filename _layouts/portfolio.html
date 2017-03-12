@@ -1,0 +1,42 @@
+---
+layout: default
+css_class: portfolio-single
+---
+
+<header class="portfolio__header" style="background-color: #{{ page.color }}">
+  <h1 class="portfolio-header__title">{{ page.title }}</h1>
+  <h2 class="portfolio-header__lead">{{ page.subtitle }}</h2>
+
+  <div class="portfolio-header__hero">
+    <img src="{{ page.hero }}" alt="{{ page.title }} Hero">
+  </div>
+
+  <ul class="meta__info">
+    <li class="info__role">
+      <span class="info__title">Role</span>
+      <span class="info__description">{{ page.role }}</span>
+    </li>
+    <li class="info__type">
+      <span class="info__title">Type</span>
+      <span class="info__description">{{ page.type }}</span>
+    </li>
+    {% if page.item_url %}
+      <li class="info__link">
+        <a class="button button--outline button--white" href="{{ page.item_url }}">Visit Project</a>
+      </li>
+    {% endif %}
+  </ul>
+</header>
+
+<article class="portfolio__content">
+  {{ page.content }}
+</article>
+
+{% if page.previous %}
+<section class="portfolio__next" style="background-color: #{{ page.previous.color }}">
+  <span class="next__title">Next Project</span>
+  <span class="next__project-title">{{ page.previous.title }}</span>
+  <span class="next__project-subtitle">{{ page.previous.subtitle }}</span>
+  <a href="{{ page.previous.url }}" title="Read the {{ page.previous.title }} case study" class="button button--white button--outline">Read the Case Study</a>
+</section>
+{% endif %}
