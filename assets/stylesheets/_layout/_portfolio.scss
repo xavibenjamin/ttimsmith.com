@@ -198,7 +198,7 @@
     font-size: 1.2rem;
     line-height: 1.4;
   }
-  > *:not(.content__pullquote) {
+  > *:not(.content__pullquote):not(ol):not(ul) {
     padding-left: 5%;
     padding-right: 5%;
     @media #{$medium-up} {
@@ -207,6 +207,19 @@
     }
     @media #{$large-up} {
       padding-left: 20%;
+      padding-right: 20%;
+    }
+  }
+  > ol,
+  > ul {
+    padding-left: 14%;
+    padding-right: 5%;
+    @media #{$medium-up} {
+      padding-left: 15%;
+      padding-right: 10%;
+    }
+    @media #{$large-up} {
+      padding-left: 25%;
       padding-right: 20%;
     }
   }
