@@ -204,20 +204,21 @@
       padding-right: 20%;
     }
   }
-  .content__pullquote {
-    border-left: 0;
-    margin-left: 0;
-    padding-left: 0;
-    text-align: center;
-    p {
-      font-size: 1.13rem;
-      font-style: italic;
-      padding-left: 5%;
-      padding-right: 5%;
-      @media #{$large-up} {
-        padding-left: 0;
-        padding-right: 0;
-      }
+}
+
+.content__pullquote {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+  p {
+    font-size: 1.13rem;
+    font-style: italic;
+    padding-left: 5%;
+    padding-right: 5%;
+    @media #{$large-up} {
+      padding-left: 0;
+      padding-right: 0;
     }
   }
 }
