@@ -1,12 +1,9 @@
 ---
-layout: portfolio
 title: Clinton Foundation
 hero: /uploads/2013/08/clinton-full.png
 role: Front-End Development
 type: Mobile Web App
-excerpt: I helped the Clinton Foundation—together with the help of Crush + Lovely—to create a mobile Safari app for their visit to Africa.
 subtitle: I helped the Clinton Foundation—together with the help of Crush + Lovely—to create a mobile Safari app for their visit to Africa.
-thumbnail: /uploads/2013/08/clinton-thumb.png
 date: '2013-07-05 13:27:44'
 color: 347c9f
 ---

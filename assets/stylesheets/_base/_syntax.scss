@@ -11,7 +11,7 @@ pre {
   border: 1px solid #F0F0F0;
   border-radius: 3px;
   font-family: $monospace-font-stack;
-  line-height: 1.5;
+  line-height: 1.3;
   overflow-x: auto;
   padding: 1rem;
   white-space: pre;
@@ -26,8 +26,8 @@ code {
   border-radius: 3px;
   color: #BF616A;
   font-family: $monospace-font-stack;
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: .9rem;
+  line-height: 1.3;
   padding: 1px 3px;
   white-space: pre;
   pre & {

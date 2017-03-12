@@ -22,3 +22,15 @@
     color: white;
   }
 }
+
+.button--outline {
+  border: 1px solid;
+  &.button--white {
+    border-color: white;
+    color: white;
+    transition: background-color 300ms ease-in-out;
+    &:hover {
+      background-color: rgba(white, .08);
+    }
+  }
+}

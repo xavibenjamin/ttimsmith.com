@@ -40,6 +40,12 @@ defaults:
       type: "events"
     values:
       layout: "event"
+  -
+    scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "portfolio"
 
 #Misc
 mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA
