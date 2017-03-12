@@ -1,13 +1,10 @@
 ---
-layout: portfolio
 title: Homewoods on the Willamette
 hero: /uploads/2013/04/homewoods-full.png
 role: Design, Front-End Development
 type: Website
 item_url: http://homewoods.org
-excerpt: Homewoods on the Willamette is a beautiful retirement community located just outside Portland.
 subtitle: While at Rocket Lift, I worked on a website for Homewoods on the Willamette, a beautiful retirement community just outside of Portland.
-thumbnail: /uploads/2013/04/homewoods-thumb.png
 date: '2013-05-01 13:27:44'
 color: d8835b
 ---

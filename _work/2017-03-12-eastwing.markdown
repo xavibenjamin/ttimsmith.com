@@ -1,0 +1,9 @@
+---
+title: The East Wing
+subtitle: In 2012, I started The East Wing, a podcast about people who build the web. I built a responsive site with WordPress for the show.
+date: 2012-09-11 18:44
+hero: /uploads/2017/03/eastwing-full.png
+color: e49e37
+role: Design, Frontend Development, WordPress Development
+type: Website
+---
