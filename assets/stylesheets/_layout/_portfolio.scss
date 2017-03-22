@@ -4,6 +4,7 @@
 
 .portfolio-items {
   list-style: none;
+  margin-top: 2rem;
   padding: 0;
   @supports (display: grid) {
     display: grid;
@@ -23,17 +24,20 @@
 .portfolio-item {
   background-blend-mode: multiply;
   border-radius: 2px;
+  color: white;
   display: flex;
   filter: grayscale(100%);
   flex-direction: column;
   justify-content: flex-end;
   padding: 1.5rem;
+  text-decoration: none;
   transition: filter 300ms ease-in;
   @supports not (display: grid) {
     flex: 1 0 50%;
   }
   &:hover,
   &:focus {
+    color: white;
     filter: grayscale(0);
   }
   &:not(:last-of-type) {
