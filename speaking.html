@@ -35,6 +35,10 @@ seo_title: Invite Tim Smith to Speak
     {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
     {% capture eventtime %}{{ event.event_date | date: '%s' }}{% endcapture %}
 
+    {% if eventtime > nowunix %}
+      <span class="event__status status--upcoming">Upcoming</span>
+    {% endif %}
+
     <span class="event__venue">{% if eventtime < nowunix %}<a href="{{ event.url }}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</span>
     <span class="event__location">{{ event.location }}</span>
     <small class="event__date">{{ event.event_date | date: "%b %d, %Y" }}</small>

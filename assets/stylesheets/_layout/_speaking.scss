@@ -27,22 +27,7 @@
     }
   }
   @supports not (display: grid) {
-    @media #{$medium-up} {
-      flex: 1 1 45%;
-      margin-right: 1.5rem;
-    }
-    @media #{$medium-only} {
-      &:nth-child(2n+2) {
-        margin-right: 0;
-      }
-    }
-    @media #{$large-up} {
-      flex: 1 1 30%;
-      max-width: 325px;
-      &:nth-child(3n+3) {
-        margin-right: 0;
-      }
-    }
+    flex: 1 1 auto;
 
     &:not(:last-of-type) {
       margin-bottom: 1.5rem;
@@ -50,9 +35,17 @@
   }
 }
 
-.event__map {
-  display: block;
-  margin-bottom: .5rem;
+.event__status {
+  border-radius: 2px;
+  display: inline-block;
+  font-size: .75rem;
+  margin-bottom: .6rem;
+  padding: 0 5px;
+}
+
+.status--upcoming {
+  background-color: salmon;
+  color: white;
 }
 
 .event__venue {
