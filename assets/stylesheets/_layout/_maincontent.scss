@@ -36,6 +36,7 @@
   background-image: url('/../uploads/home/tim-smile-4x3.jpg');
   background-position: 80%;
   background-size: cover;
+
   @media #{$small-only} {
     min-height: 300px;
     width: 100%;
@@ -90,7 +91,6 @@
     max-width: 450px;
     padding: 1.5rem;
     position: relative;
-    transform: rotate(-3deg);
     z-index: 1;
     &:after {
       border: 2px solid salmon;

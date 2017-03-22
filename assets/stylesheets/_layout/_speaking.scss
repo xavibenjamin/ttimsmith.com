@@ -8,16 +8,8 @@
   padding: 0;
   @supports (display: grid) {
     display: grid;
-    grid-gap: 1.5rem;
-    @media #{$medium-up} {
-      grid-template-columns: repeat(2, 1fr);
-    }
-    @media #{$large-up} {
-      grid-template-columns: repeat(3, 1fr);
-    }
-    @media #{$xxlarge-up} {
-      grid-template-columns: repeat(4, 1fr);
-    }
+    grid-gap: 2.5rem 2rem;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   }
   @supports not (display: grid) {
     display: flex;
@@ -26,11 +18,8 @@
 }
 
 .event {
-  background-color: $creme;
-  border-radius: 3px;
-  padding: .8rem;
   p {
-    font-size: .9rem;
+    font-size: .85rem;
   }
   @supports (display: grid) {
     &:not(:last-of-type) {
@@ -38,22 +27,7 @@
     }
   }
   @supports not (display: grid) {
-    @media #{$medium-up} {
-      flex: 1 1 45%;
-      margin-right: 1.5rem;
-    }
-    @media #{$medium-only} {
-      &:nth-child(2n+2) {
-        margin-right: 0;
-      }
-    }
-    @media #{$large-up} {
-      flex: 1 1 30%;
-      max-width: 325px;
-      &:nth-child(3n+3) {
-        margin-right: 0;
-      }
-    }
+    flex: 1 1 auto;
 
     &:not(:last-of-type) {
       margin-bottom: 1.5rem;
@@ -61,40 +35,38 @@
   }
 }
 
-.event__map {
-  display: block;
-  margin-bottom: .5rem;
-}
-
 .event__status {
-  border-radius: 3px;
+  border-radius: 2px;
   display: inline-block;
-  font-size: .8rem;
-  font-weight: 600;
-  margin-bottom: .3rem;
-  padding: .1rem .3rem;
+  font-size: .75rem;
+  margin-bottom: .6rem;
+  padding: 0 5px;
 }
 
-.event__status--past {
-  background-color: darken($creme, 8%);
-}
-
-.event__status--upcoming {
-  background-color: $primary-color;
+.status--upcoming {
+  background-color: salmon;
   color: white;
 }
 
 .event__venue {
   display: block;
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1;
   a {
     text-decoration: none;
   }
 }
 
+.event__location {
+  color: lighten($text-color, 20%);
+  display: block;
+  font-size: .8rem;
+  font-style: italic;
+  margin-bottom: .3rem;
+}
+
 .event__date {
-  color: lighten($text-color, 15%);
+  color: lighten($text-color, 20%);
   display: block;
   font-size: .8rem;
   margin-bottom: .5rem;
