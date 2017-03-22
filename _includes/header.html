@@ -1,16 +1,7 @@
-<header class="site__header">
-  <div class="site__branding">
-    <a href="/">
-      {% include icons/icon-supersmith.html %}
-    </a>
+<header class="header" role="banner">
+  <a href="/" class="site__logo">
+    {% include icons/icon-supersmith.html %}
+  </a>
 
-  </div><!-- .site__branding -->
-
-  <nav class="main__navigation">
-    <ul>
-      <li><a href="/microblog/">Microblog</a></li>
-      <li><a href="/portfolio/">Portfolio</a></li>
-      <li><a href="/resume/">Resumé</a></li>
-    </ul>
-  </nav>
+  {% include navigation.html %}
 </header>

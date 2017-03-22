@@ -1,0 +1,9 @@
+{% for project in section.contents %}
+  {% if project.title %}
+    <h3 class="entry__title"><strong>{{ project.title }}</strong> at {{ project.company }}</h3>
+  {% endif %}
+  {% if project.company_link %}
+    <small class="entry__meta"><a href="{{ project.company_url }}">{{ project.company_link }}</a></small>
+  {% endif %}
+  {{ project.description | markdownify }}
+{% endfor %}

@@ -1,0 +1,15 @@
+---
+title: UX Speakeasy 2012
+event_date: 2012-06-14 00:07
+date: 2012-06-14 11:06
+excerpt: >
+  While living in California, I gave a talk titled *Work to Live, Don't Live to Work* for my local design meetup.
+event_url: https://www.meetup.com/UXSpeakeasy/
+location: San Diego, United States
+---
+
+What is UX Speakeasy?
+
+> UX Speakeasy is a 501c3 nonprofit group for people in the San Diego User Experience (UX) Community, and is the local chapter of the [Interaction Design Association (IxDA)](http://www.ixda.org/). Interaction Designers, UX professionals, HFEs, User Researchers, Content Strategists, IAs, Visual Designers, Usability Professionals, Experience Strategists - you'll find them all here plus a few more. If you are a user experience professional and are interested in connecting and strengthening the local San Diego UX community, welcome to UX Speakeasy.
+
+<script async class="speakerdeck-embed" data-id="4fd9694517e300001f006c21" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>

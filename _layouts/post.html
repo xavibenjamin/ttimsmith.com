@@ -1,19 +1,28 @@
 ---
 layout: default
+css_class: single-post
 ---
-<div class="contain">
-  {% include header.html %}
-</div><!-- /.contain -->
 
-<article class="contain">
-  <header class="post__header">
-    <small class="post__date"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y" }}</time></small>
-    <h1>{{ page.title }}</h1>
+<article class="entry--single {% if page.custom_type == 'post' %}entry--fun{% endif %}">
+  {% if page.custom_type == 'video' %}
+    <div class="video-container">
+      {{ page.video-embed }}
+    </div>
+  {% endif %}
+  <header class="entry__header">
+    {% if page.custom_type == 'post' or page.custom_type == 'video' %}
+      <h1 class="entry-header__title">{{ page.title | smartify }}</h1>
+    {% elsif page.custom_type == 'link' %}
+      <h1 class="entry-header__title--link"><a href="{{ page.custom_url }}">{{ page.title | smartify }}</a><span class="arrow">&rarr;</span></h1>
+    {% endif %}
+    <small class="entry-header__meta"><time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y" }}</time></small>
   </header>
 
-  <div class="post__content">
+  <div class="entry__content">
     {{ content }}
   </div>
-</article><!-- .contain -->
 
-{% include footer.html %}
+  <footer class="post__footer">
+    <p>If you liked this post, and would like to read more like it, most of my writing lives on <a href="https://theboldreport.net"><em>The Bold Report</em></a>. If you have questions or want to discuss this article further, email me at <a href="mailto:smith@ttimsmith.com">smith@ttimsmith.com</a>.</p>
+  </footer>
+</article>

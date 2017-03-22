@@ -1,0 +1,80 @@
+// -------------------------------
+// RESUME
+// -------------------------------
+.resume-container {
+  @supports (display: grid) {
+    display: grid;
+    grid-column-gap: 4rem;
+    @media #{$medium-up} {
+      grid-template-columns: minmax(auto, 620px) minmax(auto, 360px);
+    }
+    @media #{$xxlarge-up} {
+      grid-template-columns: minmax(auto, 660px) minmax(auto, 410px);
+    }
+  }
+  @supports not (display: grid) {
+    @media #{$medium-up} {
+      display: flex;
+    }
+  }
+}
+
+.resume__main {
+  @supports not (display: grid) {
+    @media #{$medium-up} {
+      padding-right: 4rem;
+      width: 80%;
+    }
+    @media #{$large-up} {
+      width: 65%;
+    }
+  }
+}
+
+@supports not (display: grid) {
+  @media #{$medium-up} {
+    .resume__sidebar {
+      max-width: 360px;
+    }
+  }
+}
+
+.resume__statement {
+  > p:first-child {
+    color: #333;
+    font-size: 1.4rem;
+    line-height: 1.3;
+  }
+}
+
+.resume-sidebar__skills {
+  .resume__section-title {
+    @media #{$medium-up} {
+      margin-top: 0;
+    }
+  }
+}
+
+.resume__section-title {
+  border-bottom: 1px solid $border-color;
+  font-size: .95rem;
+  font-weight: 300;
+  margin-bottom: .5rem;
+  margin-top: 2.5rem;
+  padding-bottom: .2rem;
+  text-transform: uppercase;
+}
+
+.entry__title {
+  color: #333;
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 1.4rem;
+}
+
+.entry__meta {
+  color: lighten($text-color, 20%);
+  display: block;
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}

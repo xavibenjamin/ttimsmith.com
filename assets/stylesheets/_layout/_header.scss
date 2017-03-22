@@ -1,61 +1,96 @@
-// =========================================
+// -------------------------------
 // HEADER
-// =========================================
+// -------------------------------
 
-.site__header {
-  align-items: center;
-  display: flex;
-  margin: 1rem 0 2.5rem;
-  .home__header & {
-    left: 1rem;
-    position: absolute;
-    z-index: 2;
-    @media #{$medium-up} {
-      left: 2rem;
-    }
+.header {
+  margin-bottom: 2.5rem;
+  padding-top: 1rem;
+  @media #{$medium-up} {
+    align-items: center;
+    display: flex;
+  }
+  .home & {
+    justify-content: space-between;
   }
 }
 
-.site__branding {
-  margin: 0 .8rem 0 0;
-  max-height: 40px;
-  svg {
-    width: 40px;
+.header--home {
+  padding-top: 1.5rem;
+}
+
+.site__name {
+  display: block;
+  margin-bottom: .8rem;
+  text-decoration: none;
+  @media #{$large-up} {
+    margin-bottom: 0;
+    margin-right: 2.5rem;
   }
 }
 
 .supersmith-icon {
-  fill: $dark-color;
+  fill: lighten($text-color, 40%);
+  transition: fill 300ms ease-in-out;
 }
 
-.main__navigation {
-  ul {
-    align-items: center;
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.site__logo {
+  display: block;
+  height: 40px;
+  width: 40px;
+  @media #{$small-only} {
+    margin: 0 auto 1rem;
   }
+  @media #{$medium-up} {
+    margin-right: 1.2rem;
+  }
+  &:hover,
+  &:focus {
+    .supersmith-icon {
+      fill: $primary-color;
+    }
+  }
+}
+
+.site__title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  line-height: .9;
+}
+
+.site__subtitle {
+  color: lighten($text-color, 20%);
+  font-size: 1rem;
+  font-weight: normal;
+  margin-top: 0;
+}
+
+.site__navigation {
+  display: flex;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  @media #{$small-only} {
+    justify-content: center;
+    .header--home & {
+      justify-content: flex-start;
+    }
+  }
+
   li {
-    font-size: .8rem;
-    margin: 0 .5rem 0 0;
-    padding: 0;
-    &:last-child {
-      padding: 0;
+    font-size: .85rem;
+    margin-bottom: 0;
+    &:not(:last-of-type) {
+      margin-right: .7rem;
     }
   }
   a {
-    color: lighten($text-color, 20%);
+    display: inline-block;
+    line-height: 1;
+    text-decoration: none;
+    &:hover,
     &:focus,
-    &:hover {
-      color: $link-color;
+    &.current {
+      border-bottom: 2px solid $primary-color;
     }
-    // .home__header & {
-    //   color: lighten($dark-color, 55%);
-    //   &:focus,
-    //   &:hover {
-    //     color: white;
-    //   }
-    // }
   }
 }

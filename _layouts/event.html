@@ -1,0 +1,23 @@
+---
+layout: default
+css_class: single-talk
+---
+<article class="entry--single">
+  {% if page.video %}
+    <div class="video-container">
+      {{ page.video }}
+    </div>
+  {% endif %}
+  <header class="entry__header">
+    <h1 class="entry-header__title">{{ page.title }}</h1>
+    <small class="entry-header__meta">Presented on <time datetime="{{ page.event_date | date_to_xmlschema }}">{{ page.event_date | date: "%a, %b %d, %Y" }}</time> in {{ page.location }}{% if page.event_url %} &middot; <a href="{{ page.event_url }}">Event Website</a>{% endif %}</small>
+  </header>
+
+  <div class="entry__content">
+    {{ page.excerpt | markdownify }}
+
+    <hr>
+
+    {{ content }}
+  </div>
+</article>

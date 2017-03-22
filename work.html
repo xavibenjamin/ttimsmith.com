@@ -1,31 +1,33 @@
 ---
-layout: full-width-page
+layout: default
 title: Portfolio
 seo_title: Work by Tim Smith
 permalink: /portfolio/
 ---
-<div class="contain">
-  <p class="lead-paragraph">Thanks for visiting my portfolio! I specialize in interface design, and front-end development. Here’s some of my proudest work. If you’d like to look at code I've written, take a look at my <a href="https://github.com/smithtimmytim" title="Homie can code!">GitHub profile</a>.</p>
-</div><!-- /.contain -->
 
-<div class="portfolio__items">
+<header class="page__header">
+  <h1 class="page-header__title">Portfolio</h1>
+  <p class="page-header__description">I’ve worked as a designer and frontend developer for the past ten years and have had the privilege of working with great companies like: Fuel Brand Network, Zeus Jones, WePay, Carbon Ads, WorkSimple, &amp;Yet, Lullabot, Crush + Lovely, and Lift UX.</p>
+</header>
+
+<div class="page__content">
+  <p>I <em>love</em> the following things:</p>
+
+  <ul>
+    <li>Interface and product design on web applications</li>
+    <li>Frontend development (HTML, Haml, CSS, SCSS, JavaScript, Git)</li>
+    <li>Scaling CSS on large teams</li>
+    <li>Creating and developing design systems</li>
+  </ul>
+
+  <p>If you’re interested in working with me, I’d love to hear from you! <a href="/contact/">Get in touch</a> and we can start ironing out the details of your project.</p>
+</div>
+
+<div class="portfolio-items">
   {% for work in site.work reversed %}
-    <article class="portfolio__entry">
-      <a href="{{ work.url }}">
-        <figure class="portfolio__thumb">
-          <img src="{{ work.thumbnail }}" alt="{{ work.title }} thumb">
-        </figure>
-      </a>
-      <h2><a href="{{ work.url}}" title="Link to {{ work.title }}">{{ work.title }}</a></h2>
-      <p>{{ work.excerpt }}</p>
-    </article>
+  <a class="portfolio-item" style="background-color: #{{ work.color }}; background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.9)), url({{ work.hero }});" href="{{ work.url }}">
+    <span class="work__title">{{ work.title }}</span>
+    <p class="work__description">{{ work.subtitle }}</p>
+  </a>
   {% endfor %}
-    <article class="portfolio__entry">
-      <a href="mailto:smith@ttimsmith.com?subject=[ttimsmith.com] Let’s Work Together!" class="entry__cta">
-        <div class="cta__text">
-          <span class="cta__title">Your project!</span>
-          <span class="cta__subtitle">Send me an email &rarr;</span>
-        </div>
-      </a>
-    </article>
-</div><!-- .portfolio__items -->
+</div>

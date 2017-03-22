@@ -2,37 +2,56 @@
 name: Timothy B. Smith
 title: "Designer who codes, blabber mouth, and coffee addict."
 email: smith@ttimsmith.com
-description: "Tim Smith is a user interface and web designer based in St. Paul, Minnesota."
+description: "Tim Smith lives in beautiful St. Paul, Minnesota designing and building web applications. He made a podcasting CMS that powers Goodstuff FM and Relay FM."
 url: https://ttimsmith.com
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:title
+kramdown:
+  input: GFM
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+permalink: /:year/:month/:title/
 exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
 sass:
   sass_dir: assets/stylesheets
   style: :compressed
 timezone: America/Chicago
-post:
-  extension: md
-
 
 # Collection
 collections:
   work:
     output: true
     permalink: /portfolio/:title/
-  jobs:
-    output: false
-  microblog:
+  events:
     output: true
-    permalink: /microblog/:year/:month/:slug/
+    permalink: /speaking/:title/
 
 # Defaults
 defaults:
   -
     scope:
       path: ""
-      type: "microblog"
+      type: "posts"
     values:
-      layout: "microblog-post"
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "events"
+    values:
+      layout: "event"
+  -
+    scope:
+      path: ""
+      type: "work"
+    values:
+      layout: "portfolio"
+
+#Misc
+mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA

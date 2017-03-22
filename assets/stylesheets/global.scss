@@ -1,117 +1,62 @@
 ---
 ---
 /*
+-------------------------------
+GLOBAL
 
-GLOBAL STYLESHEET
--------------------------------------------
-
-Created and Authored by Tim Smith.
-
-Table of Contents
-
-- Import Compass
-
-- Import Ground Work
-
-- Import Variables
-
--------------------------------------------
-
-This stylesheet should only be a table of contents of styles.
-The meat of the styles will be in the individual partials in
-an effort to keep the CSS as dry as possible.
-
-------------------------------------------- */
-
-/*
-
-RESET THIS MUTHA!
--------------------------------------------
-@reset
-
-Reseting and bringing in the foundations of our CSS.
-
-------------------------------------------- */
-
-@import "_redbat/reset";
-@import "_redbat/mixins";
-
-/*
-
-VARIABLES
--------------------------------------------
-@variables
-
-Setting up variables. Bringing in Colors and Spacing.
-
-------------------------------------------- */
-
-@import "_redbat/bits";
+This is the global stylesheet.
+It's a table of contents of all
+the styles.
+------------------------------- */
 
 
-/*
-
-TOOLS
--------------------------------------------
-@tools
-
-Setting up tools. Bringing in Clearfix.
-
-------------------------------------------- */
-
-@import "_redbat/clearfix";
-@import "_redbat/hide";
-
-
-/*
-
-BASE STYLES
--------------------------------------------
-@base
-
-Setting up base. Bringing in Type, Images, Forms, and Icons.
-
-------------------------------------------- */
-
-@import "_redbat/type";
-@import "_redbat/images";
-@import "_redbat/forms";
-
-/*
-
-COMPONENTS
--------------------------------------------
-@components
-
-Setting up components & reusable objects.
-
-------------------------------------------- */
-
-@import "_redbat/objects";
-@import "_redbat/buttons";
+// -------------------------------
+// Base
+// -------------------------------
+// Section for resetting, bringing
+// in our variables, and defaults
+// for type
+// -------------------------------
+@import '_base/reset';
+@import '_base/bits';
+@import '_base/base';
+@import '_base/type';
 
 
-/*
+// -------------------------------
+// Components
+// -------------------------------
+// This section is about things that
+// we can easily absract.
+// -------------------------------
+@import '_components/buttons';
+@import '_components/forms';
+@import '_components/images';
+@import '_components/videos';
+@import '_components/entries';
 
-LAYOUT
--------------------------------------------
-@layout
 
-Layout Styles.
+// -------------------------------
+// Layout
+// -------------------------------
+// The layout section is for styles
+// tied to place where they find
+// themselves.
+// -------------------------------
+@import '_layout/header';
+@import '_layout/maincontent';
+@import '_layout/pages';
+@import '_layout/sidebar';
+@import '_layout/footer';
+@import '_layout/resume';
+@import '_layout/blog';
+@import '_layout/speaking';
+@import '_layout/portfolio';
 
-- Header
 
-- Footer
-
-- Main Content
-
-- Pages
-
-------------------------------------------- */
-
-@import "_layout/header";
-@import "_layout/maincontent";
-@import "_layout/sidebar";
-@import "_layout/pages";
-@import "_layout/footer";
-@import "_layout/microblog";
+// -------------------------------
+// Syntax
+// -------------------------------
+// Syntax highlighting styles
+// -------------------------------
+@import '_base/syntax';

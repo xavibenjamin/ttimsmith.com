@@ -1,0 +1,28 @@
+// -------------------------------
+// IMAGES
+// -------------------------------
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+.resume__image {
+  margin-bottom: 2rem;
+  img {
+    max-height: 240px;
+    object-fit: cover;
+    @media #{$medium-up} {
+      max-height: 400px;
+      width: 720px;
+    }
+  }
+}
+
+.press-kit__image-group {
+  margin: 1rem 0;
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: .3rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

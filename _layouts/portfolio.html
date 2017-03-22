@@ -1,26 +1,16 @@
 ---
 layout: default
+css_class: portfolio-single
 ---
-<div class="contain">
-  {% include header.html %}
-</div><!-- /.contain -->
 
+<header class="portfolio__header" style="background-color: #{{ page.color }}">
+  <h1 class="portfolio-header__title">{{ page.title }}</h1>
+  <h2 class="portfolio-header__lead">{{ page.subtitle }}</h2>
 
-<header class="portfolio__header" {% if page.color %}style="background-color: #{{ page.color }}"{% endif %}>
-  <div class="portfolio__container">
-    <h1 class="portfolio-header__title">{{ page.title }}</h1>
-    <h2 class="portfolio-header__lead">{{ page.subtitle }}</h2>
+  <div class="portfolio-header__hero">
+    <img src="{{ page.hero }}" alt="{{ page.title }} Hero">
   </div>
 
-  <div class="portfolio__hero">
-    <img src="{% if jekyll.environment == 'production' %}{{ site.url }}{% endif %}{{ page.hero }}" alt="Hero for {{ page.title }}" />
-  </div>
-</header>
-
-
-
-
-<aside class="portfolio__meta">
   <ul class="meta__info">
     <li class="info__role">
       <span class="info__title">Role</span>
@@ -32,28 +22,21 @@ layout: default
     </li>
     {% if page.item_url %}
       <li class="info__link">
-        <a class="button button--large" href="{{ page.item_url }}">Visit Project</a>
+        <a class="button button--outline button--white" href="{{ page.item_url }}">Visit Project</a>
       </li>
     {% endif %}
   </ul>
-</aside>
+</header>
 
-<div class="portfolio__container">
-  <div class="portfolio__content">
-    {{ content }}
-  </div>
-</div>
+<article class="portfolio__content">
+  {{ page.content }}
+</article>
 
 {% if page.previous %}
 <section class="portfolio__next" style="background-color: #{{ page.previous.color }}">
-  <div class="portfolio__container">
-    <span class="next__title">Next Project</span>
-    <span class="next__project-title">{{ page.previous.title }}</span>
-    <span class="next__project-subtitle">{{ page.previous.subtitle }}</span>
-    <a href="{{ page.previous.url }}" title="Read the {{ page.previous.title }} case study" class="button button--white button--outline">Read the Case Study</a>
-  </div>
+  <span class="next__title">Next Project</span>
+  <span class="next__project-title">{{ page.previous.title }}</span>
+  <span class="next__project-subtitle">{{ page.previous.subtitle }}</span>
+  <a href="{{ page.previous.url }}" title="Read the {{ page.previous.title }} case study" class="button button--white button--outline">Read the Case Study</a>
 </section>
 {% endif %}
-
-
-{% include footer.html %}

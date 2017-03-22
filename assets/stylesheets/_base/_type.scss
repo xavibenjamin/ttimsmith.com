@@ -1,0 +1,194 @@
+// -------------------------------
+// TYPE
+// -------------------------------
+
+// -------------------------------
+// Base Type
+// -------------------------------
+
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  @media #{$medium-up} {
+    font-size: 20px;
+  }
+  @media #{$xxlarge-up} {
+    font-size: 23px;
+  }
+}
+
+.wf-loading {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wf-active {
+  opacity: 1;
+  transition: opacity 500ms ease;
+  visibility: visible;
+}
+
+.wf-inactive {
+  font-family: system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  opacity: 1;
+  transition: opacity 500ms ease;
+  visibility: visible;
+  @media #{$medium-up} {
+    font-size: 18px;
+  }
+  @media #{$xxlarge-up} {
+    font-size: 21px;
+  }
+}
+
+body {
+  font-family: $sans;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  line-height: 1.4;
+}
+
+// -------------------------------
+// Headings
+// -------------------------------
+
+h1,
+h2, {
+  color: #333;
+}
+
+h2,
+h3,
+h5 {
+  font-weight: 600;
+  margin-top: 2.3rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  + h3 {
+    margin-top: .3rem;
+  }
+}
+
+h5 {
+  font-size: .9rem;
+  text-transform: uppercase;
+  &:before {
+    background-color: $primary-color;
+    content: '';
+    display: block;
+    height: 2px;
+    margin-bottom: .3rem;
+    width: 100px;
+  }
+}
+
+// -------------------------------
+// Text
+// -------------------------------
+
+p {
+  font-size: 1rem;
+  line-height: 1.5;
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
+}
+
+ol,
+ul {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+ol {
+  list-style: decimal-leading-zero;
+}
+
+ul {
+  list-style-type: disc;
+}
+
+li {
+  font-size: 1rem;
+  &:not(:last-of-type) {
+    margin-bottom: .5rem;
+  }
+}
+
+
+sup {
+  margin-left: .2rem;
+  vertical-align: text-bottom;
+  a {
+    background-color: lighten($secondary-color, 35%);
+    border-radius: 50%;
+    font-size: .7rem;
+    font-weight: 600;
+    padding: 1px 5px;
+    text-decoration: none;
+  }
+}
+
+
+// -------------------------------
+// Blockquote
+// -------------------------------
+
+blockquote {
+  border-left: 4px solid $border-color;
+  color: lighten($text-color, 15%);
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+  padding-left: .8rem;
+  small {
+    display: block;
+    font-size: .8rem;
+    margin-top: .5rem;
+    &:before {
+      content: '—';
+      margin-right: .1rem;
+    }
+  }
+}
+
+// -------------------------------
+// Inline Text
+// -------------------------------
+
+strong {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+// -------------------------------
+// HR
+// -------------------------------
+hr {
+  border: solid $border-color;
+  border-width: 1px 0 0;
+  display: block;
+  height: 0;
+  margin: 1.5rem auto;
+  max-width: 250px;
+  padding: 0;
+}
+
+// -------------------------------
+// Links
+// -------------------------------
+a {
+  color: $secondary-color;
+  -webkit-hyphens: none;
+  hyphens: none;
+  &:hover,
+  &:focus {
+    color: lighten($secondary-color, 10%);
+  }
+}

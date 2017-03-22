@@ -1,22 +1,14 @@
 ---
 layout: default
+css_class: page
 ---
-<div class="contain">
-  {% include header.html %}
-</div><!-- /.contain -->
 
-<div class="contain">
-  <header class="page__header">
-    <h1>{{ page.title }}</h1>
+<header class="page__header">
+  <h1 class="page-header__title">{{ page.title }}</h1>
+  {% if page.subtitle %}<h2 class="page-header__subtitle">{{ page.subtitle }}</h2>{% endif %}
+  {% if page.description %}<p class="page-header__description">{{ page.description }}</p>{% endif %}
+</header>
 
-    {% if page.description %}
-    <div class="page__description">
-      {{ page.description | markdownify }}
-    </div>
-    {% endif %}
-  </header>
-
+<div class="page__content">
   {{ content }}
-</div><!-- .contain -->
-
-{% include footer.html %}
+</div>

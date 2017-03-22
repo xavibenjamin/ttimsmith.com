@@ -1,0 +1,51 @@
+---
+layout: default
+title: Speaking
+seo_title: Invite Tim Smith to Speak
+---
+
+<header class="page__header">
+  <h1 class="page-header__title">Speaking</h1>
+  <h2 class="page-header__subtitle">Invite me to speak at your event</h2>
+</header>
+
+<div class="page__content">
+  <p>I’ve given a few talks over the years and I’m always looking to give more. I love speaking and enjoy sharing what I’m learning or have learned. I’m available to speak or give workshops on the following topics:</p>
+
+  <ul>
+    <li>Learning CSS Grid Layout</li>
+    <li>Scaling CSS on Large Teams</li>
+    <li>Replacing Floats with Flexbox</li>
+    <li>Building and Nurturing Remote Teams</li>
+    <li>Using Jekyll for Client Websites</li>
+  </ul>
+
+  <p>I only attend and speak at events who enforce a <a href="https://alistapart.com/article/tweaking-the-moral-ui">code of conduct</a>.</p>
+  <p>
+    <a href="mailto:smith@ttimsmith.com?subject=Speaking Request" class="button button--primary">Get in touch</a>
+    <a href="/speaking/press-kit/">Press Kit</a>
+  </p>
+
+</div>
+
+<h2>Past &amp; Upcoming Events</h2>
+<ul class="events">
+  {% for event in site.events reversed %}
+  <li class="event">
+    {% capture nowunix %}{{ 'now' | date: '%s' }}{% endcapture %}
+    {% capture eventtime %}{{ event.event_date | date: '%s' }}{% endcapture %}
+
+    {% if eventtime > nowunix %}
+      <span class="event__status status--upcoming">Upcoming</span>
+    {% endif %}
+
+    <span class="event__venue">{% if eventtime < nowunix %}<a href="{{ event.url }}">{{ event.title }}</a>{% else %}{{ event.title }}{% endif %}</span>
+    <span class="event__location">{{ event.location }}</span>
+    <small class="event__date">{{ event.event_date | date: "%b %d, %Y" }}</small>
+
+    {% if eventtime > nowunix and event.event_url %}
+      <p><a href="{{ event.event_url }}">Get Tickets</a></p>
+    {% endif %}
+  </li>
+  {% endfor %}
+</ul>

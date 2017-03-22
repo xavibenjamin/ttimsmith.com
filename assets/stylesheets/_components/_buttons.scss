@@ -1,0 +1,36 @@
+// -------------------------------
+// BUTTONS
+// -------------------------------
+
+.button {
+  border-radius: 3px;
+  display: inline-block;
+  padding: .4rem .7rem;
+  text-decoration: none;
+  + a {
+    margin-left: .5rem;
+  }
+}
+
+.button--primary {
+  background-color: $primary-color;
+  color: white;
+  transition: background-color 300ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: darken($primary-color, 5%);
+    color: white;
+  }
+}
+
+.button--outline {
+  border: 1px solid;
+  &.button--white {
+    border-color: white;
+    color: white;
+    transition: background-color 300ms ease-in-out;
+    &:hover {
+      background-color: rgba(white, .08);
+    }
+  }
+}

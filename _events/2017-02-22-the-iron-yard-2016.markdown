@@ -1,0 +1,14 @@
+---
+title: The Iron Yard 2016
+event_date: 2016-11-02 00:07
+date: 2017-02-22 20:56
+excerpt: >
+  Jim Cummins invited me to give a workshop at his Iron Yard frontend class. I gave a half-day workshop entitled *Making Real Stuff with Flexbox*.
+location: Minneapolis, United States
+---
+
+After showing the students how to use Flexbox to make a website header, I tasked the students with creating a card layout using what they had just learned.
+
+The students really enjoyed it! Jim Cummins, the instructor had this to say:
+
+> Tim's workshop was our students' first introduction to Flexbox. He layered concepts together to create a simple path through a complex landscape. Tim's cool and collected delivery helped to put students at ease. At the end of the workshop they were all in love with Flexbox and able to apply it in their own projects. Thanks Tim!

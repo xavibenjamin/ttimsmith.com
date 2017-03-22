@@ -1,55 +1,39 @@
 <head>
   <!--
-  Are you a beaver? Cuz daaaaaaaam.
-
   Made with love in beautiful Saint Paul, Minnesota.
   © 2008–{{ site.time | date: "%Y" }} Timothy B. Smith.
   -->
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{% if page.layout != 'microblog-post' %}{{ page.title }}{% else %}Tim Smith’s Microblog{% endif %}{% endif %} {% if page.layout == 'post' %}by Tim Smith{% endif %}</title>
+  <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{% if page.layout != 'microblog-post' %}{{ page.title }}{% else %}Tim Smith’s Microblog{% endif %}{% endif %} {% if page.layout == 'post' %}by Tim Smith{% endif %}{% if page.layout == 'portfolio' %} | Work by Tim Smith{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/apple-touch-icon.png" rel="apple-touch-icon">
   <meta name="keywords" content="tim smith, timothy b smith, designer, frontend developer, ux design, product design">
-
-  <!-- Author Info for Google -->
-  <link rel="author" href="https://plus.google.com/117161754644004218749">
-  <meta name="author" content="Tim Smith">
-  <link rel="canonical" href="//ttimsmith.com{{ page.url }}">
-  <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
-
-  <!-- Facebook Article Info -->
-  <meta property="og:image" content="/uploads/tim_680x510.jpg">
-  <meta property="og:title" content="{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}">
-  <meta property="og:site_name" content="Timothy B. Smith">
-  <meta property="og:url" content="//ttimsmith.com{{ page.url }}">
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}">
-  {% if page.custom_type %}
-  <meta property="og:type" content="article">
-  {% endif %}
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- Twitter Info -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@ttimsmith_com">
   <meta name="twitter:creator" content="@smithtimmytim">
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/stylesheets/global.css">
-  {% if page.custom_css %}
-    <link rel="stylesheet" href="/assets/stylesheets/{{ page.custom_css }}.css">
-  {% endif %}
-
   {% if page.portfolio_css %}
     <style>
       {{ page.portfolio_css }}
     </style>
   {% endif %}
 
-  <!-- Cloud Typography -->
-  <link rel="stylesheet" type="text/css" href="//cloud.typography.com/6973314/6451952/css/fonts.css" />
+  <!-- Typography -->
+  <!-- <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6973314/7543372/css/fonts.css" /> -->
 
-  {% if page.title == "On-Air CMS" %}
-    <!-- Gumroad JS -->
-    <script type="text/javascript" src="//gumroad.com/js/gumroad.js"></script>
-  {% endif %}
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'iaj5nie',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script>
 </head>

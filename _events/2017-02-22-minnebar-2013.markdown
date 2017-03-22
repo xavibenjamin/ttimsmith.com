@@ -1,0 +1,18 @@
+---
+title: MinneBar 8
+event_date: 2013-04-06 00:07
+date: 2017-02-22 00:09
+excerpt: >
+  In April of 2013, I was selected to speak at MinneBar Eight at Best Buy HQ. I gave my *Become a Better Designer with Side Projects* talk to encourage others to start a side project.
+video: <iframe width="560" height="315" src="https://www.youtube.com/embed/_VspTuwGtkk" frameborder="0" allowfullscreen></iframe>
+event_url: http://minnestar.org/minnebar/
+location: Minneapolis, United States
+---
+
+MinneBar is:
+
+> First held in 2006, MinneBar is an annual technology and software conference held in Minneapolis.  MinneBar, like other [BarCamps](http://en.wikipedia.org/wiki/BarCamp), is an (un)conference that is participant-ledand has a very loose structure.  BarCamps are held around the world from Swaziland to Seattle; MinneBar is rumored to be the largest in North America.  There are no keynote speakers or formal workshops (although we sometimes host minor web celebrities, and all sessions are led by people from the tech and business community.  The event is free an open to anyone with an interest.
+
+I was so excited to see my session accepted. MinneBar is a really fun event here in the Twin Cities, and a great opportunity to meet others in town.
+
+<script async class="speakerdeck-embed" data-id="7e965ac09fa901307d276651934d0b34" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>

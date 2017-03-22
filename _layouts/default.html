@@ -2,15 +2,19 @@
 <html>
   {% include head.html %}
 
-  <body>
+  <body {% if page.css_class or layout.css_class %}class="{{ page.css_class }}{{ layout.css_class }}"{% endif %}>
 
-    <main class="main__content" role="main">
+    {% if page.url == '/' %}
+      {% include header-home.html %}
+    {% else %}
+      {% include header.html %}
+    {% endif %}
+
+    <main class="main" role="main">
       {{ content }}
     </main>
 
-  {% if page.homepage %}
-    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script type="text/javascript" src="/assets/javascripts/app.js"></script>
-  {% endif %}
+    {% include footer.html %}
+
   </body>
 </html>

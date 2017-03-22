@@ -1,0 +1,7 @@
+{% if section.heading == 'Education' %}
+{% for school in section.contents %}
+  <h3 class="entry__title"><strong>{{ school.school }}</strong></h3>
+  <small class="entry__meta">{{ school.from }}&ndash;{{ school.to }}</small>
+  {{ school.description | markdownify }}
+{% endfor %}
+{% endif %}

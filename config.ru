@@ -8,8 +8,6 @@ use Rack::Deflater
 # Redirects for feeds and http
 use Rack::Rewrite do
   r301 %r{.*}, 'https://ttimsmith.com$&', :scheme => 'http'
-
-  r301 '/feed.xml', 'https://feedpress.me/theboldreport'
 end
 
 # Serving Static Files
@@ -23,7 +21,7 @@ use Rack::TryStatic,
     [['js'],    { 'Content-Type'  => 'text/javascript' }],
     [['png'],   { 'Content-Type'  => 'image/png' }],
     ['/assets', { 'Cache-Control' => 'public, max-age=31536000', 'Vary' => 'Accept-Encoding' }],
-    ['/uploads/me_web.jpg', { 'Cache-Control' => 'public, max-age=31536000' }],
+    ['/uploads/2016/12/me-2016.jpg', { 'Cache-Control' => 'public, max-age=31536000' }],
     ]
 
 # Serving pretty 404 page

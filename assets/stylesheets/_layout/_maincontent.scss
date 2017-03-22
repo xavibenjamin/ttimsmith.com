@@ -1,60 +1,139 @@
-// =========================================
+// -------------------------------
 // MAIN CONTENT
-// =========================================
+// -------------------------------
+.main {
+  margin-bottom: 3rem;
+}
 
-.home__cover {
-  padding: 4rem 1rem 2rem;
-  min-height: 100vh;
-  @media #{$medium-up} {
-    align-items: center;
-    display: flex;
-    padding: 0;
+// -------------------------------
+// Home Page
+// -------------------------------
+
+.home-container {
+  @supports (display: grid) {
+    display: grid;
+    grid-gap: 1rem;
+    @media #{$medium-up} {
+      grid-gap: 2rem;
+      grid-template-columns: repeat(6, 1fr);
+    }
+    @media #{$medium-only} {
+      grid-template-rows: 150px 150px 150px auto;
+    }
+
+    @media #{$large-up} {
+      grid-auto-rows: minmax(100px, auto);
+    }
+  }
+  @supports not (display: grid) {
+    position: relative;
   }
 }
 
-.cover__about {
-  flex: 0 1 620px;
-  @media #{$medium-up} {
-    padding: 4rem 0 0 2rem;
-    order: 1;
-  }
-}
-
-.about__title {
-  font-size: 2.2rem;
-  line-height: 1;
-  font-weight: 600;
-  @media #{$medium-up} {
-    font-size: 2.7rem;
-  }
-}
-
-.about__subtitle {
-  margin-top: 0;
-  margin-bottom: 1.7rem;
-  font-weight: normal;
-  color: lighten($text-color, 30%);
-}
-
-.cover__character {
+.home__picture {
+  background-blend-mode: lighten;
+  background-color: #371D5B;
+  background-image: url('/../uploads/home/tim-smile-4x3.jpg');
+  background-position: 80%;
+  background-size: cover;
 
   @media #{$small-only} {
-    margin-bottom: 1rem;
+    min-height: 300px;
+    width: 100%;
   }
   @media #{$medium-up} {
-    width: 460px;
-    max-height: 100vh;
-    overflow: hidden;
-  }
-  svg {
-    @media #{$small-only} {
-      height: 40vh;
+    &:hover {
+      background-image: url('/../uploads/home/tim-tongue-4x3.jpg');
     }
+  }
+  @supports (display: grid) {
+    grid-row: 1;
     @media #{$medium-up} {
-      width: 100%;
+      grid-column: 3 / span 4;
+      grid-row: 1 / span 2;
+    }
+    @media #{$large-up} {
+      grid-column: 2 / span 5;
+      grid-row-end: span 3;
     }
   }
+  @supports not (display: grid) {
+    @media #{$medium-up} {
+      min-height: 50vh;
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 80%;
+    }
+    @media #{$large-up} {
+      min-height: 65vh;
+    }
+    @media #{$xxlarge-up} {
+      min-height: 75vh;
+    }
+  }
+}
+
+.home__content {
+  @supports (display: grid) {
+    @media #{$medium-up} {
+      grid-column: 1 / span 4;
+      grid-row: 2 / span 3;
+    }
+    @media #{$large-up} {
+      grid-column-end: span 2;
+      grid-row: 2;
+    }
+  }
+
   @media #{$medium-up} {
-    order: 2;
+    background-color: $creme;
+    max-width: 450px;
+    padding: 1.5rem;
+    position: relative;
+    z-index: 1;
+    &:after {
+      border: 2px solid salmon;
+      bottom: -15px;
+      content: '';
+      left: -15px;
+      pointer-events: none;
+      position: absolute;
+      right: -15px;
+      top: -15px;
+    }
+  }
+
+  @supports not (display: grid) {
+    @media #{$medium-up} {
+      position: absolute;
+      top: 4rem;
+      width: 45%;
+    }
+
+    @media #{$large-up} {
+      width: 35%;
+    }
+
+    @media #{$xlarge-up} {
+      width: 30%;
+    }
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    line-height: 1;
+  }
+  h2 {
+    color: lighten($text-color, 20%);
+    font-size: 1.3rem;
+    font-weight: 300;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    margin-top: 0;
+  }
+  p {
+    font-size: .95rem;
   }
 }

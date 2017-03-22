@@ -1,0 +1,19 @@
+// -------------------------------
+// BASE
+// -------------------------------
+
+body {
+  color: $text-color;
+}
+
+.main,
+.header,
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1300px;
+  width: 90%;
+  @media #{$xxlarge-up} {
+    max-width: 1700px;
+  }
+}

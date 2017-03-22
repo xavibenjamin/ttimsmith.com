@@ -1,51 +1,35 @@
 ---
 layout: resume
-title: "Resumé"
+title: "Résumé"
 seo_title: Tim Smith’s Work History
 permalink: /resume/
-subhead: "Frontend Designer"
-image: /uploads/2016/12/me-2016
 ---
-<section class="main-column order--two">
-  <p class="resume__statement">My name is Tim Smith, and I’m a frontend designer based in St. Paul, Minnesota. I bridge the gap between designers and back-end developers.</p>
-
-  <p>I started out as a graphic designer back in 2009. Over time, I’ve found myself interested in writing front-end code. My eye for design helps me markup sites and interfaces the way designers intended.</p>
-
-  <p>My ideal role allows me to create sites and interfaces by writing standards-based markup and CSS, foster collaboration between engineering and design teams, and help maintain or create a styleguide for UI components and front-end markup.</p>
-
-  <h2 class="resume__heading">Experience</h2>
-
-  {% for job in site.jobs reversed %}
-    <div class="job">
-      <h3 class="job__title"><strong>{{ job.title }}</strong> at {{ job.company | smartify }}</h3>
-      <p class="job__meta">{{ job.start_date }}&ndash;{{ job.end_date }}</p>
-      {{ job.content }}
-    </div><!-- /.job -->
+<section class="resume__main">
+  {% for item in site.data.resume %}
+    {% for statement in item.statement %}
+      <section class="resume__statement">
+        {{ statement.text | markdownify }}
+      </section>
+    {% endfor %}
+    {% for section in item.section %}
+      <section class="resume__{{ section.heading | downcase }}">
+        <h2 class="resume__section-title">{{ section.heading }}</h2>
+        {% include resume/experience.html %}
+        {% include resume/education.html %}
+      </section>
+    {% endfor %}
   {% endfor %}
+</section>
 
-  <h2 class="resume__heading">Education</h2>
-  <h3 class="resume__subheading"><strong>Palomar Community College</strong></h3>
-  <p class="resume__meta">January 2006&ndash;May 2009</p>
-  <p>Majored in Graphic Communications. Received a number of certificates.</p>
-</section><!-- /.main-column -->
-
-<aside class="resume__sidebar order--one">
-  <h2 class="resume__heading">Skills</h2>
-  <p>Design with a focus on web applications and user experience; front-end development with a focus on standards-based markup and (S)CSS architecture; Git; presentational JavaScript (including jQuery and some CoffeeScript); some experience with Ruby, PHP, Angular, and React.</p>
-
-  <h2 class="resume__heading">Side Projects</h2>
-
-  <h3 class="resume__subheading"><strong>Writer</strong> of The Bold Report</h3>
-  <p class="resume__meta"><a href="http://theboldreport.net/">theboldreport.net</a></p>
-  <p>My writing place for design, development, technology, geek culture, Apple, and more.</p>
-
-
-  <h2 class="resume__heading">Previous Projects</h2>
-  <h3 class="resume__subheading"><strong>Acquisition Scout</strong> at A List Apart</h3>
-  <p class="resume__meta"><a href="http://alistapart.com">alistapart.com</a></p>
-  <p><em>A List Apart</em> explores the design, development, and meaning of web content, with a special focus on web standards and best practices.</p>
-
-  <h3 class="resume__subheading"><strong>Host</strong> of The East Wing</h3>
-  <p class="resume__meta"><a href="http://goodstuff.fm/theeastwing">goodstuff.fm/theeastwing</a></p>
-  <p>A weekly talk show featuring the best of the internet.</p>
-</aside><!-- /.side-column -->
+<aside class="resume__sidebar">
+  {% for item in site.data.resume %}
+    {% for sidebar in item.sidebar %}
+      {% for section in sidebar.section %}
+        <section class="resume-sidebar__{{ section.heading | downcase | replace: ' ', '-' }}">
+          <h2 class="resume__section-title">{{ section.heading }}</h2>
+          {% include resume/sidebar.html %}
+        </section>
+      {% endfor %}
+    {% endfor %}
+  {% endfor %}
+</aside>
