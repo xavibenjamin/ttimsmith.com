@@ -187,6 +187,7 @@ a {
   color: $secondary-color;
   -webkit-hyphens: none;
   hyphens: none;
+  text-decoration-skip: ink;
   &:hover,
   &:focus {
     color: lighten($secondary-color, 10%);
