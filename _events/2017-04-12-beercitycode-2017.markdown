@@ -1,0 +1,13 @@
+---
+title: BeerCity Code
+event_date: 2017-06-09 08:00
+date: 2017-04-12 11:24
+excerpt: >
+  I was invited to BeerCityCode to give my talk *Let's Learn CSS Grid*.
+event_url: http://beercitycode.com/
+location: Grand Rapids, United States
+---
+
+BeerCity Code is:
+
+> BeerCity Code is an annual conference for software developers held in Grands Rapids, MI, also known as [Beer City, USA](https://www.experiencegr.com/things-to-do/beer-city/). Software creators of all types are welcome, even those who don't care for beer.
