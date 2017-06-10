@@ -11,3 +11,11 @@ location: Grand Rapids, United States
 BeerCity Code is:
 
 > BeerCity Code is an annual conference for software developers held in Grands Rapids, MI, also known as [Beer City, USA](https://www.experiencegr.com/things-to-do/beer-city/). Software creators of all types are welcome, even those who don't care for beer.
+
+## Resources
+
+- [Rachel Andrew's Grid by Example](http://gridbyexample.com/)
+- [Jen Simmons' Labs](http://labs.jensimmons.com/)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
+<script async class="speakerdeck-embed" data-id="464290ef2c6341a19ba11def0fad710a" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
