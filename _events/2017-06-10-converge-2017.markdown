@@ -19,3 +19,5 @@ ConvergeSE is:
 - [Rachel Andrew's Grid by Example](http://gridbyexample.com/)
 - [Jen Simmons' Labs](http://labs.jensimmons.com/)
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
+<script async class="speakerdeck-embed" data-id="fd4e2365b7df4167bfb6c43da0239893" data-ratio="1.29456384323641" src="//speakerdeck.com/assets/embed.js"></script>
