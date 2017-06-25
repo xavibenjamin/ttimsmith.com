@@ -1,12 +1,12 @@
 ---
-title: Blend Conference 2013
+title: Blend Conference
 event_date: 2013-09-05 00:07
 date: 2017-02-22 11:06
 excerpt: >
   Bermon Painter was extremely kind and invited me to his conference in beautiful Charlotte, North Carolina. I was invited to give my *Become a Better Designer with Side Projects* talk.
 video: <iframe src="https://player.vimeo.com/video/80584032" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 event_url: http://2013.blendconf.com/
-location: Charlotte, United States
+location: Charlotte, NC, United States
 ---
 
 Blend Conf was:
