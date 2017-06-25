@@ -1,5 +1,5 @@
 ---
-title: UX Speakeasy 2012
+title: UX Speakeasy
 event_date: 2012-06-14 00:07
 date: 2012-06-14 11:06
 excerpt: >

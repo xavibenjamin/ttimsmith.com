@@ -1,5 +1,5 @@
 ---
-title: Blend Conference 2013
+title: Blend Conference
 event_date: 2013-09-05 00:07
 date: 2017-02-22 11:06
 excerpt: >

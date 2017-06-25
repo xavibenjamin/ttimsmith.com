@@ -1,5 +1,5 @@
 ---
-title: The Iron Yard 2016
+title: The Iron Yard
 event_date: 2016-11-02 00:07
 date: 2017-02-22 20:56
 excerpt: >

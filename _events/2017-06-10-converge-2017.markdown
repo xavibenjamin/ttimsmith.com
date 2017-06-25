@@ -1,5 +1,5 @@
 ---
-title: ConvergeSE 2017
+title: ConvergeSE
 event_date: 2017-06-14 08:00
 date: 2017-06-10 12:23
 excerpt: >
