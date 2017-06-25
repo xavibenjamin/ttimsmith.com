@@ -3,17 +3,14 @@
 // -------------------------------
 
 .events {
+  display: grid;
+  grid-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(190px, 1fr));
   list-style: none;
   margin-top: 1rem;
   padding: 0;
-  @supports (display: grid) {
-    display: grid;
+  @media #{$medium-up} {
     grid-gap: 2.5rem 2rem;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-  }
-  @supports not (display: grid) {
-    display: flex;
-    flex-wrap: wrap;
   }
 }
 
@@ -21,17 +18,8 @@
   p {
     font-size: .85rem;
   }
-  @supports (display: grid) {
-    &:not(:last-of-type) {
-      margin-bottom: 0;
-    }
-  }
-  @supports not (display: grid) {
-    flex: 1 1 auto;
-
-    &:not(:last-of-type) {
-      margin-bottom: 1.5rem;
-    }
+  &:not(:last-of-type) {
+    margin-bottom: 0;
   }
 }
 
@@ -51,7 +39,7 @@
 .event__venue {
   display: block;
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: 1.2;
   a {
     text-decoration: none;
   }
