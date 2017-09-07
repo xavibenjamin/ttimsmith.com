@@ -77,4 +77,7 @@
   display: block;
   font-size: .8rem;
   margin-bottom: .5rem;
+  a {
+    color: lighten($text-color, 20%);
+  }
 }
