@@ -8,11 +8,11 @@
 }
 
 .footer--primary {
-  background-color: #393C40;
-  color: lighten(#393C40, 40%);
+  background-color: $secondary-color-dark;
+  color: lighten($text-color, 30%);
   padding: 2.2rem 0;
   .copyright {
-    color: lighten(#393C40, 20%);
+    color: lighten($text-color, 10%);
   }
   a {
     color: inherit;
@@ -24,9 +24,14 @@
 }
 
 .footer--home {
-  color: lighten($text-color, 20%);
+  color: lighten($text-color, 10%);
   margin-bottom: 2rem;
   padding-top: 3rem;
+}
+
+.footer__logo {
+  margin-bottom: 1rem;
+  max-width: 150px;
 }
 
 .footer__about {
@@ -41,15 +46,16 @@
 }
 
 .footer__social-links {
-  display: inline-flex;
+  display: flex;
   list-style: none;
   margin-bottom: 0;
+  margin-top: .2rem;
   padding-left: 0;
   li {
     font-size: .8rem;
     &:not(:last-of-type) {
       margin-bottom: 0;
-      margin-right: .3rem;
+      margin-right: .5rem;
     }
   }
 }

@@ -8,11 +8,15 @@
 // Colors
 // -------------------------------
 $primary-color: salmon;
-$text-color: #555;
-$secondary-color: #69BBC0;
-$border-color: #DDD;
+$secondary-color-light: #607182;
+$secondary-color: #314259;
+$secondary-color-dark: #2C363F;
+$heading-color: $secondary-color-dark;
+$text-color: desaturate(lighten($secondary-color, 10%), 10%);
+$border-color: lighten($text-color, 45%);
 $alert-color: #E54A4F;
 $creme: #F6F6F1;
+$jazz-color: #EF7C97;
 
 // -------------------------------
 // Font Stack

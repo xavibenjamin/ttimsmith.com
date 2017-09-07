@@ -55,8 +55,8 @@ body {
 // -------------------------------
 
 h1,
-h2, {
-  color: #333;
+h2 {
+  color: $heading-color;
 }
 
 h2,
@@ -68,7 +68,7 @@ h5 {
 
 h2 {
   font-size: 1.2rem;
-  + h3 {
+   + h3 {
     margin-top: .3rem;
   }
 }
@@ -122,14 +122,21 @@ li {
 
 sup {
   margin-left: .2rem;
-  vertical-align: text-bottom;
+  vertical-align: super;
   a {
-    background-color: lighten($secondary-color, 35%);
-    border-radius: 50%;
+    background-color: $primary-color;
+    color: white;
+    display: inline-block;
     font-size: .7rem;
     font-weight: 600;
-    padding: 1px 5px;
+    line-height: .6;
+    padding: 3px;
     text-decoration: none;
+    &:hover,
+    &:focus {
+      background-color: lighten($primary-color, 10%);
+      color: white;
+    }
   }
 }
 
