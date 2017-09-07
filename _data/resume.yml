@@ -61,6 +61,12 @@
   - section:
     - heading: Side Projects
       contents:
+      - title: Host
+        company: YouTube Channel
+        company_link: youtube.com/smithtimmytim
+        company_url: https://youtube.com/smithtimmytim
+        description: >
+          Video reviews and unboxings on all sorts of products and technology. I post reviews of movies I love too.
       - title: Writer
         company: The Bold Report
         company_link: theboldreport.net
