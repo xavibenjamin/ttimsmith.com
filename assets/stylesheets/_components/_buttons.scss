@@ -5,9 +5,10 @@
 .button {
   border-radius: 3px;
   display: inline-block;
-  padding: .4rem .7rem;
+  line-height: 1;
+  padding: .6rem .7rem;
   text-decoration: none;
-  + a {
+   + a {
     margin-left: .5rem;
   }
 }

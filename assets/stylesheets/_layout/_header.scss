@@ -9,19 +9,10 @@
     align-items: center;
     display: flex;
   }
-  .home & {
-    justify-content: space-between;
-  }
-}
-
-.header--home {
-  padding-top: 1.5rem;
 }
 
 .site__name {
   display: block;
-  margin-bottom: .8rem;
-  text-decoration: none;
   @media #{$large-up} {
     margin-bottom: 0;
     margin-right: 2.5rem;
@@ -29,14 +20,18 @@
 }
 
 .supersmith-icon {
-  fill: lighten($text-color, 40%);
+  fill: $primary-color;
   transition: fill 300ms ease-in-out;
 }
 
 .site__logo {
-  display: block;
-  height: 40px;
-  width: 40px;
+  align-items: center;
+  display: flex;
+  text-decoration: none;
+  svg {
+    margin-right: 1rem;
+    width: 40px;
+  }
   @media #{$small-only} {
     margin: 0 auto 1rem;
   }
@@ -54,14 +49,19 @@
 .site__title {
   font-size: 1.4rem;
   font-weight: 600;
-  line-height: .9;
+  line-height: 1.1;
 }
 
 .site__subtitle {
   color: lighten($text-color, 20%);
   font-size: 1rem;
   font-weight: normal;
+  line-height: 1.1;
   margin-top: 0;
+}
+
+.navigation {
+  flex: 1;
 }
 
 .site__navigation {
@@ -69,11 +69,9 @@
   list-style: none;
   margin-bottom: 0;
   padding-left: 0;
-  @media #{$small-only} {
-    justify-content: center;
-    .header--home & {
-      justify-content: flex-start;
-    }
+
+  @media #{$medium-up} {
+    justify-content: flex-end;
   }
 
   li {
