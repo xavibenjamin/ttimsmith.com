@@ -1,0 +1,13 @@
+---
+title: Front End Design Conference
+event_date: 2018-04-25 08:00
+date: 2017-09-25 12:30
+excerpt: >
+  I was invited to Front End Design Conference.
+event_url: http://frontenddesignconference.com
+location: St.Petersburg, FL, United States
+---
+
+Front End Design Conference:
+
+> A Conference for Web Professionals Who Love their Community, the Web, and Learning.

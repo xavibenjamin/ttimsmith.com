@@ -27,8 +27,8 @@ subtitle: Helpful information and pictures of me.
 </figure>
 
 - [Smile 4×3 (jpg)](/uploads/press-kit/photos/tim-smile-4x3.jpg)
-- [Tongue 4×3 (jpg)](/uploads/press-kit/photos/tim-smile-4x3.jpg)
-- [Brow 4×3 (jpg)](/uploads/press-kit/photos/tim-smile-4x3.jpg)
+- [Tongue 4×3 (jpg)](/uploads/press-kit/photos/tim-tongue-4x3.jpg)
+- [Brow 4×3 (jpg)](/uploads/press-kit/photos/tim-brow-4x3.jpg)
 
 ## Biography
 
