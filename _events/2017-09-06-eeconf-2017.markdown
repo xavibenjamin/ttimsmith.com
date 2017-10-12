@@ -17,3 +17,6 @@ ExpressionEngine Conference is:
 - [Rachel Andrew's Grid by Example](http://gridbyexample.com/)
 - [Jen Simmons' Labs](http://labs.jensimmons.com/)
 - [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
+
+<script async class="speakerdeck-embed" data-id="dae700d7455f4693a4bfabad17976c5b" data-ratio="1.33507170795306" src="//speakerdeck.com/assets/embed.js"></script>
