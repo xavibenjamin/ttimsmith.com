@@ -16,6 +16,17 @@ sass:
   sass_dir: assets/stylesheets
   style: :compressed
 timezone: America/Chicago
+livereload: true
+
+# Pagination
+pagination:
+  debug: true
+  enabled: true
+  per_page: 20
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
 
 # Collection
 collections:
@@ -25,6 +36,15 @@ collections:
   events:
     output: true
     permalink: /speaking/:title/
+  eastwing:
+    output: true
+    permalink: /podcasts/eastwing/:title/
+  ftr:
+    output: true
+    permalink: /podcasts/ftr/:title/
+  column:
+    output: true
+    permalink: /podcasts/column/:title/
 
 # Defaults
 defaults:
@@ -52,6 +72,24 @@ defaults:
       type: "work"
     values:
       layout: "portfolio"
+  -
+    scope:
+      path: ""
+      type: "eastwing"
+    values:
+      layout: "episode"
+  -
+    scope:
+      path: ""
+      type: "ftr"
+    values:
+      layout: "episode"
+  -
+    scope:
+      path: ""
+      type: "column"
+    values:
+      layout: "episode"
 
 #Misc
 mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA

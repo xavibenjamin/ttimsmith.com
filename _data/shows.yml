@@ -1,0 +1,15 @@
+ftr:
+  name: For the Record
+  description: "*For the Record* is a show about the people behind some of our favorite things."
+  slug: ftr
+  host: Timothy B. Smith
+eastwing:
+  name: The East Wing
+  description: "*The East Wing* is a show about the web and those who create it."
+  slug: eastwing
+  host: Timothy B. Smith
+column:
+  name: The Radio Column
+  description: "*The Radio Column* is a talk show exploring the hurdles and victories of life and work."
+  slug: column
+  host: Timothy B. Smith

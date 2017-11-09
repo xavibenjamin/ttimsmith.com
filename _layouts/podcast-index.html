@@ -1,0 +1,59 @@
+---
+layout: default
+---
+
+{% assign broadcast = site.data.shows[page.show] %}
+
+<header class="page__header page__header--show">
+  <figure class="header__image">
+    <a href="/podcasts/{{ broadcast.slug }}/">
+      <img src="/uploads/shows/{{ broadcast.slug }}/thumb.png" alt="{{ broadcast.name }} Artwork">
+    </a>
+  </figure>
+
+  <div class="header__info">
+    <h1 class="page-header__title">{{ broadcast.name }}</h1>
+    {% if broadcast.description %}<p class="page-header__description">{{ broadcast.description | markdownify | remove: '<p>' }}</p>{% endif %}
+    <p class="show__host">Hosted by {{ broadcast.host }}</p>
+  </div>
+</header>
+
+
+<div class="page__content">
+  <section class="episodes">
+    {% for episode in paginator.posts %}
+      <div class="episode">
+        <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
+        <span class="episode__meta"><small class="episode__number">Episode #{{ episode.number }}</small> &middot; <small class="episode__date"><time datetime="{{ episode.date | date_to_xmlschema }}">{{ episode.date | date: "%b·%d·%Y" }}</time></small></span>
+
+        {{ episode.excerpt }}
+      </div>
+    {% endfor %}
+  </section>
+
+  {% if paginator.total_pages > 1 %}
+
+  <ul class="page-nav">
+      {% if paginator.first_page %}
+      <li class="previous">
+          <a href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}">First</a>
+      </li>
+      {% endif %}
+
+      {% if paginator.page_trail %}
+        {% for trail in paginator.page_trail %}
+          <li {% if page.url == trail.path %}class="selected"{% endif %}>
+              <a href="{{ trail.path | prepend: site.baseurl | replace: '//', '/' }}" title="{{trail.title}}">{{ trail.num }}</a>
+          </li>
+        {% endfor %}
+      {% endif %}
+
+
+       {% if paginator.last_page %}
+      <li class="previous">
+          <a href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' }}">Last</a>
+      </li>
+      {% endif %}
+  </ul>
+  {% endif %}
+</div>
