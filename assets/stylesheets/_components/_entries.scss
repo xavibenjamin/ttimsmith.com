@@ -34,7 +34,14 @@
 
 .entry-header__meta {
   color: lighten($text-color, 20%);
-  font-size: .8rem;
+  font-family: Operator Mono, Inconsolata, 'Inconsolata-g for Powerline', monospace;
+  font-size: .75rem;
+  text-transform: uppercase;
+}
+
+.entry__audio {
+  margin-bottom: 1rem;
+  width: 100%;
 }
 
 .entry__content {
@@ -47,6 +54,39 @@
       column-count: 3;
     }
   }
+}
+
+.entry__aside {
+  background-color: lighten($border-color, 13%);
+  padding: 1rem;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 150px auto;
+  grid-gap: 2rem;
+  margin-bottom: 2rem;
+
+  a {
+    text-decoration: none;
+  }
+
+  .show__name {
+    font-size: 2rem;
+    margin-top: 0;
+    line-height: 1;
+  }
+
+  .show__description {
+    font-size: 1.2rem;
+  }
+
+  .show__host {
+    font-size: .85rem;
+    color: lighten($text-color, 10%);
+  }
+}
+
+.aside__image {
+  max-width: 150px;
 }
 
 .speakerdeck-iframe {

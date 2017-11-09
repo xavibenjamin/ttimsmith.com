@@ -1,0 +1,30 @@
+// -------------------------------
+// PAGE NAV
+// -------------------------------
+
+.page-nav {
+  margin: 3rem 0 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  li {
+    flex: 1 1 auto;
+    text-align: center;
+    font-size: .85rem;
+  }
+  a {
+    display: block;
+    padding: .5rem;
+    background-color: lighten($border-color, 13%);
+    text-decoration: none;
+    &:hover,
+    &:focus {
+      background-color: lighten($border-color, 8%);
+    }
+  }
+  .selected a {
+    background-color: $primary-color;
+    color: white;
+  }
+}
