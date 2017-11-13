@@ -20,7 +20,7 @@ css_class: single-post
 <article class="entry--single {% if page.custom_type == 'post' %}entry--fun{% endif %}">
   <header class="entry__header">
     <h1 class="entry-header__title">{{ page.title | smartify }}</h1>
-    <small class="entry-header__meta"><span class="entry-header__number">Episode #{{ page.number }}</span> &middot; <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b·%d·%Y" }}</time></small>
+    <small class="entry-header__meta"><span class="entry-header__number">Episode #{{ page.number }}</span> &middot; {% if page.duration %}<span>{{ page.duration | date: "%M minutes" }}</span> &middot;{% endif %} <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b·%d·%Y" }}</time></small>
   </header>
 
   <audio id="main-audio" class="entry__audio" controls="controls" preload width="100%">

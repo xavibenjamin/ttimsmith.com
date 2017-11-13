@@ -17,7 +17,6 @@
   display: grid;
   grid-template-columns: 150px auto;
   grid-gap: 2rem;
-  align-items: center;
   max-width: none;
   background-color: lighten($border-color, 13%);
   padding: 1rem;
@@ -25,6 +24,10 @@
   .show__host {
     font-size: .85rem;
     color: lighten($text-color, 10%);
+  }
+
+  .header__info {
+    max-width: 820px;
   }
 }
 

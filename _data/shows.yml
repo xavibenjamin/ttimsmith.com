@@ -13,3 +13,11 @@ column:
   description: "*The Radio Column* is a talk show exploring the hurdles and victories of life and work."
   slug: column
   host: Timothy B. Smith
+  categories:
+    - Society & Culture
+    - Technology
+fullscreen:
+  name: Fullscreen
+  description: A discussion featuring rants, reviews, speculation, and spoilers on our favorite TV shows and movies. It's a show by and for those who binge watch on the weekends, and watch movies more than once.
+  slug: fullscreen
+  host: Adam Clark & Timothy B. Smith
