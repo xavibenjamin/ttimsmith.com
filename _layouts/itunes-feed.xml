@@ -1,4 +1,4 @@
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:atom="http://www.w3.org/2005/Atom/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
   <channel>
     {% assign broadcast = site.data.shows[page.show] %}
 
@@ -20,11 +20,13 @@
       <itunes:category text="{{ category | xml_escape }}"/>
     {% endfor %}
 
+    <atom:link href="{{ site.url }}/podcasts/{{ broadcast.slug }}/feed.xml" rel="self" type="application/rss+xml" />
+
     {% for episode in site[page.show] reversed %}
       <item>
         <title>{{ episode.title | xml_escape }}</title>
-        <description>{{ episode.excerpt | strip_html }}</description>
-        <pubDate>{{ episode.date | date_to_xmlschema }}</pubDate>
+        <description>{{ episode.excerpt | strip_html | strip_newlines }}</description>
+        <pubDate>{{ episode.date | date_to_rfc822 }}</pubDate>
         <enclosure url="{{ episode.audio }}" length="{{ episode.bytes }}" type="audio/mp3"/>
         <link>{{ site.url }}{{ episode.url }}</link>
         <guid>{{ site.url }}{{ episode.url }}</guid>
