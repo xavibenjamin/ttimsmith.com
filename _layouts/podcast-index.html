@@ -2,21 +2,8 @@
 layout: default
 ---
 
-{% assign broadcast = site.data.shows[page.show] %}
-
-<header class="page__header page__header--show">
-  <figure class="header__image">
-    <a href="/podcasts/{{ broadcast.slug }}/">
-      <img src="/uploads/shows/{{ broadcast.slug }}/thumb.png" alt="{{ broadcast.name }} Artwork">
-    </a>
-  </figure>
-
-  <div class="header__info">
-    <h1 class="page-header__title">{{ broadcast.name }}</h1>
-    {% if broadcast.description %}<p class="page-header__description">{{ broadcast.description | markdownify | remove: '<p>' }}</p>{% endif %}
-    <p class="show__host">Hosted by {{ broadcast.host }}</p>
-  </div>
-</header>
+{% assign show = site.data.shows[page.show] %}
+{% include show-header.html show=show %}
 
 
 <div class="page__content">

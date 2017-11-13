@@ -11,11 +11,16 @@ eastwing:
 column:
   name: The Radio Column
   description: "*The Radio Column* is a talk show exploring the hurdles and victories of life and work."
+  itunes_description: The Radio Column is a talk show exploring the hurdles and victories of life and work.
   slug: column
   host: Timothy B. Smith
   categories:
     - Society & Culture
     - Technology
+  rss: true
+  apple: https://itunes.apple.com/us/podcast/the-radio-column/id1312911946
+  pocketcast: http://pca.st/gwc7
+  overcast: https://overcast.fm/p716540-CZQQG1
 fullscreen:
   name: Fullscreen
   description: A discussion featuring rants, reviews, speculation, and spoilers on our favorite TV shows and movies. It's a show by and for those who binge watch on the weekends, and watch movies more than once.
