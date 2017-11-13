@@ -3,8 +3,8 @@
     {% assign broadcast = site.data.shows[page.show] %}
 
     <title>{{ broadcast.name }}</title>
-    <link>{{ site.url }}/{{ broadcast.slug }}</link>
-    <description>{{ broadcast.description }}</description>
+    <link>{{ site.url }}/podcasts/{{ broadcast.slug }}</link>
+    <description>{{ broadcast.itunes_description | xml_escape }} Hosted by {{ broadcast.host | xml_escape }}.</description>
     <language>en-US</language>
     <copyright>Copyright © {{ site.time | date: "%Y" }} Timothy B. Smith</copyright>
     <itunes:author>{{ broadcast.host | xml_escape }}</itunes:author>

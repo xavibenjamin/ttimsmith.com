@@ -3,19 +3,7 @@ layout: default
 css_class: single-post
 ---
 {% assign show = site.data.shows[page.collection] %}
-<aside class="entry__aside">
-  <figure class="aside__image">
-    <a href="/podcasts/{{ show.slug }}/">
-      <img src="/uploads/shows/{{ show.slug }}/thumb.png" alt="{{ show.name }} Artwork">
-    </a>
-  </figure>
-
-  <div class="aside__info">
-    <h3 class="show__name"><a href="/podcasts/{{ show.slug }}/">{{ show.name }}</a></h3>
-    <p class="show__description">{{ show.description | markdownify | remove: '<p>' }}</p>
-    <p class="show__host">Hosted by {{ show.host }}</p>
-  </div>
-</aside>
+{% include show-header.html show=show %}
 
 <article class="entry--single {% if page.custom_type == 'post' %}entry--fun{% endif %}">
   <header class="entry__header">
@@ -30,4 +18,6 @@ css_class: single-post
   <div class="entry__content">
     {{ content }}
   </div>
+
+  {% include podcasts/episode-nav.html %}
 </article>
