@@ -45,6 +45,9 @@ collections:
   column:
     output: true
     permalink: /podcasts/column/:title/
+  fullscreen:
+    output: true
+    permalink: /podcasts/fullscreen/:title/
 
 # Defaults
 defaults:
@@ -88,6 +91,12 @@ defaults:
     scope:
       path: ""
       type: "column"
+    values:
+      layout: "episode"
+  -
+    scope:
+      path: ""
+      type: "fullscreen"
     values:
       layout: "episode"
 

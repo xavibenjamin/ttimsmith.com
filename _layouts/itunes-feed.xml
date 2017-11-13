@@ -1,0 +1,41 @@
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:admin="http://webns.net/mvcb/" xmlns:atom="http://www.w3.org/2005/Atom/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" version="2.0">
+  <channel>
+    {% assign broadcast = site.data.shows[page.show] %}
+
+    <title>{{ broadcast.name }}</title>
+    <link>{{ site.url }}/{{ broadcast.slug }}</link>
+    <description>{{ broadcast.description }}</description>
+    <language>en-US</language>
+    <copyright>Copyright © {{ site.time | date: "%Y" }} Timothy B. Smith</copyright>
+    <itunes:author>{{ broadcast.host | xml_escape }}</itunes:author>
+    <itunes:explicit>{% if broadcast.explicit == true %}explicit{% else %}clean{% endif %}</itunes:explicit>
+    <itunes:image href="{{ site.url }}/uploads/shows/{{ broadcast.slug }}/itunes.png"/>
+    <itunes:owner>
+      <itunes:name>{{ broadcast.host | xml_escape }}</itunes:name>
+      <itunes:email>smith@ttimsmith.com</itunes:email>
+    </itunes:owner>
+    <itunes:block>no</itunes:block>
+
+    {% for category in broadcast.categories %}
+      <itunes:category text="{{ category | xml_escape }}"/>
+    {% endfor %}
+
+    {% for episode in site[page.show] reversed %}
+      <item>
+        <title>{{ episode.title | xml_escape }}</title>
+        <description>{{ episode.excerpt | strip_html }}</description>
+        <pubDate>{{ episode.date | date_to_xmlschema }}</pubDate>
+        <enclosure url="{{ episode.audio }}" length="{{ episode.bytes }}" type="audio/mp3"/>
+        <link>{{ site.url }}{{ episode.url }}</link>
+        <guid>{{ site.url }}{{ episode.url }}</guid>
+        <itunes:author>{{ broadcast.host }}</itunes:author>
+        <itunes:subtitle>{{ episode.excerpt | strip_html }}</itunes:subtitle>
+        <itunes:summary>{{ episode.excerpt | strip_html }}</itunes:summary>
+        <itunes:explicit>{% if episode.explicit == true %}explicit{% else %}clean{% endif %}</itunes:explicit>
+        <itunes:duration>{{ episode.duration }}</itunes:duration>
+        <content:encoded>{{ episode.content | xml_escape }}</content:encoded>
+        <itunes:image href="{{ site.url }}/uploads/shows/{{ broadcast.slug }}/itunes.png"/>
+      </item>
+    {% endfor %}
+  </channel>
+</rss>

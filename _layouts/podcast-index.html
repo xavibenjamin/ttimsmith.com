@@ -23,7 +23,7 @@ layout: default
   <section class="episodes">
     {% for episode in paginator.posts %}
       <div class="episode">
-        <h2><a href="{{ episode.url }}">{{ episode.title }}</a></h2>
+        <h2><a href="{{ episode.url }}">{{ episode.title | smartify }}</a></h2>
         <span class="episode__meta"><small class="episode__number">Episode #{{ episode.number }}</small> &middot; <small class="episode__date"><time datetime="{{ episode.date | date_to_xmlschema }}">{{ episode.date | date: "%b·%d·%Y" }}</time></small></span>
 
         {{ episode.excerpt }}
