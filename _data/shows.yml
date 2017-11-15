@@ -3,11 +3,13 @@ ftr:
   description: "*For the Record* is a show about the people behind some of our favorite things."
   slug: ftr
   host: Timothy B. Smith
+  retired: true
 eastwing:
   name: The East Wing
   description: "*The East Wing* is a show about the web and those who create it."
   slug: eastwing
   host: Timothy B. Smith
+  retired: true
 column:
   name: The Radio Column
   description: "*The Radio Column* is a talk show exploring the hurdles and victories of life and work."
@@ -26,3 +28,4 @@ fullscreen:
   description: A discussion featuring rants, reviews, speculation, and spoilers on our favorite TV shows and movies. It's a show by and for those who binge watch on the weekends, and watch movies more than once.
   slug: fullscreen
   host: Adam Clark & Timothy B. Smith
+  retired: true
