@@ -5,7 +5,7 @@ date: 2012-06-14 11:06
 excerpt: >
   While living in California, I gave a talk titled *Work to Live, Don't Live to Work* for my local design meetup.
 event_url: https://www.meetup.com/UXSpeakeasy/
-location: San Diego, CA, United States
+location: San Diego, CA
 ---
 
 What is UX Speakeasy?

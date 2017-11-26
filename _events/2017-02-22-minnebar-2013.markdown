@@ -6,7 +6,7 @@ excerpt: >
   In April of 2013, I was selected to speak at MinneBar Eight at Best Buy HQ. I gave my *Become a Better Designer with Side Projects* talk to encourage others to start a side project.
 video: <iframe width="560" height="315" src="https://www.youtube.com/embed/_VspTuwGtkk" frameborder="0" allowfullscreen></iframe>
 event_url: http://minnestar.org/minnebar/
-location: Minneapolis, MN, United States
+location: Minneapolis, MN
 ---
 
 MinneBar is:

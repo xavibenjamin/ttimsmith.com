@@ -5,7 +5,7 @@ date: 2017-06-10 12:23
 excerpt: >
   Gene Crawford invited me to ConvergeSE to give my talk *Let's Learn CSS Grid*.
 event_url: http://convergese.com/
-location: Columbia, SC, United States
+location: Columbia, SC
 ---
 
 ConvergeSE is:

@@ -5,7 +5,7 @@ date: 2017-03-12 00:44
 excerpt: >
   I was selected to speak at MinneBar Twelve at Best Buy HQ. I'll be giving a talk called *Let's Learn CSS Grid* on what it is and why to use it.
 event_url: http://minnestar.org/minnebar/
-location: Minneapolis, MN, United States
+location: Minneapolis, MN
 ---
 
 MinneBar is:
