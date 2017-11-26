@@ -37,6 +37,11 @@
   font-family: Operator Mono, Inconsolata, 'Inconsolata-g for Powerline', monospace;
   font-size: .75rem;
   text-transform: uppercase;
+  .single-talk &,
+  .single-post & {
+    font-family: $sans;
+    text-transform: none;
+  }
 }
 
 .entry__audio {

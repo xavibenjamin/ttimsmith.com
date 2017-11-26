@@ -5,7 +5,7 @@ date: 2017-09-25 12:30
 excerpt: >
   I was invited to Front End Design Conference.
 event_url: http://frontenddesignconference.com
-location: St.Petersburg, FL, United States
+location: St. Petersburg, FL
 ---
 
 Front End Design Conference:

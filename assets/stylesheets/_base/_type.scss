@@ -192,12 +192,12 @@ hr {
 // Links
 // -------------------------------
 a {
-  color: $secondary-color;
+  color: $link-color;
   -webkit-hyphens: none;
   hyphens: none;
   text-decoration-skip: ink;
   &:hover,
   &:focus {
-    color: lighten($secondary-color, 10%);
+    color: darken($link-color, 10%);
   }
 }

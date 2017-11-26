@@ -13,6 +13,7 @@ $secondary-color: #314259;
 $secondary-color-dark: #2C363F;
 $heading-color: $secondary-color-dark;
 $text-color: desaturate(lighten($secondary-color, 10%), 10%);
+$link-color: #2574A8;
 $border-color: lighten($text-color, 45%);
 $alert-color: #E54A4F;
 $creme: #F6F6F1;
@@ -22,7 +23,12 @@ $jazz-color: #EF7C97;
 // Font Stack
 // -------------------------------
 
-$sans: 'karmina-sans', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+// $sans: 'karmina-sans', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+$sans: 'freight-sans-pro';
+// $sans: 'adelle-sans';
+// $sans: 'ff-meta-web-pro';
+// $sans: 'ratio';
+
 
 
 // -------------------------------
