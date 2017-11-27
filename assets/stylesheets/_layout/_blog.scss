@@ -46,7 +46,10 @@ ul.posts {
   .post__date {
     color: lighten($text-color, 20%);
     display: block;
-    font-size: .8rem;
+    font-feature-settings: 'lnum';
+    font-size: .7rem;
+    font-variant-numeric: lining-nums;
+    text-transform: uppercase;
   }
 }
 

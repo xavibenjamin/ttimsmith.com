@@ -34,14 +34,10 @@
 
 .entry-header__meta {
   color: lighten($text-color, 20%);
-  font-family: Operator Mono, Inconsolata, 'Inconsolata-g for Powerline', monospace;
-  font-size: .75rem;
+  font-feature-settings: 'lnum';
+  font-size: .7rem;
+  font-variant-numeric: lining-nums;
   text-transform: uppercase;
-  .single-talk &,
-  .single-post & {
-    font-family: $sans;
-    text-transform: none;
-  }
 }
 
 .entry__audio {
