@@ -30,6 +30,9 @@
   .episode {
     h2 {
       margin-top: 0;
+      a {
+        text-decoration: none;
+      }
     }
      + .episode {
       border-top: 1px solid $border-color;
@@ -42,8 +45,9 @@
 .episode__meta {
   color: lighten($text-color, 20%);
   display: block;
-  font-family: Operator Mono, Inconsolata, 'Inconsolata-g for Powerline', monospace;
-  font-size: .75rem;
+  font-feature-settings: 'lnum';
+  font-size: .7rem;
+  font-variant-numeric: lining-nums;
   margin-bottom: .5rem;
   text-transform: uppercase;
 }
