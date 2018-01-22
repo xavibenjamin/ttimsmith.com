@@ -1,6 +1,17 @@
 // -------------------------------
 // IMAGES
 // -------------------------------
+
+figure {
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+
+  figcaption {
+    color: lighten($text-color, 20%);
+    font-size: .85rem;
+  }
+}
+
 img {
   height: auto;
   max-width: 100%;
