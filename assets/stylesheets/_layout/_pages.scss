@@ -15,7 +15,7 @@
 }
 
 .page__header--show {
-  background-color: lighten($border-color, 13%);
+  background-color: $creme;
   display: grid;
   grid-gap: 1rem;
   margin-bottom: 2rem;
