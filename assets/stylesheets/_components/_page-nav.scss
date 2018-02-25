@@ -3,20 +3,24 @@
 // -------------------------------
 
 .page-nav {
-  margin: 3rem 0 0;
-  padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   list-style: none;
+  margin: 5rem 0 0;
+  padding: 0;
   li {
-    flex: 1 1 auto;
-    text-align: center;
     font-size: .85rem;
+    font-variant-numeric: lining-nums;
+    text-align: center;
+     + li {
+      margin-left: 1rem;
+    }
   }
   a {
+    border-radius: 2px;
     display: block;
-    padding: .5rem;
-    background-color: lighten($border-color, 13%);
+    font-weight: 600;
+    padding: .3rem .7rem;
     text-decoration: none;
     &:hover,
     &:focus {
@@ -26,5 +30,12 @@
   .selected a {
     background-color: $primary-color;
     color: white;
+  }
+  .previous a {
+    box-shadow: 0 0 0 2px $border-color;
+    &:hover,
+    &:focus {
+      background-color: lighten($border-color, 15%);
+    }
   }
 }
