@@ -2,7 +2,7 @@
   <ul class="site__navigation">
     <li><a href="/podcasts/" {% if page.url == '/podcasts/' or page.layout == 'episode' or page.layout == 'podcast-index' %}class="current"{% endif %}>Podcasts</a></li>
     <li><a href="/speaking/" {% if page.url == '/speaking/' or page.url == '/speaking/press-kit/' or page.layout == 'talk' %}class="current"{% endif %}>Speaking</a></li>
-    <li><a href="/uploads/timsmith-resume.pdf">Résumé</a></li>
+    <li><a {% if page.url == '/hire-me/' %}class="current"{% endif %}href="/hire-me/">Hire Me</a></li>
     <li><a href="/portfolio/" {% if page.url == '/portfolio/' or page.layout == 'portfolio' %}class="current"{% endif %}>Portfolio</a></li>
   </ul>
 </nav>
