@@ -38,20 +38,16 @@
 }
 
 .home__picture {
-  background-blend-mode: lighten;
-  background-color: #371D5B;
-  background-image: url('/../uploads/home/tim-smile-4x3.jpg');
-  background-position: 80%;
+  background-image: url('/../uploads/home/timsmith-2018-small.jpg');
+  background-position: 75%;
   background-size: cover;
 
   @media #{$small-only} {
-    min-height: 300px;
+    min-height: 270px;
     width: 100%;
   }
   @media #{$medium-up} {
-    &:hover {
-      background-image: url('/../uploads/home/tim-tongue-4x3.jpg');
-    }
+    background-image: url('/../uploads/home/timsmith-2018.jpg');
   }
   @supports (display: grid) {
     grid-row: 1;
