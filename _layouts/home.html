@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body {% if page.css_class or layout.css_class %}class="{{ page.css_class }}{{ layout.css_class }}"{% endif %}>
+    <main class="main main--home" role="main">
+      <div class="home__wrapper">
+        <div class="home__image">
+          <img 
+            srcset="/uploads/home/tim@2x.jpg 1600w,
+                    /uploads/home/tim@3x.jpg 3200w"
+            src="/uploads/home/tim.jpg"
+            alt="Tim Smith Portrait">
+        </div>
+        <div class="home__info">
+          <h1 class="home__name">Timothy Smith</h1>
+          <h2 class="home__subtitle">I’m a podcast producer, YouTuber, and photographer</h2>
+          {{ content }}
+
+          <ul class="inline-list">
+            <li><a href="https://www.youtube.com/smithtimmytim">YouTube</a></li>
+            <li><a href="/podcasts/">Podcasts</a></li>
+            <li><a href="https://timothybsmith.photo/">Photography</a></li>
+          </ul>
+
+          <ul class="social-links">
+            <li><a href="{{ site.instagram }}">{% include icons/icon-instagram.html %}</a></li>
+            <li><a href="{{ site.twitter }}">{% include icons/icon-twitter.html %}</a></li>
+            <li><a href="mailto:{{ site.email }}?subject=Hey Tim!">{% include icons/icon-email.html %}</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    </main>
+  </body>
+</html>

@@ -11,8 +11,8 @@ $primary-color: salmon;
 $secondary-color-light: #607182;
 $secondary-color: #314259;
 $secondary-color-dark: #2C363F;
-$heading-color: $secondary-color-dark;
-$text-color: desaturate(lighten($secondary-color, 10%), 10%);
+$heading-color: #333;
+$text-color: #555;
 $link-color: #2574A8;
 $border-color: lighten($text-color, 45%);
 $alert-color: #E54A4F;
@@ -23,7 +23,7 @@ $jazz-color: #EF7C97;
 // Font Stack
 // -------------------------------
 
-$sans: 'freight-sans-pro', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+$sans: 'Whitney SSm A', 'Whitney SSm B', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 
 // -------------------------------
 // Media Queries
@@ -33,7 +33,7 @@ $small-only: 'screen and (max-width: 39.9375em)';
 $medium-up: 'screen and (min-width: 40em)';
 $medium-only: 'screen and (min-width: 40em) and (max-width: 63.9375em)';
 $large-up: 'screen and (min-width: 64em)';
-$large-only: 'screen and (min-width: 64em) and (max-width: 74.9375em)';
+$large-only: 'screen and (min-width: 64em) and (max-width: 90em)';
 $large-up: 'screen and (min-width: 64em)';
 $xlarge-up: 'screen and (min-width: 90.063em)';
 $xlarge-only: 'screen and (min-width: 90.063em) and (max-width: 120em)';
