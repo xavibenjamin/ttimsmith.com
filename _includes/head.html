@@ -8,7 +8,7 @@
   <title>{% if page.seo_title %}{{ page.seo_title }}{% else %}{{ page.title }}{% endif %}{% if page.layout == 'post' %} by Tim Smith{% endif %}{% if page.layout == 'portfolio' %} | Work by Tim Smith{% endif %}{% if page.layout == 'episode' %} | {{ site.data.shows[page.collection].name }}{% endif %}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="/apple-touch-icon.png" rel="apple-touch-icon">
-  <meta name="keywords" content="tim smith, timothy b smith, designer, frontend developer, ux design, product design">
+  <meta name="keywords" content="tim smith, timothy b smith, YouTuber, photographer, podcast producer">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 156 }}{% else %}{{ site.description }}{% endif %}">
 
   <!-- Twitter Info -->
@@ -17,20 +17,6 @@
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/assets/stylesheets/global.css">
-  {% if page.portfolio_css %}
-    <style>
-      {{ page.portfolio_css }}
-    </style>
-  {% endif %}
 
-  <script>
-    (function(d) {
-      var config = {
-        kitId: 'iaj5nie',
-        scriptTimeout: 3000,
-        async: true
-      },
-      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
-    })(document);
-  </script>
+  <link rel="stylesheet" type="text/css" href="https://cloud.typography.com/6973314/7331992/css/fonts.css" />
 </head>

@@ -4,6 +4,9 @@ title: "Designer who codes, blabber mouth, and coffee addict."
 email: smith@ttimsmith.com
 description: "Tim Smith is a designer and frontend developer living in beautiful St. Paul, Minnesota. For ten years, I’ve worked on sites and web apps by creating user flows, wireframes, mockups, and writing standards-based HTML and CSS."
 url: https://ttimsmith.com
+instagram: https://www.instagram.com/smithtimmytim/
+twitter: https://twitter.com/smithtimmytim
+
 
 # Build settings
 markdown: kramdown
@@ -99,6 +102,3 @@ defaults:
       type: "fullscreen"
     values:
       layout: "episode"
-
-#Misc
-mapbox_token: pk.eyJ1IjoidHRpbXNtaXRoIiwiYSI6Imh3Z0piYTAifQ.smU_4_vde53ZOKHrrDzpeA

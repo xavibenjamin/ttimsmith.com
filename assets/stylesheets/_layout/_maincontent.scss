@@ -5,10 +5,14 @@
   margin-bottom: 3rem;
 }
 
-.main--grid-one {
-  // display: grid;
-  // grid-template-columns: max-content minmax(auto, 300px);
-  // grid-gap: 3rem;
+.main--home {
+  margin: 0;
+  max-width: none;
+  width: 100%;
+  @media #{$large-only} {
+    max-height: 1000px;
+    overflow: hidden;
+  }
 }
 
 
@@ -16,127 +20,297 @@
 // Home Page
 // -------------------------------
 
-.home-container {
-  @supports (display: grid) {
-    display: grid;
-    grid-gap: 1rem;
-    @media #{$medium-up} {
-      grid-gap: 2rem;
-      grid-template-columns: repeat(6, 1fr);
-    }
-    @media #{$medium-only} {
-      grid-template-rows: 150px 150px 150px auto;
-    }
-
-    @media #{$large-up} {
-      grid-auto-rows: minmax(100px, auto);
+.home {
+  @media #{$medium-only} {
+    &:after {
+      background-color: salmon;
+      bottom: 0;
+      content: '';
+      mix-blend-mode: multiply;
+      position: fixed;
+      top: 0;
+      width: 90px;
     }
   }
-  @supports not (display: grid) {
-    position: relative;
+  @media #{$large-only} {
+    background-color: #F4F489;
+    overflow-x: hidden;
   }
 }
 
-.home__picture {
-  background-image: url('/../uploads/home/timsmith-2018-small.jpg');
-  background-position: 75%;
-  background-size: cover;
+.home__wrapper {
+  display: grid;
 
+  @media #{$medium-only} {
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: 20px minmax(150px, 400px) 350px 2rem;
+  }
+
+  @media #{$large-only} {
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: repeat(6, 1fr);
+    margin: 0 auto;
+    max-width: 1050px;
+    position: relative;
+    top: -100px;
+    transform: rotate(-20deg);
+  }
+
+  @media #{$xlarge-only} {
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-columns: repeat(5, 1fr);
+    max-height: 100vh;
+    overflow: hidden;
+  }
+
+  @media #{$xxlarge-up} {
+    grid-template-columns: minmax(auto, 800px)  1fr;
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.home__image {
   @media #{$small-only} {
-    min-height: 270px;
-    width: 100%;
-  }
-  @media #{$medium-up} {
-    background-image: url('/../uploads/home/timsmith-2018.jpg');
-  }
-  @supports (display: grid) {
-    grid-row: 1;
-    @media #{$medium-up} {
-      grid-column: 3 / span 4;
-      grid-row: 1 / span 2;
-    }
-    @media #{$large-up} {
-      grid-column: 2 / span 5;
-      grid-row-end: span 3;
+    height: 50vh;
+    overflow: hidden;
+    img {
+      height: 75vh;
+      object-fit: cover;
+      position: relative;
+      top: -30%;
+      transform: scale(1.6);
+      width: 100%;
     }
   }
-  @supports not (display: grid) {
-    @media #{$medium-up} {
-      min-height: 50vh;
+  @media #{$medium-only} {
+    grid-column: 2;
+    grid-row: 4;
+    max-height: 450px;
+    overflow: hidden;
+
+    img {
+      filter: saturate(50%);
+      object-fit: cover;
+      transform: scale(2.4);
+    }
+  }
+
+
+  @media #{$large-only} {
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 4;
+
+    &:after {
+      background-color: #891D62;
+      content: '';
+      height: 200px;
+      left: -100%;
+      mix-blend-mode: lighten;
+      position: absolute;
+      right: -100%;
+      top: 29%;
+    }
+  }
+
+  @media #{$xlarge-only} {
+    grid-column: 1 / span 5;
+    grid-row: 1 / span 12;
+    position: relative;
+    img {
+      height: 100vh;
+      object-fit: cover;
+      width: 100%;
+    }
+    &:after {
+      background-color: #546A80;
+      bottom: 0;
+      content: '';
+      left: 0;
+      mix-blend-mode: multiply;
       position: absolute;
       right: 0;
       top: 0;
-      width: 80%;
     }
-    @media #{$large-up} {
-      min-height: 65vh;
+  }
+
+  @media #{$xxlarge-up} {
+    position: relative;
+
+    img {
+      filter: grayscale(100%);
+      height: 100vh;
+      object-fit: cover;
     }
-    @media #{$xxlarge-up} {
-      min-height: 75vh;
+
+    &:after {
+      background-color: #FF4951;
+      border-radius: 50%;
+      content: '';
+      display: block;
+      height: 400px;
+      mix-blend-mode: multiply;
+      position: absolute;
+      right: 20%;
+      top: 25%;
+      width: 400px;
     }
   }
 }
 
-.home__content {
-  @supports (display: grid) {
-    @media #{$medium-up} {
-      grid-column: 1 / span 4;
-      grid-row: 2 / span 3;
-    }
-    @media #{$large-up} {
-      grid-column-end: span 2;
-      grid-row: 2;
+.home__info {
+  @media #{$small-only} {
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 90%;
+  }
+  @media #{$medium-only} {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  @media #{$large-only} {
+    background: #960665;
+    color: rgba(#F4F489, .7);
+    grid-column: 3 / span 3;
+    grid-row: 5 / span 2;
+    max-width: 570px;
+    padding: 2rem;
+    z-index: 4;
+    a {
+      color: #F4F489;
     }
   }
 
-  @media #{$medium-up} {
-    background-color: $creme;
-    max-width: 450px;
-    padding: 1.5rem;
-    position: relative;
-    z-index: 1;
-    &:after {
-      border: 2px solid salmon;
-      bottom: -15px;
-      content: '';
-      left: -15px;
-      pointer-events: none;
-      position: absolute;
-      right: -15px;
-      top: -15px;
+  @media #{$xlarge-only} {
+    color: rgba(white, .6);
+    grid-column: 3 / span 3;
+    grid-row: 10;
+    max-width: 575px;
+    z-index: 4;
+  }
+
+  @media #{$xxlarge-up} {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 720px;
+    padding: 5rem;
+  }
+}
+
+.home__name {
+  font-size: 2.5rem;
+  font-weight: 600;
+  letter-spacing: -2px;
+  line-height: 1;
+  @media #{$small-only} {
+    font-size: 1.8rem;
+  }
+  @media #{$medium-only} {
+    font-size: 2rem;
+  }
+
+  @media #{$large-only} {
+    color: #F4F489;
+  }
+  @media #{$xlarge-up} {
+    color: white;
+    font-size: 3.5rem;
+    letter-spacing: -3px;
+  }
+  @media #{$xxlarge-up} {
+    color: #333;
+  }
+}
+
+.home__subtitle {
+  color: #6A6A6A;
+  font-weight: normal;
+  margin-bottom: 1.6rem;
+  margin-top: 0;
+  @media #{$large-only } {
+    color: rgba(#F4F489, .7);
+  }
+  @media #{$xlarge-only} {
+    color: rgba(white, .8);
+  }
+}
+
+.inline-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 2.5rem 0 0;
+  padding: 0;
+  li {
+    align-items: center;
+    display: flex;
+    font-size: .8rem;
+    font-weight: 600;
+    line-height: 1.2;
+    &:not(:last-of-type) {
+      margin-bottom: 0;
+      margin-right: 25px;
+      &:after {
+        color: darken($border-color, 10%);
+        content: '/';
+        font-size: 1.1rem;
+        font-weight: normal;
+        left: 13px;
+        position: relative;
+        top: 0;
+      }
+    }
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+
+.social-links {
+  display: flex;
+  list-style: none;
+  margin-top: 1.6rem;
+  padding: 0;
+
+  li {
+     + li {
+      margin-left: .8rem;
+    }
+    a {
+      display: inline-block;
+      svg {
+        fill: rgba(#333, .4);
+        transition: fill 300ms ease-in-out;
+        @media #{$large-only} {
+          fill: #F4F489;
+        }
+        @media #{$xlarge-only} {
+          fill: rgba(white, .3);
+        }
+      }
+      &:hover,
+      &:focus {
+        svg {
+          fill: salmon;
+          @media #{$large-only} {
+            fill: rgba(#F4F489, .7);
+          }
+          @media #{$xlarge-only} {
+            fill: white;
+          }
+          @media #{$xxlarge-up} {
+            fill: #FF4951;
+          }
+        }
+      }
     }
   }
 
-  @supports not (display: grid) {
-    @media #{$medium-up} {
-      position: absolute;
-      top: 4rem;
-      width: 45%;
-    }
-
-    @media #{$large-up} {
-      width: 35%;
-    }
-
-    @media #{$xlarge-up} {
-      width: 30%;
-    }
-  }
-
-  h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-    line-height: 1;
-  }
-  h2 {
-    color: lighten($text-color, 10%);
-    font-size: 1.3rem;
-    font-weight: 300;
-    line-height: 1.3;
-    margin-bottom: 1rem;
-    margin-top: 0;
-  }
-  p {
-    font-size: .95rem;
+  svg {
+    height: 24px;
+    width: 24px;
   }
 }
