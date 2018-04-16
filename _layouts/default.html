@@ -7,7 +7,7 @@
     {% include header.html %}
 
 
-    <main class="main" role="main">
+    <main class="main {% if layout.main_css_class %}{{ layout.main_css_class }}{% endif %}" role="main">
       {{ content }}
     </main>
 

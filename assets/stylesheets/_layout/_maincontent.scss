@@ -15,6 +15,15 @@
   }
 }
 
+.main--podcast {
+  display: grid;
+  @media #{$medium-up} {
+    grid-column-gap: 40px;
+    grid-template-columns: 240px minmax(auto, 570px);
+    justify-content: center;
+  }
+}
+
 
 // -------------------------------
 // Home Page

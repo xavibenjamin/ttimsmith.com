@@ -2,12 +2,29 @@
 // PODCASTS
 // -------------------------------
 
+.back-button {
+  margin-bottom: 1.8rem;
+
+  @media #{$medium-up} {
+    grid-column: span 2;
+  }
+  .back-link {
+    background-color: lighten($link-color, 50%);
+    border-radius: 3px;
+    padding: 7px 15px;
+    text-decoration: none;
+  }
+}
+
 .shows {
   margin-top: 2rem;
   .show {
     display: grid;
     grid-gap: 1rem;
-    grid-template-columns: 150px auto;
+    grid-template-columns: 90px auto;
+    @media #{$medium-up} {
+      grid-template-columns: 150px auto;
+    }
      + .show {
       border-top: 1px solid $border-color;
       margin-top: 1.3rem;
@@ -29,6 +46,8 @@
 .episodes {
   .episode {
     h2 {
+      font-weight: normal;
+      letter-spacing: -1px;
       margin-top: 0;
       a {
         text-decoration: none;
@@ -43,13 +62,10 @@
 }
 
 .episode__meta {
-  color: lighten($text-color, 20%);
+  color: lighten($text-color, 10%);
   display: block;
-  font-feature-settings: 'lnum';
-  font-size: .7rem;
-  font-variant-numeric: lining-nums;
+  font-size: .75rem;
   margin-bottom: .5rem;
-  text-transform: uppercase;
 }
 
 .episode-navigation {
@@ -78,5 +94,55 @@
     font-size: .75rem;
     font-weight: 600;
     text-transform: uppercase;
+  }
+}
+
+// -----------------------------------------
+// SHOW SIDEBAR
+// -----------------------------------------
+
+.show__sidebar {
+  @media #{$small-only} {
+    background-color: rgb(241, 241, 241);
+    border-radius: 3px;
+    display: grid;
+    grid-column-gap: 1.5rem;
+    grid-template-columns: 90px auto;
+    margin-bottom: 2rem;
+    padding: 1rem;
+  }
+}
+
+.show__image {
+  margin-top: 0;
+  @media #{$medium-up} {
+    margin-bottom: 1.2rem;
+  }
+  a,
+  img {
+    display: block;
+  }
+}
+
+.show__host {
+  font-size: .9rem;
+  font-weight: 600;
+}
+
+.show__subscribe {
+  list-style: none;
+  margin-bottom: 0;
+  margin-top: .3rem;
+  padding: 0;
+  @media #{$small-only} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  li {
+    font-size: .8rem;
+  }
+  a {
+    font-weight: 600;
+    text-decoration: none;
   }
 }

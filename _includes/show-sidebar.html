@@ -1,20 +1,19 @@
 {% assign broadcast = include.show %}
 
-<header class="page__header page__header--show">
-  <figure class="header__image">
+<aside class="show__sidebar">
+  <figure class="show__image">
     <a href="/podcasts/{{ broadcast.slug }}/">
       <img src="/uploads/shows/{{ broadcast.slug }}/thumb.png" alt="{{ broadcast.name }} Artwork">
     </a>
   </figure>
 
-  <div class="header__info">
-    <h1 class="page-header__title"><a href="/podcasts/{{ broadcast.slug }}/">{{ broadcast.name }}</a></h1>
+  <div class="show__info">
+    <p class="show__description">{{ broadcast.description | markdownify | remove: '<p>' | remove: '</p>'}}</p>
     <p class="show__host">Hosted by {{ broadcast.host }}</p>
-    <p class="page-header__description">{{ broadcast.description | markdownify | remove: '<p>' | remove: '</p>'}}</p>
 
     {% if broadcast.apple or broadcast.pocketcast or broadcast.overcast or broadcast.rss %}
-      <h3 class="header__subscribe-heading">Subscribe</h3>
-      <ul class="header__subscribe">
+      <h3 class="sidebar__heading">Subscribe</h3>
+      <ul class="show__subscribe">
         {% if broadcast.apple %}<li><a href="{{ broadcast.apple }}">Apple Podcasts</a></li>{% endif %}
         {% if broadcast.pocketcast %}<li><a href="{{ broadcast.pocketcast }}">Pocket Casts</a></li>{% endif %}
         {% if broadcast.overcast %}<li><a href="{{ broadcast.overcast }}">Overcast</a></li>{% endif %}
@@ -22,4 +21,4 @@
       </ul>
     {% endif %}
   </div>
-</header>
+</aside>
