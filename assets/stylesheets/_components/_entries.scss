@@ -22,8 +22,8 @@
 }
 
 .entry-header__title {
-  font-size: 1.5rem;
-  font-weight: 600;
+  font-size: 1.8rem;
+  letter-spacing: -1.4px;
   line-height: 1.1;
 }
 
@@ -33,11 +33,8 @@
 }
 
 .entry-header__meta {
-  color: lighten($text-color, 20%);
-  font-feature-settings: 'lnum';
-  font-size: .7rem;
-  font-variant-numeric: lining-nums;
-  text-transform: uppercase;
+  color: lighten($text-color, 10%);
+  font-size: .8rem;
 }
 
 .entry__audio {

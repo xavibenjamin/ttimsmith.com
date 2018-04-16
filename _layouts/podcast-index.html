@@ -1,9 +1,14 @@
 ---
 layout: default
+main_css_class: main--podcast
 ---
 
+<div class="back-button">
+  <a href="/podcasts/" class="back-link">&larr; All Shows</a>
+</div>
+
 {% assign show = site.data.shows[page.show] %}
-{% include show-header.html show=show %}
+{% include show-sidebar.html show=show %}
 
 
 <div class="page__content">
@@ -11,7 +16,7 @@ layout: default
     {% for episode in paginator.posts %}
       <div class="episode">
         <h2><a href="{{ episode.url }}">{{ episode.title | smartify }}</a></h2>
-        <small class="episode__meta"><span class="episode__number">Episode #{{ episode.number }}</span> &middot; <span class="episode__date"><time datetime="{{ episode.date | date_to_xmlschema }}">{{ episode.date | date: "%b·%d·%Y" }}</time></span></small>
+        <small class="episode__meta"><span class="episode__number">Episode #{{ episode.number }}</span>&ensp;&middot;&ensp;{% if episode.duration %}<span>{{ episode.duration | date: "%M minutes" }}</span>&ensp;&middot;&ensp;{% endif %}<span class="episode__date"><time datetime="{{ episode.date | date_to_xmlschema }}">{{ episode.date | date: "%a, %b %d, %Y" }}</time></span></small>
 
         {{ episode.excerpt }}
       </div>

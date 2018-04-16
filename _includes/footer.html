@@ -1,23 +1,9 @@
 <footer class="footer {% if page.url == '/' %}footer--home{% else %}footer--primary{% endif %}" role="contentinfo">
-  <div class="container">
-
-    {% if page.url != '/' %}
-      <div class="footer__logo">
-        <img src="/assets/images/smith-logo.svg" alt="Tim Smith Logo">
-      </div>
-
-      <div class="footer__about">
-        {{ "I'm Tim Smith, a designer and frontend developer from Saint Paul, MN. I've worked on the web for a decade, [working with different companies and clients](/portfolio/). I love passing on knowledge by [speaking and giving workshops](/speaking/). In 2013, I created *[Brightly Colored](https://brightlycolored.org)*, a blog about design, development, technology, and most importantly, Star Wars. When away from my desk, I spend time with my amazing wife Kelly, eating brunch, watching movies, walking the mall, and other sappy-sounding couple stuff." | markdownify }}
-      </div>
-    {% endif %}
-
-    <small class="copyright">&copy; 2008&ndash;{{ site.time | date: "%Y" }} Timothy B. Smith &middot; Hosted by <a href="https://www.netlify.com/">Netlify</a></small>
-    <ul class="footer__social-links">
-      <li><a href="mailto:smith@ttimsmith.com">Email</a></li>
-      <li><a href="https://youtube.com/smithtimmytim">YouTube</a></li>
-      <li><a href="https://twitter.com/smithtimmytim">Twitter</a></li>
-      <li><a href="https://github.com/smithtimmytim">GitHub</a></li>
-      <li><a href="https://www.instagram.com/smithtimmytim/">Instagram</a></li>
-    </ul>
-  </div>
+  <small class="copyright">&copy; 2008&ndash;{{ site.time | date: "%Y" }} Timothy B. Smith &middot; Hosted by <a href="https://www.netlify.com/">Netlify</a></small>
+  <ul class="footer__social-links">
+    <li><a href="https://www.instagram.com/smithtimmytim/">Instagram</a></li>
+    <li><a href="https://youtube.com/smithtimmytim">YouTube</a></li>
+    <li><a href="https://twitter.com/smithtimmytim">Twitter</a></li>
+    <li><a href="mailto:smith@ttimsmith.com">Email</a></li>
+  </ul>
 </footer>

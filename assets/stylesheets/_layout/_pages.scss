@@ -4,7 +4,9 @@
 
 .page__header {
   margin-bottom: 1rem;
-  max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 620px;
   @media #{$xxlarge-up} {
     max-width: 720px;
   }
@@ -80,8 +82,9 @@
 
 .page-header__title {
   font-size: 2rem;
-  font-weight: 600;
+  letter-spacing: -1.3px;
   line-height: 1;
+  margin-bottom: .5rem;
   a {
     text-decoration: none;
   }
@@ -89,13 +92,15 @@
 
 .page-header__subtitle {
   color: lighten($text-color, 20%);
-  font-size: 1.4rem;
+  font-size: 1.2rem;
   font-weight: normal;
   line-height: 1;
   margin-top: 0;
 }
 
 .page__content {
+  margin-left: auto;
+  margin-right: auto;
   max-width: 620px;
   @media #{$xxlarge-up} {
     max-width: 660px;

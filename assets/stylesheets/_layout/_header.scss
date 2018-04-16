@@ -3,25 +3,11 @@
 // -------------------------------
 
 .header {
-  margin-bottom: 2.5rem;
-  padding-top: 1rem;
-  @media #{$medium-up} {
-    align-items: center;
-    display: flex;
-  }
-}
-
-.site__name {
-  display: block;
-  @media #{$large-up} {
-    margin-bottom: 0;
-    margin-right: 2.5rem;
-  }
-}
-
-.supersmith-icon {
-  fill: $primary-color;
-  transition: fill 300ms ease-in-out;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 3rem;
+  padding-top: 1.5rem;
 }
 
 .site__logo {
@@ -29,66 +15,13 @@
   display: flex;
   text-decoration: none;
   svg {
-    margin-right: 1rem;
-    width: 40px;
-  }
-  @media #{$small-only} {
-    margin: 0 auto 1rem;
-  }
-  @media #{$medium-up} {
-    margin-right: 1.2rem;
+    fill: $primary-color;
+    width: 110px;
   }
   &:hover,
   &:focus {
     .supersmith-icon {
       fill: $primary-color;
-    }
-  }
-}
-
-.site__title {
-  font-size: 1.4rem;
-  font-weight: 600;
-  line-height: 1.1;
-}
-
-.site__subtitle {
-  color: lighten($text-color, 20%);
-  font-size: 1rem;
-  font-weight: normal;
-  line-height: 1.1;
-  margin-top: 0;
-}
-
-.navigation {
-  flex: 1;
-}
-
-.site__navigation {
-  display: flex;
-  list-style: none;
-  margin-bottom: 0;
-  padding-left: 0;
-
-  @media #{$medium-up} {
-    justify-content: flex-end;
-  }
-
-  li {
-    font-size: .85rem;
-    margin-bottom: 0;
-    &:not(:last-of-type) {
-      margin-right: .7rem;
-    }
-  }
-  a {
-    display: inline-block;
-    line-height: 1;
-    text-decoration: none;
-    &:hover,
-    &:focus,
-    &.current {
-      border-bottom: 2px solid $primary-color;
     }
   }
 }
