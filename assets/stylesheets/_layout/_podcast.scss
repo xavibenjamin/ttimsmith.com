@@ -20,9 +20,10 @@
   margin-top: 2rem;
   .show {
     display: grid;
-    grid-gap: 1rem;
+    grid-column-gap: 1.5rem;
     grid-template-columns: 90px auto;
     @media #{$medium-up} {
+      grid-column-gap: 40px;
       grid-template-columns: 150px auto;
     }
      + .show {
@@ -33,7 +34,13 @@
   }
 
   .show__name {
+    font-weight: normal;
+    line-height: 1.1;
+    margin-bottom: .1rem;
     margin-top: 0;
+    a {
+      text-decoration: none;
+    }
   }
 
   .show__host {
