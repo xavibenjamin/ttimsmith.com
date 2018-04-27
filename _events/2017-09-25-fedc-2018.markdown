@@ -3,7 +3,7 @@ title: Front End Design Conference
 event_date: 2018-04-25 08:00
 date: 2017-09-25 12:30
 excerpt: >
-  I was invited to Front End Design Conference.
+  I was invited to Front End Design Conference to speak on CSS Grid.
 event_url: http://frontenddesignconference.com
 location: St. Petersburg, FL
 ---
@@ -11,3 +11,11 @@ location: St. Petersburg, FL
 Front End Design Conference:
 
 > A Conference for Web Professionals Who Love their Community, the Web, and Learning.
+
+## Resources
+
+- [Rachel Andrew's Grid by Example](http://gridbyexample.com/)
+- [Jen Simmons' Labs](http://labs.jensimmons.com/)
+- [Mozilla Developer Network](https://developer.mozilla.org/en-US/)
+
+<script async class="speakerdeck-embed" data-id="c212b01f63bd495bad7f65611e810bfe" data-ratio="1.33507170795306" src="//speakerdeck.com/assets/embed.js"></script>
