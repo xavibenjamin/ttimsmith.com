@@ -1,10 +1,10 @@
 ---
 title: A Hodgepodge of Topics
 number: '020'
-audio: https://audio.simplecast.com/53e0fc74.mp3
+audio: https://audio.simplecast.com/f91f48cd.mp3
 excerpt: Tim talks about burnout and about the hiring practices in technology.
 duration: '00:11:06'
-bytes: 8000000
+bytes: 7760000
 ---
 
 **Topic:** Burnout
