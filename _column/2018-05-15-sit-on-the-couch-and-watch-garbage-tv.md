@@ -14,4 +14,4 @@ Tim talks about lacking motivation, how ironically his lack of motivation gave h
 ## Links and Show Notes
 
 - [Amateurs wait for inspiration](https://www.youtube.com/watch?v=CzE73mmDqAE)
-- [It's Expensive to Lose Weight | The Radio Column](https://ttimsmith.com/podcasts/column/its-expensive-to-lose-weight/)
+- [It's Expensive to Lose Weight \| The Radio Column](https://ttimsmith.com/podcasts/column/its-expensive-to-lose-weight/)
