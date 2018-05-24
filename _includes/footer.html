@@ -4,9 +4,11 @@
     <li><a href="https://www.instagram.com/smithtimmytim/">Instagram</a></li>
     <li><a href="https://youtube.com/smithtimmytim">YouTube</a></li>
     <li><a href="https://twitter.com/smithtimmytim">Twitter</a></li>
-    <li><a href="mailto:smith@ttimsmith.com">Email</a></li>
+    <li><a href="mailto:smith@ttimsmith.com?subject=Hey Tim!">Contact</a></li>
   </ul>
 
+  {% unless page.url == '/newsletter/' %}
   <div class="createsend-button" style="height:22px;display:inline-block;" data-listid="t/79/590/F0F/38853C2722F30885">
   </div><script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
+  {% endunless %}
 </footer>
