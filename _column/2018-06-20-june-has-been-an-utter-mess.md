@@ -17,4 +17,3 @@ Tim talks about "the story of the two lenses", and how it left them with no mone
 - [Tim Smith (@smithtimmytim) \| Twitter](https://twitter.com/smithtimmytim)
 - [Timothy Smith - YouTube](https://www.youtube.com/smithtimmytim)
 - [Timothy Smith is creating YouTube videos. \| Patreon](https://www.patreon.com/smithtimmytim)
-j
