@@ -51,6 +51,9 @@ collections:
   fullscreen:
     output: true
     permalink: /podcasts/fullscreen/:title/
+  afk:
+    output: true
+    permalink: /podcasts/afk/:title/
 
 # Defaults
 defaults:
@@ -100,5 +103,11 @@ defaults:
     scope:
       path: ""
       type: "fullscreen"
+    values:
+      layout: "episode"
+  -
+    scope:
+      path: ""
+      type: "afk"
     values:
       layout: "episode"

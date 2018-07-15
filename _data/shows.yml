@@ -1,3 +1,10 @@
+afk:
+  name: Away from Keyboard
+  description: "Exploring the human side of creative work. A podcast from Changelog Media."
+  slug: afk
+  host: Timothy B. Smith
+  overcast: https://overcast.fm/p907167-7FzxLe
+  pocketcast: https://pca.st/8KZ6
 ftr:
   name: For the Record
   description: "*For the Record* is a show about the people behind some of our favorite things."
