@@ -1,9 +1,9 @@
 ---
 title: Jason Snell Is His Own HR Person
 number: "001"
-audio: https://cdn.changelog.com/uploads/afk/1/away-from-keyboard-1.mp3
 excerpt: "It's been four years since Jason Snell left his job at Macworld and started his own site Six Colors. In that time, Jason is back to what he loves: creating. He talks about the diversity of his work day, finding the right mix of revenue streams, and taking a break when you need one."
 duration: '00:23:03'
+embed: '<iframe src="https://changelog.com/afk/1/embed?theme=day" width="100%" height=220 scrolling=no frameborder=no></iframe>'
 ---
 
 It's been four years since Jason Snell left his job at Macworld and started his own site Six Colors. In that time, Jason is back to what he loves: creating. He talks about the diversity of his work day, finding the right mix of revenue streams, and taking a break when you need one.

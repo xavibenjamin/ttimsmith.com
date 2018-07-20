@@ -17,9 +17,15 @@ main_css_class: main--podcast
     <small class="entry-header__meta"><span class="entry-header__number">Episode #{{ page.number }}</span>&ensp;&middot;&ensp;{% if page.duration %}<span>{{ page.duration | date: "%M minutes" }}</span>&ensp;&middot;&ensp;{% endif %}<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%a, %b %d, %Y" }}</time></small>
   </header>
 
-  <audio id="main-audio" class="entry__audio" controls="controls" preload width="100%">
-    <source src="{{ page.audio }}" type="audio/mpeg" />
-  </audio>
+  {% if page.audio %}
+    <audio id="main-audio" class="entry__audio" controls="controls" preload width="100%">
+      <source src="{{ page.audio }}" type="audio/mpeg" />
+    </audio>
+  {% else %}
+    <div class="entry__audio">
+      {{ page.embed }}
+    </div>
+  {% endif %}
 
   <div class="entry__content">
     {{ content }}

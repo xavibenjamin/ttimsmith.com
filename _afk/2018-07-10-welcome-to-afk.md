@@ -1,9 +1,9 @@
 ---
 title: "Welcome to ‘Away from Keyboard’"
 number: "000"
-audio: https://cdn.changelog.com/uploads/afk/0/away-from-keyboard-0.mp3
 excerpt: Away from Keyboard is a new show from Changelog that talks to creative professionals about how they do what they do, where they started, and how they deal with the things that make us all humans.
 duration: '00:02:32'
+embed: '<iframe src="https://changelog.com/afk/0/embed?theme=day" width="100%" height=220 scrolling=no frameborder=no></iframe>'
 ---
 
 Away from Keyboard is a new show from Changelog that talks to creative professionals about how they do what they do, where they started, and how they deal with the things that make us all humans.
