@@ -30,7 +30,7 @@
         <enclosure url="{{ episode.audio }}" length="{{ episode.bytes }}" type="audio/mp3"/>
         <link>{{ site.url }}{{ episode.url }}</link>
         <guid>{{ site.url }}{{ episode.url }}</guid>
-        <itunes:author>{{ broadcast.host }}</itunes:author>
+        <itunes:author>{{ broadcast.host | xml_escape }}</itunes:author>
         <itunes:subtitle>{{ episode.excerpt | strip_html }}</itunes:subtitle>
         <itunes:summary>{{ episode.excerpt | strip_html }}</itunes:summary>
         <itunes:explicit>{% if episode.explicit == true %}explicit{% else %}clean{% endif %}</itunes:explicit>
