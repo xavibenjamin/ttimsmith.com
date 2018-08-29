@@ -1,15 +1,14 @@
 ---
-layout: episode
 title: Chris Kennedy
 number: "001"
-audio: https://audio.simplecast.com/74c3398d
+embed: "<iframe src='https://share.transistor.fm/e/68de96eb' width='100%' height='180' frameborder='0' scrolling='no' seamless='true'></iframe>"
 ---
 
 Tim talks with Chris Kennedy about user experience, being involved in the community, and when it's appropriate to do things differently.
 
 ---
 
-### Episode Links
+## Episode Links
 
 - [Kennedy’s Garage](http://kennedysgarage.com/)
 - [M. Shanken Communications, Inc Media Kit](http://mshanken.com/)

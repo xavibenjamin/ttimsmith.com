@@ -1,7 +1,7 @@
 ---
 title: Beauty Is in the Imperfection
 number: "002"
-audio: https://audio.simplecast.com/8b8e084a
+embed: "<iframe src='https://share.transistor.fm/e/49b98147' width='100%' height='180' frameborder='0' scrolling='no' seamless='true'></iframe>"
 ---
 
 Paul Armstrong was in a business partnership back in 1998, which ended in him being sued. Soon after, he went through debt, the birth of his first baby, his parents divorcing, and his mother being diagnosed with dementia. He talks about life, marriage, kids, and how they’ve influenced his work.

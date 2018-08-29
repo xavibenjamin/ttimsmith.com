@@ -1,7 +1,7 @@
 ---
 title: Jim Dalrymple on Family and Losing Weight
 layout: episode
-audio: https://audio.simplecast.com/307f9020
+embed: "<iframe src='https://share.transistor.fm/e/8c3e609c' width='100%' height='180' frameborder='0' scrolling='no' seamless='true'></iframe>"
 number: "001"
 ---
 
