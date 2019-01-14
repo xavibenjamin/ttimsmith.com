@@ -1,7 +1,7 @@
 ---
 title: Jumping Off a Cliff Superman Style
 number: '003'
-audio: https://audio.simplecast.com/a39d79fe.mp3
+embed: "<iframe src='https://share.transistor.fm/e/e2266a6e' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 ---
 
 Adam Clark is joined by his college buddy and Game of Thrones enthusiast, Matt Powell, to discuss the final episode of Game of Thrones, Season 4.

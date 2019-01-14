@@ -1,8 +1,9 @@
 ---
 title: I've Never Read a Comic Book in my Life
 number: '001'
-audio: https://audio.simplecast.com/ae9d4666.mp3
+embed: "<iframe src='https://share.transistor.fm/e/889b91dd' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 ---
+
 Adam Clark and Tim Smith talk about upcoming trailers Lucy and Transcendence, Game of Thrones, and review Captain America.
 
 ## Links and Show Notes

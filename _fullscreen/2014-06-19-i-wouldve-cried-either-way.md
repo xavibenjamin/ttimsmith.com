@@ -1,9 +1,10 @@
 ---
 title: I Would've Cried Either Way
 number: '002'
-audio: https://audio.simplecast.com/fc08e40d.mp3
+embed: "<iframe src='https://share.transistor.fm/e/92ac8f20' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 ---
-Adam and Tim talk about Star Wars, upcoming films *Boyhood*, *The Double*, and *Third Person*, and review *The Amazing Spider-Man 2*.
+
+Adam and Tim talk about Star Wars, upcoming films _Boyhood_, _The Double_, and _Third Person_, and review _The Amazing Spider-Man 2_.
 
 ## Links and Show Notes
 
