@@ -1,7 +1,7 @@
 ---
 title: Those Are the Words of a Very Wise Person Named Yoda
 number: '024'
-audio: https://audio.simplecast.com/6749ee3d.mp3
+embed: "<iframe src='https://share.transistor.fm/e/30d163b8' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about being nervous about an upcoming assignment and how embracing the unknown and making mistakes, makes you better.
 duration: '00:04:27'
 bytes: 3220000

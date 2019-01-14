@@ -1,7 +1,7 @@
 ---
 title: On a Beach With My Lovely Wife
 number: '023'
-audio: https://audio.simplecast.com/58c1e3bc.mp3
+embed: "<iframe src='https://share.transistor.fm/e/1acb3d29' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about admiting to himself that he needs a break, and how doing that already helps him feel better.
 duration: '00:05:06'
 bytes: 3650000

@@ -1,7 +1,7 @@
 ---
 title: A Hodgepodge of a Lot of Different Things
 number: '013'
-audio: https://audio.simplecast.com/d3914e27.mp3
+embed: "<iframe src='https://share.transistor.fm/e/41c7deac' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about the strategy behind creating content and deciding where to put things.
 duration: '00:07:50'
 bytes: 11265528

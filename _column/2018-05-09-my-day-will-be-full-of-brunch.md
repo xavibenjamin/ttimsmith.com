@@ -1,7 +1,7 @@
 ---
 title: My Day Will Be Full of Brunch
 number: '019'
-audio: https://audio.simplecast.com/53e0fc74.mp3
+embed: "<iframe src='https://share.transistor.fm/e/d68a7822' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about his third wedding anniversary. No advice or life lessons in this one!
 duration: '00:03:36'
 bytes: 2630000

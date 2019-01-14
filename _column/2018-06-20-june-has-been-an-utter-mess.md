@@ -1,7 +1,7 @@
 ---
 title: June Has Been an Utter Mess
 number: '027'
-audio: https://audio.simplecast.com/aefa535d.mp3
+embed: "<iframe src='https://share.transistor.fm/e/583bcd02' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about "the story of the two lenses", and how it left them with no money on a business trip.
 duration: '00:07:05'
 bytes: 5030000

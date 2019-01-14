@@ -1,7 +1,7 @@
 ---
 title: A Little Life Update
 number: '014'
-audio: https://audio.simplecast.com/6c80ab43.mp3
+embed: "<iframe src='https://share.transistor.fm/e/9e2a3274' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about focusing efforts on things that are successful, which might mean the death of a beloved property.
 duration: '00:05:32'
 bytes: 5230000

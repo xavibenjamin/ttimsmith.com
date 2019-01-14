@@ -1,7 +1,7 @@
 ---
 title: Stopped Brightly Colored and Nobody Cared
 number: '015'
-audio: https://audio.simplecast.com/642fb4ed.mp3
+embed: "<iframe src='https://share.transistor.fm/e/d738cb17' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about officially stopping <em>Brightly Colored</em>, his talk at Front-End Design Conference, and the NBA Playoffs.
 duration: '00:11:12'
 bytes: 7840000
@@ -9,7 +9,7 @@ bytes: 7840000
 
 **Topic:** Focus (Part Two)
 
-Tim talks about officially stopping *Brightly Colored*, his talk at Front-End Design Conference, and the NBA Playoffs.
+Tim talks about officially stopping _Brightly Colored_, his talk at Front-End Design Conference, and the NBA Playoffs.
 
 Also, I meant to say episode 15…
 

@@ -1,7 +1,7 @@
 ---
 title: Sit on the Couch and Watch Garbage TV
 number: '021'
-audio: https://audio.simplecast.com/10b0c136.mp3
+embed: "<iframe src='https://share.transistor.fm/e/7a6208fe' width='100%' height='180' frameborder='0' scrolling='no' seamless='true' style='width:100%; height:180px;'></iframe>"
 excerpt: Tim talks about lacking motivation, how ironically his lack of motivation gave him the topic for today, and how sometimes that's just ok.
 duration: '00:06:57'
 bytes: 4930000
