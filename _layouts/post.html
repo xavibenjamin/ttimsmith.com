@@ -15,7 +15,7 @@ css_class: single-post
     {% elsif page.custom_type == 'link' %}
       <h1 class="entry-header__title--link"><a href="{{ page.custom_url }}">{{ page.title | smartify }}</a><span class="arrow">&rarr;</span></h1>
     {% endif %}
-    <small class="entry-header__meta"><span class="entry-header__author">By Timothy B. Smith</span> &middot; <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b·%d·%Y" }}</time></small>
+    <small class="entry-header__meta"><span class="entry-header__author">Timothy B. Smith</span>&emsp;<time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%b %d, %Y" }}</time></small>
   </header>
 
   <div class="entry__content">

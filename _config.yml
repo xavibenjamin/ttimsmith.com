@@ -1,12 +1,14 @@
 # Site settings
 name: Timothy B. Smith
-title: "Designer who codes, blabber mouth, and coffee addict."
+title: 'Designer who codes, blabber mouth, and coffee addict.'
 email: smith@ttimsmith.com
-description: "Tim Smith is a former web designer and frontend developer from Saint Paul, Minnesota. He now spends his days producing podcasts, creating videos for his YouTube channel, and taking pictures."
+description: 'Tim Smith is a former web designer and frontend developer from Saint Paul, Minnesota. He now spends his days producing podcasts, creating videos for his YouTube channel, and taking pictures.'
 url: https://ttimsmith.com
-instagram: https://www.instagram.com/smithtimmytim/
-twitter: https://twitter.com/smithtimmytim
 
+twitter: https://twitter.com/smithtimmytim
+micro-blog: https://micro.blog/smith
+github: https://github.com/smithtimmytim
+flickr: https://www.flickr.com/photos/smithtimmytim/
 
 # Build settings
 markdown: kramdown
@@ -57,57 +59,48 @@ collections:
 
 # Defaults
 defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
+  - scope:
+      path: ''
+      type: 'posts'
     values:
-      layout: "post"
-  -
-    scope:
-      path: ""
-      type: "pages"
+      layout: 'post'
+  - scope:
+      path: ''
+      type: 'pages'
     values:
-      layout: "page"
-  -
-    scope:
-      path: ""
-      type: "events"
+      layout: 'page'
+  - scope:
+      path: ''
+      type: 'events'
     values:
-      layout: "event"
-  -
-    scope:
-      path: ""
-      type: "work"
+      layout: 'event'
+  - scope:
+      path: ''
+      type: 'work'
     values:
-      layout: "portfolio"
-  -
-    scope:
-      path: ""
-      type: "eastwing"
+      layout: 'portfolio'
+  - scope:
+      path: ''
+      type: 'eastwing'
     values:
-      layout: "episode"
-  -
-    scope:
-      path: ""
-      type: "ftr"
+      layout: 'episode'
+  - scope:
+      path: ''
+      type: 'ftr'
     values:
-      layout: "episode"
-  -
-    scope:
-      path: ""
-      type: "column"
+      layout: 'episode'
+  - scope:
+      path: ''
+      type: 'column'
     values:
-      layout: "episode"
-  -
-    scope:
-      path: ""
-      type: "fullscreen"
+      layout: 'episode'
+  - scope:
+      path: ''
+      type: 'fullscreen'
     values:
-      layout: "episode"
-  -
-    scope:
-      path: ""
-      type: "afk"
+      layout: 'episode'
+  - scope:
+      path: ''
+      type: 'afk'
     values:
-      layout: "episode"
+      layout: 'episode'

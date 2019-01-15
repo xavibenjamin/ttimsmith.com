@@ -1,5 +1,6 @@
 ---
 ---
+
 /*
 -------------------------------
 GLOBAL
@@ -8,7 +9,6 @@ This is the global stylesheet.
 It's a table of contents of all
 the styles.
 ------------------------------- */
-
 
 // -------------------------------
 // Base
@@ -22,7 +22,6 @@ the styles.
 @import '_base/base';
 @import '_base/type';
 
-
 // -------------------------------
 // Components
 // -------------------------------
@@ -35,7 +34,6 @@ the styles.
 @import '_components/videos';
 @import '_components/entries';
 @import '_components/page-nav';
-
 
 // -------------------------------
 // Layout
@@ -51,7 +49,6 @@ the styles.
 @import '_layout/blog';
 @import '_layout/speaking';
 @import '_layout/podcast';
-
 
 // -------------------------------
 // Syntax

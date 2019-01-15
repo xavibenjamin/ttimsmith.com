@@ -1,5 +1,7 @@
 <nav class="navigation" role="navigation">
   <ul class="site__navigation">
     <li><a href="/podcasts/" {% if page.url == '/podcasts/' or page.layout == 'episode' or page.layout == 'podcast-index' %}class="current"{% endif %}>Podcasts</a></li>
+    <li><a href="/writing/" {% if page.url == '/writing/' or page.layout == 'post' %}class="current"{% endif %}>Blog Archive</a></li>
+    <li><a href="/speaking/" {% if page.url == '/speaking/' or page.layout == 'event' %}class="current"{% endif %}>Speaking</a></li>
   </ul>
 </nav>

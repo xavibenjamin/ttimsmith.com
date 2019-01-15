@@ -9,7 +9,7 @@
     grid-column: span 2;
   }
   .back-link {
-    background-color: lighten($link-color, 50%);
+    background-color: lighten($link-color, 45%);
     border-radius: 3px;
     padding: 7px 15px;
     text-decoration: none;
@@ -26,7 +26,7 @@
       grid-column-gap: 40px;
       grid-template-columns: 150px auto;
     }
-     + .show {
+    + .show {
       border-top: 1px solid $border-color;
       margin-top: 1.3rem;
       padding-top: 1.3rem;
@@ -36,7 +36,7 @@
   .show__name {
     font-weight: normal;
     line-height: 1.1;
-    margin-bottom: .1rem;
+    margin-bottom: 0.1rem;
     margin-top: 0;
     a {
       text-decoration: none;
@@ -45,7 +45,7 @@
 
   .show__host {
     color: lighten($text-color, 10%);
-    font-size: .85rem;
+    font-size: $ratio-1;
     font-weight: 600;
   }
 }
@@ -60,7 +60,7 @@
         text-decoration: none;
       }
     }
-     + .episode {
+    + .episode {
       border-top: 1px solid $border-color;
       margin-top: 1.3rem;
       padding-top: 1.3rem;
@@ -71,14 +71,14 @@
 .episode__meta {
   color: lighten($text-color, 10%);
   display: block;
-  font-size: .75rem;
-  margin-bottom: .5rem;
+  font-size: $ratio-1;
+  margin-bottom: 0.5rem;
 }
 
 .episode-navigation {
   border-top: 3px solid $primary-color;
   margin-top: 3rem;
-  padding-top: 1rem;
+  padding-top: $ratio;
   ul {
     display: flex;
     list-style: none;
@@ -86,7 +86,7 @@
     padding: 0;
   }
   li {
-    font-size: .8rem;
+    font-size: $ratio-1;
     width: 50%;
     &:nth-child(2) {
       text-align: right;
@@ -98,7 +98,7 @@
   .navigation__title {
     color: $primary-color;
     display: block;
-    font-size: .75rem;
+    font-size: $ratio-1;
     font-weight: 600;
     text-transform: uppercase;
   }
@@ -109,14 +109,18 @@
 // -----------------------------------------
 
 .show__sidebar {
+  background-color: rgb(241, 241, 241);
+  padding: $ratio;
+  border-radius: 3px;
   @media #{$small-only} {
-    background-color: rgb(241, 241, 241);
-    border-radius: 3px;
     display: grid;
     grid-column-gap: 1.5rem;
     grid-template-columns: 90px auto;
     margin-bottom: 2rem;
-    padding: 1rem;
+  }
+
+  .show__description {
+    font-size: $ratio-1;
   }
 }
 
@@ -132,21 +136,21 @@
 }
 
 .show__host {
-  font-size: .9rem;
+  font-size: $ratio-1;
   font-weight: 600;
 }
 
 .show__subscribe {
   list-style: none;
   margin-bottom: 0;
-  margin-top: .3rem;
+  margin-top: 0.3rem;
   padding: 0;
   @media #{$small-only} {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
   li {
-    font-size: .8rem;
+    font-size: $ratio-1;
   }
   a {
     font-weight: 600;

@@ -8,6 +8,7 @@
   justify-content: center;
   margin-bottom: 3rem;
   padding-top: 1.5rem;
+  flex-direction: column;
 }
 
 .site__logo {
@@ -23,5 +24,35 @@
     .supersmith-icon {
       fill: $primary-color;
     }
+  }
+}
+
+.site__navigation {
+  list-style: none;
+  display: flex;
+
+  li {
+    font-size: 0.9rem;
+    + li {
+      margin-left: 0.8rem;
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: lighten($text-color, 20%);
+    transition: color 300ms ease-in-out;
+    border-bottom: 2px solid transparent;
+
+    &:hover,
+    &:focus {
+      color: $primary-color;
+    }
+  }
+
+  a.current {
+    border-bottom: 2px solid $primary-color;
+    color: $link-color;
+    font-weight: 600;
   }
 }

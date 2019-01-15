@@ -3,18 +3,9 @@
 // -------------------------------
 
 .entry--single {
-  max-width: 620px;
-  @media #{$xxlarge-up} {
-    max-width: 660px;
-  }
-  &.entry--fun {
-    @media #{$large-up} {
-      max-width: 1000px;
-    }
-    @media #{$xxlarge-up} {
-      max-width: none;
-    }
-  }
+  max-width: 36.678rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .entry__header {
@@ -22,36 +13,25 @@
 }
 
 .entry-header__title {
-  font-size: 1.8rem;
-  letter-spacing: -1.4px;
+  font-size: $ratio3;
+  letter-spacing: -0.1rem;
   line-height: 1.1;
 }
 
 .entry-header__title--link {
-  font-size: 1.3rem;
+  font-size: $ratio2;
   line-height: 1.2;
+  letter-spacing: -0.1rem;
 }
 
 .entry-header__meta {
   color: lighten($text-color, 10%);
-  font-size: .8rem;
+  font-size: $ratio-1;
 }
 
 .entry__audio {
-  margin-bottom: 1rem;
+  margin-bottom: $ratio;
   width: 100%;
-}
-
-.entry__content {
-  .entry--fun & {
-    @media #{$large-up} {
-      column-count: 2;
-      column-gap: 4rem;
-    }
-    @media #{$xxlarge-up} {
-      column-count: 3;
-    }
-  }
 }
 
 .speakerdeck-iframe {

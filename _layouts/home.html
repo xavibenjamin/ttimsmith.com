@@ -13,24 +13,16 @@
             alt="Tim Smith Portrait">
         </div>
         <div class="home__info">
-          <h1 class="home__name">Timothy Smith</h1>
-          <h2 class="home__subtitle">I’m a podcast producer, YouTuber, and photographer</h2>
+          <h1 class="home__name">Hi! I’m Tim Smith, a podcast producer, writer, and photography enthusiast in Saint Paul, MN.</h1>
           {{ content }}
 
           <ul class="inline-list">
-            <li><a href="https://www.youtube.com/smithtimmytim">YouTube</a></li>
             <li><a href="/podcasts/">Podcasts</a></li>
-            <li><a href="https://timothybsmith.photo/">Photography</a></li>
+            <li><a href="/writing/">Blog Archive</a></li>
+            <li><a href="/speaking/">Speaking</a></li>
           </ul>
 
-          <ul class="social-links">
-            <li><a href="{{ site.instagram }}">{% include icons/icon-instagram.html %}</a></li>
-            <li><a href="{{ site.twitter }}">{% include icons/icon-twitter.html %}</a></li>
-            <li><a href="mailto:{{ site.email }}?subject=Hey Tim!">{% include icons/icon-email.html %}</a></li>
-          </ul>
-
-          <div class="createsend-button" style="height:22px;display:inline-block;" data-listid="t/79/590/F0F/38853C2722F30885">
-          </div><script type="text/javascript">(function () { var e = document.createElement('script'); e.type = 'text/javascript'; e.async = true; e.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://btn.createsend1.com/js/sb.min.js?v=3'; e.className = 'createsend-script'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(e, s); })();</script>
+          {% include social-links.html %}
         </div>
       </div>
       

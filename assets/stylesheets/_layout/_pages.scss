@@ -3,26 +3,23 @@
 // -------------------------------
 
 .page__header {
-  margin-bottom: 1rem;
+  margin-bottom: $ratio;
   margin-left: auto;
   margin-right: auto;
-  max-width: 620px;
-  @media #{$xxlarge-up} {
-    max-width: 720px;
-  }
+  max-width: 36.678rem;
   .page-header__description {
-    font-size: 1.2rem;
-    margin-bottom: .3rem;
+    font-size: $ratio1;
+    margin-bottom: 0.3rem;
   }
 }
 
 .page__header--show {
   background-color: $creme;
   display: grid;
-  grid-gap: 1rem;
+  grid-gap: $ratio;
   margin-bottom: 2rem;
   max-width: none;
-  padding: 1rem;
+  padding: $ratio;
 
   @media #{$medium-up} {
     grid-gap: 2rem;
@@ -31,9 +28,9 @@
 
   .show__host {
     color: lighten($text-color, 10%);
-    font-size: .9rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    margin: 0 0 .5rem;
+    margin: 0 0 0.5rem;
   }
 
   .header__image {
@@ -47,7 +44,7 @@
   }
 
   .header__subscribe-heading {
-    font-size: .7rem;
+    font-size: 0.7rem;
     margin-top: 2rem;
     text-transform: uppercase;
   }
@@ -59,10 +56,10 @@
     margin: 0;
     padding: 0;
     li {
-      font-size: .8rem;
+      font-size: 0.8rem;
       line-height: 1.2;
-       + li {
-        margin-left: .8rem;
+      + li {
+        margin-left: 0.8rem;
       }
       &:not(:last-of-type) {
         margin-bottom: 0;
@@ -84,7 +81,7 @@
   font-size: 2rem;
   letter-spacing: -1.3px;
   line-height: 1;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
   a {
     text-decoration: none;
   }
@@ -101,8 +98,5 @@
 .page__content {
   margin-left: auto;
   margin-right: auto;
-  max-width: 620px;
-  @media #{$xxlarge-up} {
-    max-width: 660px;
-  }
+  max-width: 36.678rem;
 }

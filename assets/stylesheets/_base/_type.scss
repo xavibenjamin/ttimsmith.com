@@ -7,20 +7,17 @@
 // -------------------------------
 
 html {
-  font-size: 15px;
+  font-size: calc(13px + 0.25vw);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  @media #{$medium-up} {
-    font-size: 16px;
-  }
 }
 
 body {
   font-family: $sans;
   -webkit-hyphens: auto;
   hyphens: auto;
-  letter-spacing: -.4px;
-  line-height: 1.5;
+  letter-spacing: -0.4px;
+  line-height: 1.4;
 }
 
 // -------------------------------
@@ -40,21 +37,21 @@ h5 {
 }
 
 h2 {
-  font-size: 1.2rem;
-   + h3 {
-    margin-top: .3rem;
+  font-size: $ratio1;
+  + h3 {
+    margin-top: 0.3rem;
   }
 }
 
 h5 {
-  font-size: .9rem;
+  font-size: 0.9rem;
   text-transform: uppercase;
   &:before {
     background-color: $primary-color;
     content: '';
     display: block;
     height: 2px;
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
     width: 100px;
   }
 }
@@ -64,22 +61,22 @@ h5 {
 // -------------------------------
 
 p {
-  font-size: 1rem;
-  line-height: 1.5;
+  font-size: $ratio;
+  line-height: 1.6;
   &:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-bottom: $ratio;
   }
 }
 
 ol,
 ul {
-  margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-bottom: $ratio;
+  margin-top: $ratio;
   padding-left: 2rem;
   li {
-    font-size: 1rem;
+    font-size: $ratio;
     &:not(:last-of-type) {
-      margin-bottom: .5rem;
+      margin-bottom: 0.5rem;
     }
   }
 }
@@ -92,20 +89,17 @@ ul {
   list-style-type: disc;
 }
 
-
-
-
 sup {
-  margin-left: .2rem;
+  margin-left: 0.2rem;
   vertical-align: super;
   a {
     background-color: $primary-color;
     color: white;
     display: inline-block;
-    font-size: .7rem;
+    font-size: $ratio-2;
     font-weight: 600;
-    line-height: .6;
-    padding: 3px;
+    line-height: 0.6;
+    padding: 5px 3px;
     text-decoration: none;
     &:hover,
     &:focus {
@@ -115,7 +109,6 @@ sup {
   }
 }
 
-
 // -------------------------------
 // Blockquote
 // -------------------------------
@@ -123,16 +116,16 @@ sup {
 blockquote {
   border-left: 4px solid $border-color;
   color: lighten($text-color, 15%);
-  margin-bottom: 1rem;
-  margin-left: 1rem;
-  padding-left: .8rem;
+  margin-bottom: $ratio;
+  margin-left: $ratio;
+  padding-left: 0.8rem;
   small {
     display: block;
-    font-size: .8rem;
-    margin-top: .5rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
     &:before {
       content: '—';
-      margin-right: .1rem;
+      margin-right: 0.1rem;
     }
   }
 }

@@ -9,18 +9,18 @@
   margin: 5rem 0 0;
   padding: 0;
   li {
-    font-size: .85rem;
+    font-size: 0.85rem;
     font-variant-numeric: lining-nums;
     text-align: center;
-     + li {
-      margin-left: 1rem;
+    + li {
+      margin-left: $ratio;
     }
   }
   a {
     border-radius: 2px;
     display: block;
     font-weight: 600;
-    padding: .3rem .7rem;
+    padding: 0.3rem 0.7rem;
     text-decoration: none;
     &:hover,
     &:focus {

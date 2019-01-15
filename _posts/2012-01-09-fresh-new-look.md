@@ -2,9 +2,12 @@
 title: Fresh New Look!
 custom_type: post
 ---
+
 So, I’ve got a brand new site... again. It almost seems that I’m redesigning this crap too much. But, the truth is, there are always better ways to solve problems and I strive to do that with all of my work, even my personal stuff.
 
 With that said, the site I had up before honestly looked a bit amateurish. I don’t know what I was thinking. I mean, it did only take about two hours to design and code it up so, that might explain things a bit. Either way, moving forward, there were a couple of things I wanted to get better at.
+
+Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.
 
 ## My Work
 

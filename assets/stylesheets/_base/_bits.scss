@@ -1,8 +1,6 @@
-
 // -------------------------------
 // BITS
 // -------------------------------
-
 
 // -------------------------------
 // Colors
@@ -10,20 +8,21 @@
 $primary-color: salmon;
 $secondary-color-light: #607182;
 $secondary-color: #314259;
-$secondary-color-dark: #2C363F;
+$secondary-color-dark: #2c363f;
 $heading-color: #333;
 $text-color: #555;
-$link-color: #2574A8;
-$border-color: #DDD;
-$alert-color: #E54A4F;
-$creme: #F6F6F1;
-$jazz-color: #EF7C97;
+$link-color: #3f8cb7;
+$border-color: #ddd;
+$alert-color: #e54a4f;
+$creme: #f6f6f1;
+$jazz-color: #ef7c97;
 
 // -------------------------------
 // Font Stack
 // -------------------------------
 
-$sans: 'Whitney SSm A', 'Whitney SSm B', system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
+$sans: 'Whitney SSm A', 'Whitney SSm B', system, -apple-system,
+  BlinkMacSystemFont, Avenir, sans-serif;
 
 // -------------------------------
 // Media Queries
@@ -39,11 +38,25 @@ $xlarge-up: 'screen and (min-width: 90.063em)';
 $xlarge-only: 'screen and (min-width: 90.063em) and (max-width: 120em)';
 $xxlarge-up: 'screen and (min-width: 120.063em)';
 
-
 // -------------------------------
 // Helpers
 // -------------------------------
 
 .m-l-half {
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
+
+// -------------------------------
+// Type Ratio
+// -------------------------------
+
+$magic: 1.2;
+
+$ratio: 1rem;
+
+$ratio-1: $ratio / $magic;
+$ratio-2: $ratio-1 / $magic;
+
+$ratio1: $ratio * $magic;
+$ratio2: $ratio1 * $magic;
+$ratio3: $ratio2 * $magic;
