@@ -1,14 +1,13 @@
 afk:
   name: Away from Keyboard
-  description: "Exploring the human side of creative work. A podcast in partnership with Changelog Media."
+  description: 'Exploring the human side of creative work. A podcast in partnership with Changelog Media.'
   slug: afk
   host: Timothy B. Smith
-  overcast: https://overcast.fm/p907167-7FzxLe
-  pocketcast: https://pca.st/8KZ6
   external_link: https://changelog.com/afk
+  retired: true
 ftr:
   name: For the Record
-  description: "*For the Record* is a show about the people behind some of our favorite things."
+  description: '*For the Record* is a show about the people behind some of our favorite things.'
   slug: ftr
   host: Timothy B. Smith
   retired: true
@@ -17,7 +16,7 @@ ftr:
     - Technology
 eastwing:
   name: The East Wing
-  description: "*The East Wing* is a show about the web and those who create it."
+  description: '*The East Wing* is a show about the web and those who create it.'
   slug: eastwing
   host: Timothy B. Smith
   retired: true
@@ -25,7 +24,7 @@ eastwing:
     - Technology
 column:
   name: The Radio Column
-  description: "*The Radio Column* is a talk show exploring the hurdles and victories of life and work."
+  description: '*The Radio Column* is a talk show exploring the hurdles and victories of life and work.'
   itunes_description: The Radio Column is a talk show exploring the hurdles and victories of life and work.
   slug: column
   host: Timothy B. Smith

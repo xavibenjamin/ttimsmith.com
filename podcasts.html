@@ -27,10 +27,10 @@ description: Over the years, I've hosted a few different podcasts. Here are the 
   {% for show in site.data.shows %}
     {% if show[1].retired == true %}
     <div class="show">
-      <a href="/podcasts/{{ show[1].slug }}"><img class="show__image" src="/uploads/shows/{{ show[1].slug }}/thumb.png" alt="{{ show.name }} Thumb"></a>
+      <a{% if show[1].external_link %} href="{{ show[1].external_link}}"{% else %} href="/podcasts/{{ show[1].slug }}"{% endif %}><img class="show__image" src="/uploads/shows/{{ show[1].slug }}/thumb.png" alt="{{ show.name }} Thumb"></a>
 
       <div class="show__info">
-        <h2 class="show__name"><a href="/podcasts/{{ show[1].slug }}">{{ show[1].name }}</a></h2>
+        <h2 class="show__name"><a{% if show[1].external_link %} href="{{ show[1].external_link}}"{% else %} href="/podcasts/{{ show[1].slug }}"{% endif %}>{{ show[1].name }}</a></h2>
         <p class="show__host">Hosted by {{ show[1].host }}</p>
 
         <p class="show__description">{{ show[1].description | markdownify | remove: '<p>' }}</p>
