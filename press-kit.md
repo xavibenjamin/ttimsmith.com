@@ -34,11 +34,11 @@ subtitle: Helpful information and pictures of me.
 
 ### Short Version
 
-Tim Smith is a designer and frontend developer from Saint Paul, MN.
+Tim Smith is a designer and frontend developer living in Oceanside, CA.
 
 ### Longer Version
 
-Tim Smith is a designer and frontend developer from Saint Paul, MN. He's worked on the web for a decade, working with different companies and clients. Tim writes [*Brightly Colored*](https://brightlycolored.org), a blog about design, development, technology, and most importantly, Star Wars. When away from his desk, he spends time with his amazing wife Kelly, eating brunch, watching movies, walking the mall, and other sappy-sounding couple stuff.
+Tim Smith is a designer and frontend developer living in Oceanside, CA. He's worked on the web for a decade, working with different companies and clients. Tim writes [*Brightly Colored*](https://brightlycolored.org), a blog about design, development, technology, and most importantly, Star Wars. When away from his desk, he spends time with his amazing wife Kelly, eating brunch, watching movies, walking the mall, and other sappy-sounding couple stuff.
 
 ## Travel
 
