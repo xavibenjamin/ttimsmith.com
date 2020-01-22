@@ -4,23 +4,26 @@
 
   <body {% if page.css_class or layout.css_class %}class="{{ page.css_class }}{{ layout.css_class }}"{% endif %}>
     <main class="main main--home" role="main">
-
       <div class="home__image">
-        <img 
-          srcset="/uploads/home/tim@2x.jpg 1600w,
-                  /uploads/home/tim@3x.jpg 3200w"
-          src="/uploads/home/tim.jpg"
-          alt="Tim Smith Portrait">
+        <img
+          srcset="/uploads/tim-4x5@2x.jpg 1600w,
+                  /uploads/tim-4x5@3x.jpg 3200w"
+          src="/uploads/tim-4x5.jpg"
+          alt="Tim Smith Portrait" >
       </div>
 
-      <div class="home__info">
-        <h1 class="home__name">Hi! I’m Tim Smith, a frontend designer, writer, and photography enthusiast in Oceanside, CA.</h1>
+      <div class="home__content">
+        <h1 class="home__title">Timothy B. Smith</h1>
+        <h2 class="home__subtitle">Geek, coffee snob, and maker of stuff</h2>
+
         {{ content }}
 
+        <small><a href="mailto:smith@ttimsmith.com">smith@ttimsmith.com</a> </small>
 
         {% include social-links.html %}
-      </div>
 
+        
+      </div>
     </main>
   </body>
 </html>

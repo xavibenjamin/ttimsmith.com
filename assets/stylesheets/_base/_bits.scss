@@ -5,24 +5,19 @@
 // -------------------------------
 // Colors
 // -------------------------------
-$primary-color: salmon;
-$secondary-color-light: #607182;
-$secondary-color: #314259;
-$secondary-color-dark: #2c363f;
-$heading-color: #333;
-$text-color: #555;
-$link-color: #3f8cb7;
-$border-color: #ddd;
-$alert-color: #e54a4f;
-$creme: #f6f6f1;
-$jazz-color: #ef7c97;
+:root {
+  --bg: #1d2433;
+  --accent: #ef6b73;
+  --link-color: #5ccfe6;
+  --text-color: #a2aabc;
+  --text-color-light: #6679a4;
+}
 
 // -------------------------------
 // Font Stack
 // -------------------------------
 
-$sans: 'Whitney SSm A', 'Whitney SSm B', system, -apple-system,
-  BlinkMacSystemFont, Avenir, sans-serif;
+$sans: system, -apple-system, BlinkMacSystemFont, Avenir, sans-serif;
 
 // -------------------------------
 // Media Queries
@@ -37,14 +32,6 @@ $large-up: 'screen and (min-width: 64em)';
 $xlarge-up: 'screen and (min-width: 90.063em)';
 $xlarge-only: 'screen and (min-width: 90.063em) and (max-width: 120em)';
 $xxlarge-up: 'screen and (min-width: 120.063em)';
-
-// -------------------------------
-// Helpers
-// -------------------------------
-
-.m-l-half {
-  margin-left: 0.5rem;
-}
 
 // -------------------------------
 // Type Ratio

@@ -5,10 +5,11 @@ email: smith@ttimsmith.com
 description: 'Tim Smith is a geek, coffee snob, and maker of stuff in Oceanside, California.'
 url: https://ttimsmith.com
 
+youtube: https://www.youtube.com/smithtimmytim
 twitter: https://twitter.com/smithtimmytim
 micro-blog: https://micro.blog/smith
-github: https://github.com/smithtimmytim
 flickr: https://www.flickr.com/photos/smithtimmytim/
+apple_music: https://music.apple.com/profile/smithtimmytim
 
 # Build settings
 markdown: kramdown
