@@ -1,7 +1,7 @@
 ---
 layout: home
-seo_title: Tim Smith (@smithtimmytim) is a frontend designer, writer, and photography enthusiast.
+seo_title: Tim Smith (@smithtimmytim) is a geek, coffee snob, and maker of stuff
 css_class: home
 ---
 
-I'm currently building [Bokeh](https://bokeh.pics), a better way to share photos with friends and family. In 2013, I started a blog now called [_Brightly Colored_](https://brightlycolored.org/), a web-column about about comic books, _Star Wars_, technology, and other geekery. When away from my keyboard, I spend time with my wonderful partner, Kelly.
+My days are spent finding awesome creative people at [BuySellAds](https://www.buysellads.com/). I'm the creator of [Bokeh](https://bokeh.pics/), an Instagram alternative to share photos with friends and family privately. On my free time, [I love to write](https://timmmmy.blog/), [make YouTube videos](https://www.youtube.com/smithtimmytim), [read comics](https://leagueofcomicgeeks.com/profile/smithtimmytim), [watch movies](https://letterboxd.com/ttimsmith/), play board games, or spend time naked near water.

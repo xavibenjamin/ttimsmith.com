@@ -23,36 +23,11 @@ the styles.
 @import '_base/type';
 
 // -------------------------------
-// Components
-// -------------------------------
-// This section is about things that
-// we can easily absract.
-// -------------------------------
-@import '_components/buttons';
-@import '_components/forms';
-@import '_components/images';
-@import '_components/videos';
-@import '_components/entries';
-@import '_components/page-nav';
-
-// -------------------------------
 // Layout
 // -------------------------------
 // The layout section is for styles
 // tied to place where they find
 // themselves.
 // -------------------------------
-@import '_layout/header';
 @import '_layout/maincontent';
 @import '_layout/pages';
-@import '_layout/footer';
-@import '_layout/blog';
-@import '_layout/speaking';
-@import '_layout/podcast';
-
-// -------------------------------
-// Syntax
-// -------------------------------
-// Syntax highlighting styles
-// -------------------------------
-@import '_base/syntax';

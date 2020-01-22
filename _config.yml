@@ -1,8 +1,8 @@
 # Site settings
 name: Timothy B. Smith
-title: 'Designer who codes, blabber mouth, and coffee addict.'
+title: 'Geek, coffee snob, and maker of stuff'
 email: smith@ttimsmith.com
-description: 'Tim Smith is a frontend designer in Oceanside, California. He now spends his days writing code, building Bokeh, and taking pictures.'
+description: 'Tim Smith is a geek, coffee snob, and maker of stuff in Oceanside, California.'
 url: https://ttimsmith.com
 
 twitter: https://twitter.com/smithtimmytim
@@ -20,87 +20,5 @@ exclude: ['scss', 'README.md', 'Rakefile', 'Gemfile', 'Gemfile.lock', 'vendor']
 sass:
   sass_dir: assets/stylesheets
   style: :compressed
-timezone: America/Chicago
+timezone: America/Los_Angeles
 livereload: true
-
-# Pagination
-pagination:
-  debug: true
-  enabled: true
-  per_page: 10
-  sort_reverse: true
-  trail:
-    before: 2
-    after: 2
-
-# Collection
-collections:
-  work:
-    output: true
-    permalink: /portfolio/:title/
-  events:
-    output: true
-    permalink: /speaking/:title/
-  eastwing:
-    output: true
-    permalink: /podcasts/eastwing/:title/
-  ftr:
-    output: true
-    permalink: /podcasts/ftr/:title/
-  column:
-    output: true
-    permalink: /podcasts/column/:title/
-  fullscreen:
-    output: true
-    permalink: /podcasts/fullscreen/:title/
-  afk:
-    output: true
-    permalink: /podcasts/afk/:title/
-
-# Defaults
-defaults:
-  - scope:
-      path: ''
-      type: 'posts'
-    values:
-      layout: 'post'
-  - scope:
-      path: ''
-      type: 'pages'
-    values:
-      layout: 'page'
-  - scope:
-      path: ''
-      type: 'events'
-    values:
-      layout: 'event'
-  - scope:
-      path: ''
-      type: 'work'
-    values:
-      layout: 'portfolio'
-  - scope:
-      path: ''
-      type: 'eastwing'
-    values:
-      layout: 'episode'
-  - scope:
-      path: ''
-      type: 'ftr'
-    values:
-      layout: 'episode'
-  - scope:
-      path: ''
-      type: 'column'
-    values:
-      layout: 'episode'
-  - scope:
-      path: ''
-      type: 'fullscreen'
-    values:
-      layout: 'episode'
-  - scope:
-      path: ''
-      type: 'afk'
-    values:
-      layout: 'episode'
